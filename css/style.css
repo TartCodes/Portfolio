@@ -19,7 +19,7 @@ time, mark, audio, video {
 	padding: 0;
 	border: 0;
 	font-size: 100%;
-	font: inherit;
+	font: relative;
 	vertical-align: baseline;
 }
 /* HTML5 display-role reset for older browsers */
@@ -50,10 +50,7 @@ table {
 * {
     box-sizing: border-box;
   }
-  
-  body {
-    width: 100%;
-  }
+   
   
   /* Clear fix hack */
   .clearfix:after {
@@ -74,76 +71,577 @@ html {
 }
 
 /* Body */
+body {
+    width: 100%;
+}
 
 a {
-    text-decoration: none;
-   
-  }
+    text-decoration: none;    
+}
+
+h2 {
+   background: black;
+   color: white;
+   width: fit-content;
+   font-family: 'Oswald', sans-serif;
+   font-weight: bold;
+   font-size: 2.5rem;
+   padding: .4rem; 
+}
 
 /* Header */
 
 header {
-    display: flex;
-    width: 100%;
+    float: right;
+    width: 60%;
+    padding-top: 2rem;
+    background: #231f20;
+    height: 90vh;
 }
 
-.bgProf {    
-    display: flex;
-    width: 100%;
-    background-color: #F8F8F8;
-}
-
-.bgProfDiv {
-    background-image: url(../assets/portfoliobg.png);
-    background-size: cover;
-    width: 50%;
-    background-repeat: no-repeat;
-    
-}
-
-.tcLogo {
-    display: flex;
-    width: 30%;
-    justify-content: flex-end;
-}
-
-.tcLogo img {
-    width: 20%;    
-}
-
-
-
-/* Nav */
+                /* Nav */
 
 
 
 nav {
     display: flex;
-    width: 60%;
+    width: 100%;
+    background: #231f20;
+   
 }
 
 .headerNav {  /* containter */
     display: flex;
-    width: 100%;
+    width: 60%;
     flex-direction: row;
-    justify-content: flex-end;
+    justify-content: space-between
+    
+}
+
+.headerNav a,
+.headerNav a:visited
+.headerNav a:hover
+.headerNav a:active {
+    color: #ababab;
 }
 
 .headerNav li {
-    justify-content: space-between;
-    width: 60%;
+    font-family: 'Roboto', Helvetica, sans-serif;
+    font-size: 1rem;
+    padding-left: 3rem;
+    font-weight: bold;
+    
 }
 
 .social {
     display: flex;
-    justify-content: flex-end;
     justify-content: space-between;
-    width: 40%;
+    width: 10%;
+    padding-left: 6rem;
+    background-color: #231f20;
+    color: white;
+}
+
+.social a,
+.social a:visited,
+.social a:hover,
+.social a:active{ 
+    color: white
+}
+
+.social li {
+    font-family: 'Roboto', Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 1rem; 
+    padding-left: 1rem;
+    background-color: #231f20;
+    color: white;
+}
+
+.home a {
+    background-color: #00edff;
+    color: black;
+    padding: .5rem;
 }
 
 
-/* Main */
+/* section bg prof disaster */
 
-/* Section */
+.bgProfCont {
+    float: left;
+    width: 40%;
+    height: 85vh;
+    background-color: #F8F8F8;
+    
+}
+
+.bgImgSec {
+    float: left;
+    width: 33%;
+    z-index: 1;
+    height: 100%;
+    background-color: #F8F8F8;
+}
+
+.profLogo {
+    background-image: url(../assets/portfoliobg.png);
+    background-size: cover;
+    float: left;
+    width: 50%;
+    height: 100%;   
+}
+
+.tcLogo {        
+    width: 30%;    
+    float: right;
+}
+
+
+/* Ceneter Layers */
+
+.introSection {
+    position: absolute;
+    left: 25rem;
+    top: 17rem;
+    width: 50%;    
+}
+
+.blueSquare {    
+    position: absolute;
+    width: 80%;
+    height: 40rem;
+    background: #00edff;
+    z-index: 1;
+    top: -10rem;
+    left: 15rem;
+}
+
+.mainPhoto {
+    position: absolute;
+    width: 80%;
+    height: 40rem;
+    background: black;
+    z-index: 2;
+    top: -8rem;
+    left: 17rem;
+}
+
+.intro {
+    font-family: 'Oswald', sans-serif;
+    font-weight: bold;
+    position: relative;    
+    font-size: 5.5rem;
+    z-index: 5;
+    background-color: #F8F8F8;
+    line-height: 6rem;
+    width: fit-content;
+    height: fit-content;
+}
+
+
+/* About Aside */
+
+.about {
+    float: left;
+    width: 15%;
+    margin-left: 5%;
+    margin-top: 2%;
+}
+
+.about p {
+    color: #686868;
+    font-size: 1rem;
+    font-family: 'Open Sans', sans-serif;
+    line-height: 1.67;
+    width: 100%;
+}
+
+.about span {
+    color: #00edff;
+    font-family: 'Oswald',sans-serif;
+    font-size: 1rem;
+    border-bottom: solid thin #00edff;
+}
+
+.about a,
+.about a:active
+.about a:hover
+.about a:visited {
+    color: #00edff;
+}
+
+/* Skills Section */
+
+.skills {
+    display: flex;
+    padding-top: 6%;
+    padding-left: 3rem;
+    flex-direction: row;
+    justify-content: center;
+    width:80%;
+}
+
+.skills div {    
+    width: 25%;
+    padding-left: .5rem;
+}
+
+.skills h3 {
+    font-family: 'Oswald',sans-serif;
+    font-size: 2.5rem;
+    font-weight: bold;    
+}
+
+.skills 
+p {
+    font-family: 'Open Sans', sans-serif ;
+    font-size: 1rem;
+    color: #686868;
+    line-height: 1.67;
+    margin-top: .5rem;    
+}
+
+
+/* Projects */
+
+main {
+    width: 100%;
+    margin-top: 7%;
+   }
+
+main
+.bgProjectsDiv {
+    background-image: url(../assets/projectsimg.png);
+    background-position: right;
+    background-size: cover;
+    background: #F8F8F8;
+}
+
+.projects a,
+.projects a:active
+.projects a:hover
+.projects a:visited {
+    color: #231f20;
+}
+
+.projects {
+    margin-left: 5%;
+}
+
+.projectsOneAndTwo {
+    display: flex;
+    flex-direction: row;    
+    width: 100%;
+    margin-top: 1%;    
+    
+}
+
+/* first project */
+
+.firstProject {
+    background-image: url(../assets/firstImg.png);
+    background-repeat: no-repeat;
+    background-size: cover;    
+    width: 30%;
+    height: 0;
+    padding-top: 25%;
+}
+
+.firstProject 
+h4 {
+    font-family: 'Oswald', sans-serif;
+    color: #231f20;
+    font-weight: bold;
+    position: relative;
+    bottom: 3rem;
+    background: white;
+    width: fit-content;
+    padding: .5rem 2rem .5rem .5rem  ;
+    z-index: 2;   
+}
+
+.firstProject 
+div {
+    width: fit-content;
+    padding: 1rem 8.5rem 1rem 1rem;
+    background: #00edff;
+    position: relative;
+    bottom: 4.75rem;
+    left: .4rem;
+    z-index:1;
+}
+
+/* second project */
+
+.secondProject {
+    background-image: url(../assets/legendsbnb.webp);
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 65%;
+    height: 0;
+    padding-top: 25%;
+    margin-left: 1%;
+}
+
+.secondProject
+h4 {
+    font-family: 'Oswald', sans-serif;
+    color: #231f20;
+    font-weight: bold;
+    position: relative;
+    bottom: 3rem;
+    left: .3rem;
+    background: white;
+    width: fit-content;
+    padding: .5rem 2rem .5rem .5rem  ;
+    z-index: 2;
+}
+
+.secondProject
+div {
+    width: fit-content;
+    padding: 1rem 10.7rem 1rem 1rem;
+    background: #00edff;
+    position: relative;
+    bottom: 4.75rem;
+    z-index:1;
+}
+
+/* Projects 3 4 5 */
+
+.projectsThreeFourFive {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    margin-top: 1%;
+    justify-content: left;
+    
+}
+
+/* third project */
+
+.thirdProject {
+    width: 30%;
+    background-image: url(../assets/rpgdice.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 0;
+    padding-top: 25%;
+}
+
+.thirdProject
+h4 {
+    font-family: 'Oswald', sans-serif;
+    color: #231f20;
+    font-weight: bold;
+    position: relative;
+    bottom: 3rem;
+    background: white;
+    width: fit-content;
+    padding: .5rem 2rem .5rem .5rem  ;
+    z-index: 2;
+}
+
+.thirdProject
+div {
+    width: fit-content;
+    padding: 1rem 8.75rem 1rem 1rem;
+    background: #00edff;
+    position: relative;
+    bottom: 4.75rem;
+    left: .4rem;
+    z-index:1;
+}
+
+
+/* fourth project */
+
+.fourthProject {
+    background-image: url(../assets/pf2e.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 25%;
+    height: 0;
+    padding-top: 25%; 
+    margin-left: 1%;
+}
+
+.fourthProject
+h4 {
+    font-family: 'Oswald', sans-serif;
+    color: #231f20;
+    font-weight: bold;
+    position: relative;
+    bottom: 3rem;
+    background: white;
+    width: fit-content;
+    padding: .5rem 2rem .5rem .5rem  ;
+    z-index: 2;
+}
+
+.fourthProject
+div {
+    width: fit-content;
+    padding: 1rem 9.35rem 1rem 1rem;
+    background: #00edff;
+    position: relative;
+    bottom: 4.75rem;
+    z-index:1;
+}
+
+/* fifth project */
+
+.fifthProject {
+    background-image: url(../assets/pomotimer.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 25%;
+    height: 0;
+    padding-top: 25%; 
+    margin-left: 1%;   
+}
+
+
+.fifthProject
+h4 {
+    font-family: 'Oswald', sans-serif;
+    color: #231f20;
+    font-weight: bold;
+    position: relative;
+    bottom: 3rem;
+    font-size: 1rem;
+    background: white;
+    width: fit-content;
+    padding: .5rem 2rem .5rem .5rem;
+    z-index: 2;
+}
+
+.fifthProject
+div {
+    width: 12rem;
+    height: 2rem;
+    background: #00edff;
+    position: relative;
+    bottom: 5.2rem;
+    left: .5rem;
+}
 
 /* Footer */
+
+.footerSection {
+    width: 100%;
+    background: #231f20;
+    margin-top: 15%;
+    
+}
+
+.footerP {
+    display: flex;
+    justify-content: center;
+}
+
+.footerP
+p {
+    font-family: 'Oswald',sans-serif;
+    font-weight: bold;
+    color: #231f20;
+    font-size: 2.5rem;
+    z-index: 2;
+    position: relative;
+    left: 10%;
+    background: #fff;
+    top: -4rem;
+    padding: 3rem;
+}
+
+.blueSquareTwo {
+    position: relative;
+    width: 22rem;
+    background: #00edff;
+    top: -5rem;
+    right: 44%;
+    height: 5rem;
+    z-index: 1;
+}
+
+.getInTouch {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+
+.getInTouch
+span {
+    font-family: 'Oswald',sans-serif;
+    font-weight: bold;
+    font-size: 2rem;
+    color: #ffffff;
+}
+
+.endP {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 2%;
+}
+
+.endP
+p {
+    font-family: 'Open Sans',sans-serif;
+    font-size: 1rem;
+    color: #fbfbfb; 
+}
+
+.contact {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-top: 2%;
+}
+
+.contact
+a {
+    color: #00edff;
+    font-family: 'Oswald',sans-serif;
+    font-weight: bold;
+    font-size: 1.25rem;
+    border-bottom: solid 1px #00edff;
+    border-bottom-width: 2px;
+    line-height: 1.5rem;
+}
+
+.footNote {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    margin-top: 3%;
+    padding: 0 5% 2% 5%;
+}
+
+.footNote
+p {
+    color: #ffffff;
+    font-family: 'Oswald',sans-serif;
+    font-size: 1rem;
+    padding-left: 5%;
+}
+
+.socialTwo {
+    display: flex;
+    flex-direction: row;    
+}
+
+.socialTwo a,
+.socialTwo a:active
+.socialTwo a:hover
+.socialTwo a:visited {
+    color: #ffffff;
+}
+
+.socialTwo
+li {
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    padding-right: 1rem;
+}

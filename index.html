@@ -6,26 +6,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TartCodes Portfolio</title>
 
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Oswald:wght@400;700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+    
     <!-- header -->
     <header>
-        <section class="bgProf">
-            <div class="bgProfDiv"></div>
-            <div class="tcLogo">
-                <img src="../portfolio/assets/tartcodeslogo.png" alt="TartCodes Logo">
-            </div>
-        <!-- </section> -->
-       
+            
         <!-- links within site -->
             <nav>
            
              <ul class="headerNav">
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Projects</a></li>
-                    <li><a href="#">Journal</a></li>
+                    <li class="home"><a href="#">HOME</a></li>
+                    <li><a href="#">ABOUT</a></li>
+                    <li><a href="#">PROJECTS</a></li>
+                    <li><a href="#">JOURNAL</a></li>
              </ul>
             <!-- links to social -->
                 <ul class="social"> 
@@ -35,95 +34,118 @@
                     <li><a href="#">In.</a></li>               
                 </ul>
             </nav>
-        </section>
-    </header>
-    <!-- Main with h1, bg photo, etc -->
-    <main>
-        <section class="mainSection">
-            <div class="blueSquare"></div>
-            <div class="mainPhoto"></div>
-            <h1 class="intro">
-                Hi, I'm Matt. <br>
-                    Explore. Enjoy. Then Lets Get To Work.
-            </h1>
-        </section>
         
-        <!-- About, offset and left of skills -->
-        <aside class="about">
-            <h2>ABOUT.</h2>
-            <p>My names Matt Tartaglione, I'm a software engineer and I love...</p>
-            <span>READ MORE</span>
-        </aside>
+    </header>
+    <!-- portfolio logo with tc logo -->
+    <section class="bgProfCont">
+        <section class="bgImgSec">
+            <div class="profLogo">
+                <img class="tcLogo" src="assets/tartcodeslogo.png" alt="TartCodes Logo">
+            </div>
+        </section>
 
-        <!-- blurb about skills, when I learn more turn this into a slideshow -->
-        <section class="skills">
+        <section class="introSection">            
+            <h1 class="intro">
+                Hi, I'm Matt.               
+            </h1>
+            <p class="intro">
+                Let's build together!
+            </p>      
+            <div class="blueSquare"></div>
+            <div class="mainPhoto"></div>      
+        </section> 
+    </section>
+   
+      <!-- About, offset and left of skills -->
+    <aside class="about">
+        <h2>ABOUT.</h2>
+        <p>My name is Matt Tartaglione, I'm a software engineer and I love...</p>
+        <span>
+            <a href="#">READ MORE</a>
+        </span>
+    </aside>
+
+    <!-- blurb about skills, when I learn more turn this into a slideshow -->
+    <section class="skills">
+        <div>
             <h3>HTML 5</h3>
             <p>The universal markup language for the Web. Tags and more Tags.</p>
+        </div>
+        <div>
             <h3>CSS</h3>
-            <p>Why this website looks so beautiful. The language designed to specify the overall appearance of webpages.</p>
+            <p>Why this website looks so beautiful. Helps detail the appearance of webpages.</p>
+        </div>
+        <div>
             <h3>JavaScript</h3>
             <p>Everything is an object. Lets me make cool stuff.</p>
-        </section>
-    </main>
+        </div>
+    </section>    
 
     <!-- projects section -->
-    <section class="projects">
-        <h2>RECENT PROJECTS.</h2>
+    <main>
+        <section class="projects">
+            <h2>RECENT PROJECTS.</h2>
+            <div class="bgProjectsDiv"></div>
+            <section class="projectsOneAndTwo">
+                <div class="firstProject">
+                    <h4><a href="https://trumbullhikes.netlify.app/">TRUMBULL HIKES</a></h4>
+                    <div></div>
+                </div>
+                <div class="secondProject">
+                    <h4><a href="#">LEGENDS B&B WEBSITE</a></h4>
+                    <div></div>
+                </div>
+            </section>
 
-        <section class="projectsOneAndTwo">
-            <div class="firstProject">
-                <h4><a href="https://trumbullhikes.netlify.app/">TRUMBULL HIKES</a></h4>
-            </div>
-            <div class="secondProject">
-                <h4><a href="#">LEGENDS B&B WEBSITE</a></h4>
-            </div>
-        </section>
+            <section class="projectsThreeFourFive">
+                <div class="thirdProject">
+                    <h4><a href="#">DICE ROLLER: WIP</a></h4>
+                    <div></div>
+                </div>
+                <div class="fourthProject">                    
+                    <h4><a href="#">PF2E PROJECT: WIP</a></h4>
+                    <div></div>
+                </div>
+                <div class="fifthProject">                    
+                    <h4><a href="#">POMODORO TIMER: WIP</a></h4>
+                    <div></div>
+                </div>
+            </section>
 
-        <section class="projectsThreeFourFive">
-            <div class="thirdProject">
-                <h4><a href="#">DICE ROLLER: WIP</a></h4>
-            </div>
-            <div class="fourthProject">
-                <h4><a href="#">CALCULATOR: WIP</a></h4>
-            </div>
-            <div class="fifthProject">
-                <h4><a href="#">POMODORO TIMER: WIP</a></h4>
-            </div>
-        </section>
-
-        <section class="projectsSixSeven">
-            <div class="sixthProject">
-                <h4><a href="#">COMING SOON</a></h4>
-            </div>
-            <div class="seventhProject">
-                <h4><a href="#">COMING SOON</a></h4>
-            </div>
-        </section>
-        <span><a href="#">ALL PROJECTS</a></span>
-    </section>
-
-    <!-- projects font background image -->
-    <section class="bgProjects">
-        <div class="bgProjectsDiv"></div>
-    </section>
+            <!-- <section class="projectsSixSeven">
+                <div class="sixthProject">
+                    <h4><a href="#">COMING SOON</a></h4>
+                </div>
+                <div class="seventhProject">
+                    <h4><a href="#">COMING SOON</a></h4>
+                </div>
+            </section>
+            <span><a href="#">ALL PROJECTS</a></span>
+        </section> -->   
+           
+        
+    </main>
 
     <!-- footer -->
 
-    <section class="footerSection">
-        <div class="footerP">
+    <section class="footerSection">        
+        <div class="footerP">            
             <p>READY? LET'S MAKE SOMETHING GREAT TOGETHER!</p>
+            <div class="blueSquareTwo"></div>            
         </div>
+        
         <div class="getInTouch">
-            GET IN TOUCH!
+            <span>GET IN TOUCH!</span>
         </div>
-        <p>
-            While I'm good with smoke signals, there are simpler ways for us to connect and answer your questions.
-        </p>
+
+        <div class="endP">
+            <p>While I'm good with smoke signals, there are simpler ways for us to connect and answer your questions.</p>
+        </div>
         <div class="contact">
-           <a href="#">Contact</a>
+           <a href="mailto:tartCodes@gmail.com"> &#x27AF;Contact</a>
         </div>
         <div class="footNote">
-            <p>2022 Personal Portfolio By TartCodes</p>
+            <p> &copy; 2022 Personal Portfolio By TartCodes</p>
             <ul class="socialTwo"> 
                 <li><a href="https://github.com/TartCodes">Gh.</a></li>
                 <li><a href="https://www.linkedin.com/in/matt-tartaglione/">Li.</a></li>
