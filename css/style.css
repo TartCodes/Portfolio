@@ -70,6 +70,12 @@ html {
     font-size: 16px;
 }
 
+/* @media screen and (min-width: 1200px){
+    html {
+        font-size: 1.1rem;
+    }    
+} */
+
 /* Body */
 body {
     width: 100%;
@@ -92,11 +98,10 @@ h2 {
 /* Header */
 
 header {
-    float: right;
-    width: 60%;
-    padding-top: 2rem;
+    display: flex;
+    width: 100%;
     background: #231f20;
-    height: 90vh;
+    height: 55rem;
 }
 
                 /* Nav */
@@ -111,11 +116,8 @@ nav {
 }
 
 .headerNav {  /* containter */
-    display: flex;
-    width: 60%;
-    flex-direction: row;
-    justify-content: space-between
-    
+    display: flex;   
+    background: #231f20;   
 }
 
 .headerNav a,
@@ -125,7 +127,8 @@ nav {
     color: #ababab;
 }
 
-.headerNav li {
+.headerNav 
+li {
     font-family: 'Roboto', Helvetica, sans-serif;
     font-size: 1rem;
     padding-left: 3rem;
@@ -134,12 +137,10 @@ nav {
 }
 
 .social {
-    display: flex;
-    justify-content: space-between;
-    width: 10%;
-    padding-left: 6rem;
-    background-color: #231f20;
-    color: white;
+    display: flex;   
+    width: 100%;
+     
+    background: #231f20;  
 }
 
 .social a,
@@ -158,57 +159,67 @@ nav {
     color: white;
 }
 
-.home a {
+.home 
+a {
     background-color: #00edff;
     color: black;
     padding: .5rem;
+    font-weight: bolder;
 }
 
 
 /* section bg prof disaster */
 
 .bgProfCont {
-    float: left;
-    width: 40%;
-    height: 85vh;
+    display: flex;
+    width: 100%;
+    height: 55rem;
     background-color: #F8F8F8;
     
 }
 
 .bgImgSec {
-    float: left;
+    display: flex;
     width: 33%;
-    z-index: 1;
-    height: 100%;
-    background-color: #F8F8F8;
 }
 
 .profLogo {
     background-image: url(../assets/portfoliobg.png);
     background-size: cover;
-    float: left;
-    width: 50%;
-    height: 100%;   
+    width: 60%;
+    display: flex;
+    justify-content: right;    
 }
 
 .tcLogo {        
-    width: 30%;    
-    float: right;
+    width: 3rem;
+    height: fit-content;
+}
+
+.list-section {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 2%;
+    background: #231f20;
 }
 
 
 /* Ceneter Layers */
 
 .introSection {
-    position: absolute;
-    left: 25rem;
+    display: flex;
+    position: relative;
+    right: 25rem;
     top: 17rem;
-    width: 50%;    
+}
+
+.mid-squares{
+    width: 100%;
 }
 
 .blueSquare {    
-    position: absolute;
-    width: 80%;
+    position: relative;
+    width: 100%;
     height: 40rem;
     background: #00edff;
     z-index: 1;
@@ -217,8 +228,8 @@ nav {
 }
 
 .mainPhoto {
-    position: absolute;
-    width: 80%;
+    position: relative;
+    width: 100%;
     height: 40rem;
     background: black;
     z-index: 2;
@@ -228,13 +239,19 @@ nav {
 
 .intro {
     font-family: 'Oswald', sans-serif;
-    font-weight: bold;
-    position: relative;    
+    font-weight: bolder;
     font-size: 5.5rem;
     z-index: 5;
-    background-color: #F8F8F8;
     line-height: 6rem;
-    width: fit-content;
+    height: fit-content;
+}
+
+.intro-span {
+    font-family: 'Oswald', sans-serif;
+    font-weight: bolder;
+    font-size: 5.5rem;
+    z-index: 5;
+    line-height: 6rem;
     height: fit-content;
 }
 
@@ -248,7 +265,8 @@ nav {
     margin-top: 2%;
 }
 
-.about p {
+.about 
+p {
     color: #686868;
     font-size: 1rem;
     font-family: 'Open Sans', sans-serif;
@@ -256,7 +274,8 @@ nav {
     width: 100%;
 }
 
-.about span {
+.about 
+span {
     color: #00edff;
     font-family: 'Oswald',sans-serif;
     font-size: 1rem;
