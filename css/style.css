@@ -101,7 +101,7 @@ header {
     display: flex;
     width: 100%;
     background: #231f20;
-    height: 65rem;
+    height: 55rem;
 }
 
                 /* Nav */
@@ -110,7 +110,7 @@ header {
 
 nav {
     display: flex;
-    width: 40%;
+    width: 60%;
     background: #231f20;  
 }
 
@@ -139,7 +139,7 @@ li {
     display: flex;
     width: 100%;
     background: #231f20;
-    padding-left: 50%; 
+    padding-left: 35%; 
 }
 
 .social a,
@@ -178,7 +178,7 @@ a {
 
 .bgImgSec {
     display: flex;
-    width: 33%;
+    width: 45%;
 }
 
 .profLogo {
@@ -198,7 +198,9 @@ a {
     display: flex;
     justify-content: space-between;
     padding-top: 2%;
+    height: 65rem;
     background: #231f20;
+    width: 100%;
 }
 
 
@@ -214,14 +216,14 @@ a {
 .mid-squares{
     width: 60%;
     position: relative;
-    bottom: 45rem;
-    left: 23rem;
+    bottom: 33rem;
+    left: 15rem;
     z-index: 0;
 }
 
 .blueSquare {    
     position: absolute;
-    width: 75%;
+    width: 55rem;
     height: 60rem;
     background: #00edff;
     z-index: 1;
@@ -231,7 +233,7 @@ a {
 
 .mainPhoto {
     position: absolute;
-    width: 75%;
+    width: 55rem;
     height: 60rem;
     background: black;
     z-index: 1;
@@ -285,6 +287,7 @@ span {
     flex-direction: column;
     width: 15%;
     margin-left: 5%;
+    padding-bottom: 3rem;
 }
 
 .about 
@@ -320,10 +323,12 @@ span {
 
 .skills {
     display: flex;
-    padding-left: 3rem;
     flex-direction: row;
     justify-content: right;
-    width:80%;
+    width: 80%;
+    position: relative;
+    bottom: 5rem;
+    left: 10rem;
 }
 
 .skills div {    
@@ -351,8 +356,7 @@ p {
 
 main {
     width: 100%;
-    margin-top: 7%;
-   }
+}
 
 main
 .bgProjectsDiv {
