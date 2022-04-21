@@ -101,7 +101,7 @@ header {
     display: flex;
     width: 100%;
     background: #231f20;
-    height: 55rem;
+    height: 65rem;
 }
 
                 /* Nav */
@@ -110,9 +110,8 @@ header {
 
 nav {
     display: flex;
-    width: 100%;
-    background: #231f20;
-   
+    width: 40%;
+    background: #231f20;  
 }
 
 .headerNav {  /* containter */
@@ -137,10 +136,10 @@ li {
 }
 
 .social {
-    display: flex;   
+    display: flex;
     width: 100%;
-     
-    background: #231f20;  
+    background: #231f20;
+    padding-left: 50%; 
 }
 
 .social a,
@@ -173,9 +172,8 @@ a {
 .bgProfCont {
     display: flex;
     width: 100%;
-    height: 55rem;
-    background-color: #F8F8F8;
-    
+    height: 65rem;
+    background-color: #F8F8F8;    
 }
 
 .bgImgSec {
@@ -206,21 +204,25 @@ a {
 
 /* Ceneter Layers */
 
-.introSection {
+/* .introSection {
     display: flex;
     position: relative;
     right: 25rem;
     top: 17rem;
-}
+} */
 
 .mid-squares{
-    width: 100%;
+    width: 60%;
+    position: relative;
+    bottom: 45rem;
+    left: 23rem;
+    z-index: 0;
 }
 
 .blueSquare {    
-    position: relative;
-    width: 100%;
-    height: 40rem;
+    position: absolute;
+    width: 75%;
+    height: 60rem;
     background: #00edff;
     z-index: 1;
     top: -10rem;
@@ -228,41 +230,61 @@ a {
 }
 
 .mainPhoto {
-    position: relative;
-    width: 100%;
-    height: 40rem;
+    position: absolute;
+    width: 75%;
+    height: 60rem;
     background: black;
-    z-index: 2;
+    z-index: 1;
     top: -8rem;
     left: 17rem;
 }
 
 .intro {
+    position: relative;
+    z-index: 5;
+    top: 11rem;
+    width: fit-content;
     font-family: 'Oswald', sans-serif;
     font-weight: bolder;
-    font-size: 5.5rem;
-    z-index: 5;
+    font-size: 5.5rem;    
     line-height: 6rem;
-    height: fit-content;
+    color: black;
+}
+
+h1 
+span {
+    background: white;
+    line-height: initial;
+    padding: 0 1rem;
 }
 
 .intro-span {
+    position: relative;
+    z-index: 5;
+    left: 3rem;  
+    top: 11rem; 
+    width: fit-content;
     font-family: 'Oswald', sans-serif;
     font-weight: bolder;
     font-size: 5.5rem;
-    z-index: 5;
-    line-height: 6rem;
-    height: fit-content;
+    line-height: 10rem;     
+}
+
+.intro-span
+span {
+    background: white;
+    padding: 0 1rem;
+    
 }
 
 
 /* About Aside */
 
 .about {
-    float: left;
+    display: flex;
+    flex-direction: column;
     width: 15%;
     margin-left: 5%;
-    margin-top: 2%;
 }
 
 .about 
@@ -279,6 +301,11 @@ span {
     color: #00edff;
     font-family: 'Oswald',sans-serif;
     font-size: 1rem;
+}
+
+.about
+span
+span {
     border-bottom: solid thin #00edff;
 }
 
@@ -293,10 +320,9 @@ span {
 
 .skills {
     display: flex;
-    padding-top: 6%;
     padding-left: 3rem;
     flex-direction: row;
-    justify-content: center;
+    justify-content: right;
     width:80%;
 }
 
