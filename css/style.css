@@ -184,6 +184,7 @@ a {
 .profLogo {
     background-image: url(../assets/portfoliobg.png);
     background-size: cover;
+    background-repeat: no-repeat;
     width: 60%;
     display: flex;
     justify-content: right;    
@@ -206,24 +207,21 @@ a {
 
 /* Ceneter Layers */
 
-/* .introSection {
-    display: flex;
-    position: relative;
-    right: 25rem;
-    top: 17rem;
-} */
-
 .mid-squares{
-    width: 60%;
+    width: 60%;   
     position: relative;
     bottom: 33rem;
-    left: 15rem;
+    left: 15%;
     z-index: 0;
 }
 
+
+
 .blueSquare {    
     position: absolute;
-    width: 55rem;
+    width: 82.5%;
+    min-width: 853px;
+    max-width: 1090px;
     height: 60rem;
     background: #00edff;
     z-index: 1;
@@ -233,7 +231,9 @@ a {
 
 .mainPhoto {
     position: absolute;
-    width: 55rem;
+    width: 82.5%;
+    min-width: 853px;
+    max-width: 1090px;
     height: 60rem;
     background: black;
     z-index: 1;
@@ -248,9 +248,10 @@ a {
     width: fit-content;
     font-family: 'Oswald', sans-serif;
     font-weight: bolder;
-    font-size: 5.5rem;    
+    font-size: 5rem;
     line-height: 6rem;
     color: black;
+    left: 2.7rem;
 }
 
 h1 
@@ -263,13 +264,13 @@ span {
 .intro-span {
     position: relative;
     z-index: 5;
-    left: 3rem;  
-    top: 11rem; 
+    left: 5.6rem;
+    top: 11rem;
     width: fit-content;
     font-family: 'Oswald', sans-serif;
     font-weight: bolder;
-    font-size: 5.5rem;
-    line-height: 10rem;     
+    font-size: 5rem;
+    line-height: 10rem;    
 }
 
 .intro-span
@@ -287,7 +288,7 @@ span {
     flex-direction: column;
     width: 15%;
     margin-left: 5%;
-    padding-bottom: 3rem;
+    padding-bottom: 9rem;
 }
 
 .about 
@@ -325,15 +326,15 @@ span {
     display: flex;
     flex-direction: row;
     justify-content: right;
-    width: 80%;
-    position: relative;
-    bottom: 5rem;
-    left: 10rem;
+    width: 100%;
+    position: absolute;
+    bottom: -44rem;
+    left: 16.5rem;
 }
 
 .skills div {    
-    width: 25%;
-    padding-left: .5rem;
+    width: 33.333%;
+    padding-left: 0.5rem;
 }
 
 .skills h3 {
@@ -577,16 +578,21 @@ div {
 
 /* Footer */
 
-.footerSection {
+.footer {
     width: 100%;
     background: #231f20;
-    margin-top: 15%;
-    
+    margin-top: 15%;    
+}
+
+.footer-section {
+    position: relative;
+    width: 100%;
 }
 
 .footerP {
     display: flex;
     justify-content: center;
+    position: relative;
 }
 
 .footerP
@@ -597,20 +603,20 @@ p {
     font-size: 2.5rem;
     z-index: 2;
     position: relative;
-    left: 10%;
     background: #fff;
-    top: -4rem;
+    top: -5rem;
     padding: 3rem;
+    left: 11rem;
 }
 
 .blueSquareTwo {
     position: relative;
     width: 22rem;
     background: #00edff;
-    top: -5rem;
-    right: 44%;
-    height: 5rem;
-    z-index: 1;
+    top: -6rem;
+    z-index: -1;
+    left: -47.5rem;
+    height: 6rem;
 }
 
 .getInTouch {
@@ -650,6 +656,14 @@ p {
 
 .contact
 a {
+    color: #00edff;
+    font-size: 1.5rem;
+    padding-right: 1.5rem;
+}
+
+.contact
+a 
+span{
     color: #00edff;
     font-family: 'Oswald',sans-serif;
     font-weight: bold;
