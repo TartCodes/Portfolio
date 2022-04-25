@@ -135,7 +135,7 @@ nav {
     .headerNav {
         width: 100%;
         justify-content: center;
-        padding-right: .5rem; /*to offset home bg padding*/
+        padding-right: .5rem; 
     }
 }
 
@@ -337,6 +337,15 @@ a {
     }
 }
 
+@media screen and (max-width:325px) {
+    .intro {            
+        font-size: 3rem;
+        left: 0;
+        top: 4rem;
+        text-align: center;    
+        letter-spacing: 0;
+    }
+}
 
 h1 
 span {
@@ -611,6 +620,13 @@ div {
     }    
 }
 
+@media screen and (max-width: 325px) {
+    .projectsThreeFourFive
+    div {
+        font-size: .9rem;
+    }    
+}
+
 /* third project */
 
 .thirdProject {
@@ -645,6 +661,13 @@ div {
     left: .4rem;
     z-index:1;
 }
+@media screen and (max-width: 325px) {
+    .thirdProject
+    div {
+        padding: 1rem 8rem 1rem 1rem;
+    }
+}
+
 
 
 /* fourth project */
@@ -680,6 +703,13 @@ div {
     position: relative;
     bottom: 4.75rem;
     z-index:1;
+}
+
+@media screen and (max-width: 325px) {
+    .fourthProject
+    div {
+        padding: 1rem 8.75rem 1rem 1rem;
+    }
 }
 
 /* fifth project */
