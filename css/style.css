@@ -763,7 +763,7 @@ p {
         background: #00edff;
         width: 100%;       
         padding: 2rem;        
-        border: solid 3px black;
+        border: solid 3px #231f20;
         position: revert;
         text-align: center;
     }
@@ -815,6 +815,13 @@ span {
     text-align: center;
 }
 
+@media screen and (max-width: 480px) {
+    .endP {
+        margin-top: 5%;
+    }
+}
+
+
 .endP
 p {
     font-family: 'Open Sans',sans-serif;
@@ -828,6 +835,13 @@ p {
     width: 100%;
     margin-top: 2%;
 }
+
+@media screen and (max-width: 480px) {
+    .contact {
+        margin-top: 5%;
+    }
+}
+
 
 .contact
 a {
@@ -855,6 +869,12 @@ span{
     flex-direction: row;
     margin-top: 3%;
     padding: 0 5% 2% 5%;
+}
+
+@media screen and (max-width: 480px) {
+    .footNote {
+        margin-top: 5%;
+    }
 }
 
 .footNote
