@@ -119,6 +119,13 @@ nav {
     background: #231f20;
 }
 
+@media screen and (max-width: 480px) {
+    nav {
+      display: none;
+    }
+}
+
+
 .headerNav {  /* containter */
     display: flex;   
     background: #231f20;   
@@ -282,7 +289,9 @@ a {
     max-width: revert;
     height: 25rem;
     left: 0;
-    border: thick solid #231f20;
+    border-right: thick solid #231f20;
+    border-bottom: thick solid #231f20; ;
+    border-left: thick solid #231f20; ;
     }
 }
 
@@ -362,7 +371,7 @@ span {
         width: 100%;
         text-align: center;
         margin: 0;
-        margin-bottom: 10%;
+        margin-bottom: 6%;
         padding-bottom: 0;
     }
 }
@@ -390,6 +399,7 @@ span {
     color: #00edff;
     font-family: 'Oswald',sans-serif;
     font-size: 1rem;
+    margin-top: 1rem;
 }
 
 .about
@@ -484,12 +494,28 @@ main
     }    
 }
 
+@media screen and (max-width: 480px) {
+    .projects
+    h2 {
+        margin: 0 auto;
+    }    
+}
+
 .projectsOneAndTwo {
     display: flex;
     flex-direction: row;    
     width: 100%;
     margin-top: 1%;    
-    
+}
+
+@media screen and (max-width: 480px) {
+    .projectsOneAndTwo {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        margin-top: 1%;       
+        justify-content: right;        
+    }
 }
 
 /* first project */
@@ -539,6 +565,12 @@ div {
     margin-left: 1%;
 }
 
+@media screen and (max-width: 480px) {
+    .secondProject {
+        width: 60%;
+    }    
+}
+
 .secondProject
 h4 {
     font-family: 'Oswald', sans-serif;
@@ -570,8 +602,13 @@ div {
     display: flex;
     flex-direction: row;
     margin-top: 1%;
-    justify-content: left;
-    
+    justify-content: left;    
+}
+
+@media screen and (max-width: 480px) {
+    .projectsThreeFourFive {
+        justify-content: center;
+    }    
 }
 
 /* third project */
@@ -674,7 +711,7 @@ h4 {
 
 .fifthProject
 div {
-    width: 12rem;
+    width: 9.25rem;
     height: 2rem;
     background: #00edff;
     position: relative;
@@ -715,6 +752,24 @@ p {
     left: 11rem;
 }
 
+@media screen and (max-width:480px) {
+    .footerP
+    p {
+        font-family: 'Oswald',sans-serif;
+        font-weight: bold;
+        color: #231f20;
+        font-size: 2rem;
+        z-index: 2;        
+        background: #00edff;
+        width: 100%;       
+        padding: 2rem;        
+        border: solid 3px black;
+        position: revert;
+        text-align: center;
+    }
+}
+
+
 .blueSquareTwo {
     position: relative;
     width: 22rem;
@@ -725,10 +780,23 @@ p {
     height: 6rem;
 }
 
+@media screen and (max-width:480px) {
+    .blueSquareTwo {
+        display: none;
+    } 
+    
+}
+
 .getInTouch {
     display: flex;
     width: 100%;
     justify-content: center;
+}
+
+@media screen and (max-width:480px) {
+    .getInTouch {
+        margin-top: 1.5%;
+    }
 }
 
 .getInTouch
@@ -744,6 +812,7 @@ span {
     display: flex;
     justify-content: center;
     margin-top: 2%;
+    text-align: center;
 }
 
 .endP
