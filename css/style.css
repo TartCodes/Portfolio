@@ -186,7 +186,7 @@ li {
 .social a,
 .social a:visited,
 .social a:hover,
-.social a:active{ 
+.social a:active { 
     color: white
 }
 
@@ -256,13 +256,10 @@ a {
 @media screen and (max-width:480px) {
     .mid-squares {
         width: 100%;
-        left: 6rem;
-        top: 7rem;
-        position: absolute;
+        left: 0;
+        bottom: 22rem;
     }
 }
-
-
 
 .blueSquare {    
     position: absolute;
@@ -278,13 +275,14 @@ a {
 
 @media screen and (max-width: 480px) {
     .blueSquare {
-    width: 96%;
-    top: -16rem;
-    position: relative;
+    width: 100%;
+    top: 0rem;
+    position: absolute;
     min-width: revert;
     max-width: revert;
     height: 25rem;
-    left: -5rem;
+    left: 0;
+    border: thick solid #231f20;
     }
 }
 
@@ -310,22 +308,23 @@ a {
     position: relative;
     z-index: 5;
     top: 11rem;
-    width: fit-content;
+    width: 100%;
     font-family: 'Oswald', sans-serif;
     font-weight: bolder;
     font-size: 5rem;
-    line-height: 6rem;
+    line-height: 8rem;
+    letter-spacing: .1rem;
     color: black;
     left: 2.7rem;
 }
 
 @media screen and (max-width:480px) {
-    .intro {
-        display: block;
-        font-size: 4rem;
-        left: 8rem;
+    .intro {            
+        font-size: 3.5rem;
+        left: 0;
         top: 4rem;
-        width: 24rem;
+        text-align: center;    
+        letter-spacing: 0;
     }
 }
 
@@ -345,41 +344,8 @@ span {
 }
 
 .intro-span {
-    position: relative;
-    z-index: 5;
-    left: 5.6rem;
-    top: 11rem;
-    width: fit-content;
-    font-family: 'Oswald', sans-serif;
-    font-weight: bolder;
-    font-size: 5rem;
-    line-height: 10rem;    
+    padding-left: 1.9rem;
 }
-
-@media screen and (max-width:480px) {
-    .intro-span {
-        font-size: 4rem;
-        left: -2.5rem;
-        top: 5rem;              
-    }
-}
-
-
-
-.intro-span
-span {
-    background: white;
-    padding: 0 1rem;    
-}
-
-@media screen and (max-width:480px) {
-    .intro-span
-    span {
-        padding: 0 .5rem;
-                    
-    }
-}
-
 
 /* About Aside */
 
@@ -393,8 +359,21 @@ span {
 
 @media screen and (max-width: 480px) {
     .about {
-        padding-bottom: ;
+        width: 100%;
+        text-align: center;
+        margin: 0;
+        margin-bottom: 10%;
+        padding-bottom: 0;
     }
+}
+
+@media screen and (max-width: 480px) {
+    .about
+    h2 {
+        align-self: center;
+        padding-bottom: .75rem; 
+        margin-bottom: 1rem;
+   }
 }
 
 .about 
@@ -440,8 +419,9 @@ span {
 
 @media screen and (max-width: 480px) {
     .skills {
-        bottom: 3rem;
-        left: -5rem;
+        bottom: -20rem;
+        left: 0;
+        text-align: center;
     }
 }
 
@@ -452,7 +432,8 @@ span {
 
 @media screen and (max-width: 480px) {
     .skills div {
-        
+        /* border-top: solid thin #231f20; */
+        border-bottom: solid thick #231f20;
     }
 }
 
@@ -495,6 +476,12 @@ main
 
 .projects {
     margin-left: 5%;
+}
+
+@media screen and (max-width: 480px) {
+    .projects {
+        margin: 0;
+    }    
 }
 
 .projectsOneAndTwo {
