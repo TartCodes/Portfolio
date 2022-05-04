@@ -10,160 +10,166 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Oswald:wght@400;700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style2.css">
 </head>
 <body>
     
-    <!-- header -->
-    <header>         
+
+
+    <!-- Header -->
+    <header>
+        <div class="portimg-grid-1">
+            <div class="tart-logo-cont">
+                <div class="side-img-container">
+                    <div class="side-img"></div>
+                </div>
+                <img src="assets/tartcodeslogo.png" alt="">                 
+            </div>
+            <aside class="about">
+                    <h2>ABOUT.</h2>
+                    <p>My name is Matt Tartaglione, I'm a software engineer.</p>
+                    <span>
+                        <a href="#"><span>READ MORE</span></a>
+                    </span>
+            </aside>
+                          
+        </div>
+
         
-        <nav>
-            <section class="bgProfCont">
-                <section class="bgImgSec">
-                    <div class="profLogo">
-                        <img class="tcLogo" src="assets/tartcodeslogo.png" alt="TartCodes Logo">
-                    </div>
-                </section>
-            </section> 
-        </nav>     
-        <!-- links within site -->
-            
-            <section class="list-section">
-                    <ul class="headerNav">
+
+        <!-- Nav -->
+
+        <div class="nav-grid-2">
+            <section class="nav-section">            
+                <ul class="header-nav">
                     <li class="home"><a href="#">HOME</a></li>
                     <li><a href="#">ABOUT</a></li>
                     <li><a href="#">PROJECTS</a></li>
                     <li><a href="#" >JOURNAL</a></li>
-             </ul>
+                </ul>
+
             <!-- links to social -->
+            <div class="social-div">
                 <ul class="social"> 
                     <li><a href="https://github.com/TartCodes" target="_blank">Gh.</a></li>
                     <li><a href="https://www.linkedin.com/in/matt-tartaglione/" target="_blank">Li.</a></li>
                     <li><a href="https://twitter.com/TartCodes" target="_blank">Tw.</a></li>
                     <li><a href="https://www.instagram.com" target="_blank">In.</a></li>               
                 </ul>
-            </section>
-    </header>
-       
-    <section class="mid-squares"> 
-            <div class="intro">   
-                <h1>
-                HI, I'M <span>MATT.</span><br>
-                    <div class="intro-span">
-                WHAT <span>CAN I DO FOR YOU?</span>
-                    </div>
-            <!-- <span class="intro-span"> -->
-                
-            <!-- </span> -->  
-                </h1>    
-            </div>        
-            <div class="blueSquare"></div>
-            <div class="mainPhoto"></div>
-        
-            <section class="skills">
-            <div>
-                <h3>HTML 5</h3>
-                <p>The universal markup language for the Web. Tags and more Tags.</p>
             </div>
-            <div>
+            </section>
+        </div>
+
+        <section class="header-grid-3">
+            <h1>HI, I'M <span>MATT.</span><br> I BUILD THINGS FOR <span>THE WEB.</span></h1>
+            <!-- <div class="blue-square"></div> -->
+            <div class="main-photo"></div>
+        </section>        
+
+        <div class="black-space"></div>
+    </header>
+
+    <main>
+        <section class="skills">        
+            <div class="grid-skill-1">
+                <h3>HTML 5</h3>
+                <p>The universal markup language for the Web. Tags and more Tags.</p>                </div>
+            </div>
+           
+            <div class="grid-skill-2">
                 <h3>CSS</h3>
                 <p>Why this website looks so beautiful. Helps detail the appearance of webpages.</p>
             </div>
-            <div>
+           
+            <div class="grid-skill-3">
                 <h3>JavaScript</h3>
                 <p>Everything is an object. Lets me make cool stuff.</p>
             </div>
-            </section>
-    </section>
-</section> 
-
-   
-      <!-- About, offset and left of skills -->
-    <aside class="about">
-        <h2>ABOUT.</h2>
-        <p>My name is Matt Tartaglione, I'm a software engineer and I...</p>
-        <span>
-            <a href="#"><span>READ MORE</span></a>
-        </span>
-    </aside>
-
-        <!-- projects section -->
-    <main>
-        <section class="projects">
-            <h2>RECENT PROJECTS.</h2>
-            <div class="bgProjectsDiv"></div>
-            <section class="projectsOneAndTwo">
-                <div class="firstProject">
-                    <h4><a href="https://trumbullhikes.netlify.app/" target="_blank">HIKE CT</a></h4>
-                    <div></div>
-                </div>
-                <div class="secondProject">
-                    <h4><a href="#" target="_blank">LEGENDS B&B WEBSITE</a></h4>
-                    <div></div>
-                </div>
-            </section>
-
-            <section class="projectsThreeFourFive">
-                <div class="thirdProject">
-                    <h4><a href="#" target="_blank">DICE ROLLER: WIP</a></h4>
-                    <div></div>
-                </div>
-                <div class="fourthProject">                    
-                    <h4><a href="#" target="_blank">PF2E PROJECT: WIP</a></h4>
-                    <div></div>
-                </div>
-                <div class="fifthProject">                    
-                    <h4><a href="#" target="_blank">POMODORO: WIP</a></h4>
-                    <div></div>
-                </div>
-            </section>
-
-            <!-- <section class="projectsSixSeven">
-                <div class="sixthProject">
-                    <h4><a href="#">COMING SOON</a></h4>
-                </div>
-                <div class="seventhProject">
-                    <h4><a href="#">COMING SOON</a></h4>
-                </div>
-            </section>
-            <span><a href="#">ALL PROJECTS</a></span>
-        </section> -->   
-           
-        
+        </section>
     </main>
 
-    <!-- footer -->
+    <!-- Projects -->
+
+    <section class="projects">
+        <div class="recent-projects-div">
+            <h2>RECENT PROJECTS.</h2>
+        </div>
+        <div class="projects-container">  
+
+            <a class="firstProject" href="https://trumbullhikes.netlify.app/" target="_blank">
+                <div class="firstProject">                 
+                    <h4>HIKE CT</h4>
+                </div>
+            </a>
+            
+            <a class="secondProject" href="#" target="_blank">
+                <!-- <div> -->
+                    <h4>LEGENDS B&B WEBSITE</h4>
+                <!-- </div> -->
+            </a>
+        <!-- </div> -->
+
+            <a class="thirdProject" href="#" target="_blank">
+                <!-- <div class="thirdProject"> -->
+                 <h4>DICE ROLLER: WIP</h4>        
+                <!-- </div> -->
+          </a>
+                
+            <a class="fourthProject" href="#" target="_blank">
+                <!-- <div class="fourthProject">-->
+                <h4>PF2E PROJECT: WIP</h4>
+                <!-- </div> -->
+            </a>
+
+            <a class="fifthProject" href="#" target="_blank">
+                <!-- <div class="fifthProject"> -->
+                    <h4>POMODORO: WIP</h4>
+                <!-- </div> -->
+            </a>
+                
+                <!-- <div class="bg-projects-container">
+                    <div class="bg-projects"></div>
+                </div>        -->
+        </div>        
+    </section>
+
+    <!-- Footer -->
 
     <footer class="footer">
 
-        <section class="footer-section">                    
-            <div class="footerP">            
-                <p>READY? LET'S MAKE SOMETHING GREAT TOGETHER!</p>
-                <div class="blueSquareTwo"></div> 
-            </div>             
-        </section>
-        
-        <div class="getInTouch">
-            <span>GET IN TOUCH!</span>
+        <div class="footer-h5-wrap">
+            <h5>READY? LET'S MAKE SOMETHING GREAT!</h5>
         </div>
 
-        <div class="endP">
-            <p>While I'm good with smoke signals, there are simpler ways for us to connect and answer your questions.</p>
+        <div class="footer-grid" >
+
+            <div class="get-in-touch">
+                <span>GET IN TOUCH!</span>
+            </div>
+
+            <div class="end-paragraph">
+                <p>While I'm good with smoke signals, there are simpler ways for us to connect and answer your questions.</p>
+            </div>
+
+            <div class="contact">
+                <a href="mailto:tartCodes@gmail.com"> &#x27AF;<span>CONTACT</span></a>
+            </div>
+
+            <div class="foot-note">
+                <p> &copy; 2022 Personal Portfolio By TartCodes</p>                
+            </div>
+
+            <div class="social-two-wrapper">
+                <ul class="social-two"> 
+                    <li><a href="https://github.com/TartCodes" target="_blank">Gh.</a></li>
+                    <li><a href="https://www.linkedin.com/in/matt-tartaglione/" target="_blank">Li.</a></li>
+                    <li><a href="https://twitter.com/TartCodes" target="_blank">Tw.</a></li>
+                    <li><a href="https://www.instagram.com" target="_blank">In.</a></li>               
+                </ul>
+            </div>
         </div>
-        <div class="contact">
-           <a href="mailto:tartCodes@gmail.com"> &#x27AF;<span>CONTACT</span></a>
-        </div>
-        <div class="footNote">
-            <p> &copy; 2022 Personal Portfolio By TartCodes</p>
-            <ul class="socialTwo"> 
-                <li><a href="https://github.com/TartCodes" target="_blank">Gh.</a></li>
-                <li><a href="https://www.linkedin.com/in/matt-tartaglione/" target="_blank">Li.</a></li>
-                <li><a href="https://twitter.com/TartCodes" target="_blank">Tw.</a></li>
-                <li><a href="https://www.instagram.com" target="_blank">In.</a></li>               
-            </ul>
-        </div>
+
 
     </footer>
-    
 </body>
 </html>
