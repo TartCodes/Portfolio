@@ -96,8 +96,9 @@ html {
     font-weight: bold;
     font-size: 2.5rem;
     padding: .4rem; 
-  }
+  } 
 
+   
 /* Header */
 
 header {
@@ -221,6 +222,7 @@ li {
     .header-nav
     li {
         margin-left: 0;
+        font-size: 1.25rem;
     }
 }
 
@@ -252,6 +254,7 @@ a {
     .social-div {
         width: 100%;
         margin-top: 4%;
+        margin-bottom: 2%;
     }
 }
 
@@ -270,6 +273,14 @@ li {
     font-size: 1rem;    
     background-color: #231f20;
     color: white;
+}
+
+ 
+ @media screen and (max-width: 480px) {
+    .social
+    li {
+        font-size: 1.25rem
+    }
 }
 
 /* Squares of pain */
@@ -309,6 +320,7 @@ h1 {
         display: block;
         text-align: center;
         margin-top: 4%;
+        font-size: 4rem;
     }
 }
 
@@ -389,7 +401,7 @@ span {
     .skills {
         display: flex;
         position: revert;
-        width: 70%;
+        width: 84%;
         margin: 0 auto;
     }
 }
@@ -417,6 +429,13 @@ p {
         display: flex;
         justify-content: center;
         text-align: center;        
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .skills
+    p {
+       font-size: 1.25rem;       
     }
 }
 
@@ -500,6 +519,7 @@ h4 {
     h4 {
         border-top: .3vh solid #00edff;
         border-right: .3vh solid #00edff;
+        font-size: 1.25rem;
     }
 }
 
@@ -580,6 +600,12 @@ h4 {
     padding-bottom: 1%;
 }
 
+@media screen and (max-width: 480px) {
+    .footer {
+        margin-top: 10%;
+    }
+}
+
 .footer-h5-wrap {
     display: flex;
     justify-content: center;
@@ -625,6 +651,12 @@ span {
     color: #fbfbfb;
     grid-column: 2;
     margin-top: 3%;     
+}
+
+@media screen and (max-width: 480px) {
+   .end-paragraph {
+       font-size: 1.15rem;        
+    }
 }
 
 .contact {
@@ -676,6 +708,8 @@ p {
 
 .social-two-wrapper {
       grid-column: 3;
+      display: grid;
+      align-content: end;
 }
 
 .social-two {
@@ -698,3 +732,4 @@ li {
     font-weight: bold;
     padding-right: 1rem;
 }
+
