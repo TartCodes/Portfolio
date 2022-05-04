@@ -85,7 +85,7 @@ table {
 
 html {
     /* font-size: 16px; */
-    font-size: min(2vh,1vw)
+    font-size: min(1.75vh,1.5vw);
 }
 
   h2 {
@@ -308,7 +308,7 @@ h1 {
         position: revert;
         display: block;
         text-align: center;
-        margin-top: 8%;
+        margin-top: 4%;
     }
 }
 
@@ -348,6 +348,7 @@ span {
     position: relative;
     left: 37%;
     top: -20%;
+    padding-right: 10%;
 }
 
 .about 
