@@ -100,11 +100,6 @@ html {
 
   /* Body */
 
-  @media screen and (max-width: 480px) {
-      body {
-          margin: .5%;
-      }
-  }
    
 /* Header */
 
