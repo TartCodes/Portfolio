@@ -98,6 +98,13 @@ html {
     padding: .4rem; 
   } 
 
+  /* Body */
+
+  @media screen and (max-width: 480px) {
+      body {
+          margin: .5%;
+      }
+  }
    
 /* Header */
 
@@ -111,7 +118,7 @@ header {
 
 @media screen and (max-width: 480px){
     header {
-        max-height: 20vh;
+        max-height: 35vh;
         grid-template-columns: 1fr 1fr;
         margin-bottom: 3%;
     }
@@ -207,6 +214,7 @@ img {
     .header-nav {
         width: 100%;
         justify-content: space-evenly;
+        
     }
 }
 
@@ -222,7 +230,7 @@ li {
     .header-nav
     li {
         margin-left: 0;
-        font-size: 1.25rem;
+        font-size: 1.5rem;
     }
 }
 
@@ -253,7 +261,7 @@ a {
 @media screen and (max-width: 480px) {
     .social-div {
         width: 100%;
-        margin-top: 4%;
+        margin-top: 6%;
         margin-bottom: 2%;
     }
 }
@@ -279,7 +287,7 @@ li {
  @media screen and (max-width: 480px) {
     .social
     li {
-        font-size: 1.25rem
+        font-size: 1.45rem
     }
 }
 
@@ -289,6 +297,7 @@ li {
     grid-row: 2/4;
     background: #00edff;
     width: 100%;
+    height: 100%;
 }
 
 @media screen and (max-width: 480px) {
@@ -319,8 +328,8 @@ h1 {
         position: revert;
         display: block;
         text-align: center;
-        margin-top: 4%;
-        font-size: 4rem;
+        margin-top: 12%;
+        font-size: 5rem;
     }
 }
 
@@ -401,7 +410,7 @@ span {
     .skills {
         display: flex;
         position: revert;
-        width: 84%;
+        width: 95%;
         margin: 0 auto;
     }
 }
@@ -435,7 +444,7 @@ p {
 @media screen and (max-width: 480px) {
     .skills
     p {
-       font-size: 1.25rem;       
+       font-size: 1.45rem;       
     }
 }
 
@@ -519,7 +528,7 @@ h4 {
     h4 {
         border-top: .3vh solid #00edff;
         border-right: .3vh solid #00edff;
-        font-size: 1.25rem;
+        font-size: 1.4rem;
     }
 }
 
@@ -602,7 +611,7 @@ h4 {
 
 @media screen and (max-width: 480px) {
     .footer {
-        margin-top: 10%;
+        margin-top: 15%;
     }
 }
 
