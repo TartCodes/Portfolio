@@ -1,23 +1,25 @@
-/* @link https://utopia.fyi/type/calculator?c=320,18,1.333,1500,24,1.25,5,3,&s=0.75|0.5|0.25,1.5|2|3|4|6,s-l
+/* @link https://utopia.fyi/type/calculator?c=320,18,1.333,1500,24,1.25,5,3,&s=0.75|0.5|0.25,1.5|2|3|4|6,s-l */
 
 :root {
-    --step--3: clamp(0.48rem, calc(0.40rem + 0.40vw), 0.77rem);
-    --step--2: clamp(0.63rem, calc(0.54rem + 0.44vw), 0.96rem);
-    --step--1: clamp(0.84rem, calc(0.75rem + 0.48vw), 1.20rem);
-    --step-0: clamp(1.13rem, calc(1.02rem + 0.51vw), 1.50rem);
-    --step-1: clamp(1.50rem, calc(1.40rem + 0.51vw), 1.88rem);
-    --step-2: clamp(2.00rem, calc(1.91rem + 0.47vw), 2.34rem);
-    --step-3: clamp(2.66rem, calc(2.59rem + 0.36vw), 2.93rem);
-    --step-4: clamp(3.55rem, calc(3.52rem + 0.15vw), 3.66rem);
-    --step-5: clamp(4.58rem, calc(4.78rem + -0.21vw), 4.74rem);
-  } */
+    --step--3: clamp(0.42rem, calc(0.33rem + 0.47vw), 0.77rem);
+    --step--2: clamp(0.56rem, calc(0.45rem + 0.54vw), 0.96rem);
+    --step--1: clamp(0.75rem, calc(0.63rem + 0.61vw), 1.20rem);
+    --step-0: clamp(1.00rem, calc(0.86rem + 0.68vw), 1.50rem);
+    --step-1: clamp(1.33rem, calc(1.19rem + 0.73vw), 1.88rem);
+    --step-2: clamp(1.78rem, calc(1.62rem + 0.77vw), 2.34rem);
+    --step-3: clamp(2.37rem, calc(2.22rem + 0.76vw), 2.93rem);
+    --step-4: clamp(3.16rem, calc(3.02rem + 0.68vw), 3.66rem);
+    --step-5: clamp(4.21rem, calc(4.11rem + 0.50vw), 4.58rem);
+    --step-6: clamp(5.61rem, calc(5.58rem + 0.15vw), 5.72rem);
+    --step-7: clamp(7.15rem, calc(7.57rem + -0.44vw), 7.48rem);
+  }
 
 /* http://meyerweb.com/eric/tools/css/reset/
    v2.0 | 20110126
    License: none (public domain)
 */
 
-:root {
+/* :root {
 --fs-xl: clamp(3.5rem, 12vw + 1rem, 5rem);
 --fs-600: 2rem;
 --fs-500: 1.5rem;
@@ -30,7 +32,7 @@
       --fs-500: 1rem;
       --fs-400: .75rem;
     }
-  }
+  } */
 
 
 
@@ -100,10 +102,10 @@ table {
     text-decoration: none;    
 }
 
-html {
+/* html {
     /* font-size: 16px;
-    font-size: min(1.75vh,1.5vw); */
-}
+    font-size: min(1.75vh,1.5vw); 
+} */
 
   h2 {
     background: black;
@@ -111,7 +113,7 @@ html {
     width: fit-content;
     font-family: 'Oswald', sans-serif;
     font-weight: bold;
-    font-size: var(--fs-600);
+    font-size: var(--step-3);
     padding: 1rem; 
   } 
 
@@ -237,7 +239,7 @@ img {
 .header-nav
 li {
     font-family: 'Roboto', Helvetica, sans-serif;
-    font-size: var(--fs-400);
+    font-size: var(--step--1);
     font-weight: bold;
     margin-left: 10%;
 }
@@ -294,7 +296,7 @@ a {
 li {
     font-family: 'Roboto', Helvetica, sans-serif;
     font-weight: bold;
-    font-size: var(--fs-400);
+    font-size: var(--step--1);
     background-color: #231f20;
     color: white;
 }
@@ -332,7 +334,7 @@ h1 {
     top: 50%;
     font-family: 'Oswald', sans-serif;
     font-weight: bolder;
-    font-size: var(--fs-xl);
+    font-size: var(--step-6);
     line-height: 8rem;
     letter-spacing: .1rem;
     color: black;
@@ -452,7 +454,7 @@ main {
 main
 h3 {
     font-family: 'Oswald',sans-serif;
-    font-size: var(--fs-600);
+    font-size: var(--step-2);
     font-weight: bold;    
 }
 
@@ -556,7 +558,7 @@ h4 {
     border-top: .5vh solid #00edff;
     border-right: .5vh solid #00edff;
     margin-bottom: 1rem;
-    font-size: var(--fs-400);
+    font-size: var(--step--1);
 }
 
 @media screen and (max-width: 480px) {
@@ -661,7 +663,7 @@ h5 {
     font-family: 'Oswald',sans-serif;
     font-weight: bold;
     color: #231f20;
-    font-size: var(--fs-600);
+    font-size: var(--step-3);
     position: relative;
     bottom: 10rem;
     background: white;
@@ -686,13 +688,13 @@ h5 {
 span {
     font-family: 'Oswald',sans-serif;
     font-weight: bold;
-    font-size: var(--fs-500);
+    font-size: var(--step-1);
     color: #ffffff;
 }
 
 .end-paragraph {
     font-family: 'Open Sans',sans-serif;
-    font-size: var(--fs-400);
+    font-size: var(--step--1);
     color: #fbfbfb;
     grid-column: 2;
     margin-top: 3%;     
@@ -723,7 +725,7 @@ span{
     color: #00edff;
     font-family: 'Oswald',sans-serif;
     font-weight: bold;
-    font-size: var(--fs-500);
+    font-size: var(--step--1);
     border-bottom: solid 1px #00edff;
     border-bottom-width: 2px;
     line-height: 1.5rem;
@@ -747,7 +749,7 @@ span{
 p {
     color: #ffffff;
     font-family: 'Oswald',sans-serif;
-    font-size: var(--fs-400);
+    font-size: var(--step--1);
     padding-left: 5%;
 }
 
@@ -775,6 +777,7 @@ p {
 li {
     font-family: 'Roboto', sans-serif;
     font-weight: bold;
+    font-size: var(--step--1);
     padding-right: 1rem;
 }
 
