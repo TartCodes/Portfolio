@@ -1,40 +1,57 @@
-/* @link https://utopia.fyi/type/calculator?c=320,12,1.2,1140,16,1.25,5,2,&s=0.75|0.5|0.25,1.5|2|3|4|6,s-l */
+/* @link https://utopia.fyi/type/calculator?c=320,18,1.333,1500,24,1.25,5,3,&s=0.75|0.5|0.25,1.5|2|3|4|6,s-l
 
-/* :root {
-    --step--2: clamp(0.64rem, calc(0.47rem + 0.23vw), 0.52rem);
-    --step--1: clamp(0.63rem, calc(0.56rem + 0.34vw), 0.80rem);
-    --step-0: clamp(0.75rem, calc(0.65rem + 0.49vw), 1.00rem);
-    --step-1: clamp(0.90rem, calc(0.76rem + 0.68vw), 1.25rem);
-    --step-2: clamp(1.08rem, calc(0.89rem + 0.94vw), 1.56rem);
-    --step-3: clamp(1.30rem, calc(1.04rem + 1.28vw), 1.95rem);
-    --step-4: clamp(1.56rem, calc(1.21rem + 1.73vw), 2.44rem);
-    --step-5: clamp(1.87rem, calc(1.40rem + 2.31vw), 3.05rem);
+:root {
+    --step--3: clamp(0.48rem, calc(0.40rem + 0.40vw), 0.77rem);
+    --step--2: clamp(0.63rem, calc(0.54rem + 0.44vw), 0.96rem);
+    --step--1: clamp(0.84rem, calc(0.75rem + 0.48vw), 1.20rem);
+    --step-0: clamp(1.13rem, calc(1.02rem + 0.51vw), 1.50rem);
+    --step-1: clamp(1.50rem, calc(1.40rem + 0.51vw), 1.88rem);
+    --step-2: clamp(2.00rem, calc(1.91rem + 0.47vw), 2.34rem);
+    --step-3: clamp(2.66rem, calc(2.59rem + 0.36vw), 2.93rem);
+    --step-4: clamp(3.55rem, calc(3.52rem + 0.15vw), 3.66rem);
+    --step-5: clamp(4.58rem, calc(4.78rem + -0.21vw), 4.74rem);
   } */
 
 /* http://meyerweb.com/eric/tools/css/reset/
    v2.0 | 20110126
    License: none (public domain)
 */
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed,
-figure, figcaption, footer, header, hgroup,
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: relative;
-	vertical-align: baseline;
+
+:root {
+--fs-xl: clamp(3.5rem, 12vw + 1rem, 5rem);
+--fs-600: 2rem;
+--fs-500: 1.5rem;
+--fs-400: 1rem;
 }
+
+@media (max-width: 480px) {
+    :root {
+      --fs-600: 2rem;
+      --fs-500: 1rem;
+      --fs-400: .75rem;
+    }
+  }
+
+
+
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body,
+h1,
+h2,
+h3,
+p,
+blockquote {
+  margin: 0;
+  padding: 0;
+}
+
+
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
@@ -84,8 +101,8 @@ table {
 }
 
 html {
-    /* font-size: 16px; */
-    font-size: min(1.75vh,1.5vw);
+    /* font-size: 16px;
+    font-size: min(1.75vh,1.5vw); */
 }
 
   h2 {
@@ -94,12 +111,15 @@ html {
     width: fit-content;
     font-family: 'Oswald', sans-serif;
     font-weight: bold;
-    font-size: 2.5rem;
-    padding: .4rem; 
+    font-size: var(--fs-600);
+    padding: 1rem; 
   } 
 
   /* Body */
 
+  /* body {
+      font-size: var(--fs-400);
+  } */
    
 /* Header */
 
@@ -108,6 +128,7 @@ header {
     grid-template-columns: .8fr 1.25fr 1fr;
     grid-template-rows: .5fr 2fr;
     height: 100vh;
+    margin-bottom: 5%;
 }
 
 
@@ -216,7 +237,7 @@ img {
 .header-nav
 li {
     font-family: 'Roboto', Helvetica, sans-serif;
-    font-size: 1rem;
+    font-size: var(--fs-400);
     font-weight: bold;
     margin-left: 10%;
 }
@@ -225,7 +246,7 @@ li {
     .header-nav
     li {
         margin-left: 0;
-        font-size: 1.5rem;
+        /* font-size: 1.5rem; */
     }
 }
 
@@ -273,7 +294,7 @@ a {
 li {
     font-family: 'Roboto', Helvetica, sans-serif;
     font-weight: bold;
-    font-size: 1rem;    
+    font-size: var(--fs-400);
     background-color: #231f20;
     color: white;
 }
@@ -282,7 +303,7 @@ li {
  @media screen and (max-width: 480px) {
     .social
     li {
-        font-size: 1.45rem
+        /* font-size: 1.45rem */
     }
 }
 
@@ -311,7 +332,7 @@ h1 {
     top: 50%;
     font-family: 'Oswald', sans-serif;
     font-weight: bolder;
-    font-size: 5rem;
+    font-size: var(--fs-xl);
     line-height: 8rem;
     letter-spacing: .1rem;
     color: black;
@@ -324,7 +345,8 @@ h1 {
         display: block;
         text-align: center;
         margin-top: 12%;
-        font-size: 5rem;
+        font-size: var(--fs-xl);
+        line-height: 3rem;
     }
 }
 
@@ -370,7 +392,7 @@ span {
 .about 
 p {
     color: #686868;
-    font-size: 1rem;
+    /* font-size: 1rem; */
     font-family: 'Open Sans', sans-serif;
     line-height: 1.8;
     width: 100%;
@@ -381,7 +403,7 @@ p {
 span {
     color: #00edff;
     font-family: 'Oswald',sans-serif;
-    font-size: 1rem;
+    /* font-size: 1rem; */
 }
 
 .about
@@ -392,17 +414,34 @@ span {
 
 /* Skills */
 
-.skills {
+main {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    position: relative;
-    top: 16rem;
-    left: 35%;
-    width: 60%;
+    grid-template-columns: repeat(4, .5fr);
+    grid-template-rows: 1fr 1fr;
+    width: 80%;
+    margin: 0 auto;
+    grid-column-gap: 2%;
 }
 
+.grid-skill-1 {
+    grid-column: 2;
+    grid-row: 2;
+}
+
+.grid-skill-2 {
+    grid-column: 3;
+    grid-row: 2;
+}
+
+.grid-skill-3 {
+    grid-column: 4;
+    grid-row: 2;
+}
+
+
+
 @media screen and (max-width: 480px) {
-    .skills {
+    main {
         display: flex;
         position: revert;
         width: 95%;
@@ -410,17 +449,17 @@ span {
     }
 }
 
-.skills
+main
 h3 {
     font-family: 'Oswald',sans-serif;
-    font-size: 2.5rem;
+    font-size: var(--fs-600);
     font-weight: bold;    
 }
 
-.skills 
+main
 p {
     font-family: 'Open Sans', sans-serif;
-    font-size: 1rem;
+    font-size: var(--fs-400);
     color: #686868;
     line-height: 1.67;
     margin-top: 0.5rem;
@@ -439,14 +478,14 @@ p {
 @media screen and (max-width: 480px) {
     .skills
     p {
-       font-size: 1.45rem;       
+       /* font-size: 1.45rem;        */
     }
 }
 
 /* Projects */
 
 .projects {
-    margin-top: 18%;
+    margin-top: 10%
 }
 
 @media screen and (max-width: 480px) {
@@ -517,13 +556,14 @@ h4 {
     border-top: .5vh solid #00edff;
     border-right: .5vh solid #00edff;
     margin-bottom: 1rem;
+    font-size: var(--fs-400);
 }
 
 @media screen and (max-width: 480px) {
     h4 {
         border-top: .3vh solid #00edff;
         border-right: .3vh solid #00edff;
-        font-size: 1.4rem;
+        font-size: var(--fs-500);
     }
 }
 
@@ -598,7 +638,7 @@ h4 {
 /* Footer */
 
 .footer {
-    height: fit-content;
+    width: 100%;
     margin-top: 8%;
     background: #231f20;
     padding-bottom: 1%;
@@ -613,6 +653,7 @@ h4 {
 .footer-h5-wrap {
     display: flex;
     justify-content: center;
+    height: 10rem;
 }
 
 .footer-h5-wrap
@@ -620,12 +661,12 @@ h5 {
     font-family: 'Oswald',sans-serif;
     font-weight: bold;
     color: #231f20;
-    font-size: 2.5rem;
+    font-size: var(--fs-600);
     position: relative;
-    bottom: 3.5rem;
+    bottom: 10rem;
     background: white;
     z-index: 2;
-    padding: 2%;
+    padding: 2% 2% 4% 2%;
     border-top: solid 1rem #00edff;
     border-left: solid 1rem #00edff;
     margin-right: 1rem;
@@ -645,13 +686,13 @@ h5 {
 span {
     font-family: 'Oswald',sans-serif;
     font-weight: bold;
-    font-size: 2rem;
+    font-size: var(--fs-500);
     color: #ffffff;
 }
 
 .end-paragraph {
     font-family: 'Open Sans',sans-serif;
-    font-size: 1rem;
+    font-size: var(--fs-400);
     color: #fbfbfb;
     grid-column: 2;
     margin-top: 3%;     
@@ -659,7 +700,7 @@ span {
 
 @media screen and (max-width: 480px) {
    .end-paragraph {
-       font-size: 1.15rem;        
+       /* font-size: 1.15rem;         */
     }
 }
 
@@ -682,7 +723,7 @@ span{
     color: #00edff;
     font-family: 'Oswald',sans-serif;
     font-weight: bold;
-    font-size: 1.25rem;
+    font-size: var(--fs-500);
     border-bottom: solid 1px #00edff;
     border-bottom-width: 2px;
     line-height: 1.5rem;
@@ -706,7 +747,7 @@ span{
 p {
     color: #ffffff;
     font-family: 'Oswald',sans-serif;
-    font-size: 1rem;
+    font-size: var(--fs-400);
     padding-left: 5%;
 }
 
