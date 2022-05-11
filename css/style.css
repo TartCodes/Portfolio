@@ -151,7 +151,7 @@ header {
 }
 
 .side-img-container {
-    width: 70%;
+    width: 75%;
 }
 
 .side-img {
@@ -314,14 +314,15 @@ li {
 h1 {
     position: absolute;
     z-index: 3;
-    left: 12%;
-    top: 50%;
+    left: 9%;
+    top: 27rem;
     font-family: 'Oswald', sans-serif;
     font-weight: bolder;
     font-size: clamp(1rem, 9vw, 5rem);
     line-height: 8rem;
     letter-spacing: .1rem;
     color: black;
+    
 }
 
 @media screen and (max-width: 480px) {
@@ -332,6 +333,7 @@ h1 {
         text-align: center;
         padding: 5% 0;       
         line-height: 3rem;
+        
     }
 }
 
@@ -343,6 +345,22 @@ span {
     padding: 0 .5rem;
 }
 
+/* .yellow {
+    color: #E7E03B;
+}
+
+.green {
+    color: #82C20A;
+}
+
+.blue {
+    color: #4E9BE1;
+}
+
+.red {
+    color: #D72738;
+} */
+
 @media screen and (max-width: 480px) {
     h1 
     .header-span-2 {
@@ -351,8 +369,21 @@ span {
     }
 }
 
+@media screen and (max-width: 480px) {
+    .yellow,
+    .green,
+    .blue,
+    .red {
+        color: black
+    }
+}
+
 .main-photo {
-    background-color: black;
+    background-color: #111111;
+    background-image: url(../assets/mainphoto-resized.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: bottom;
     position: relative;
     padding: 27rem;
     left: 4%;
