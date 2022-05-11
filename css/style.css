@@ -123,8 +123,7 @@ html {
 header {
     display: grid;
     grid-template-columns: .8fr 1.25fr 1fr;
-    grid-template-rows: .5fr 2fr;
-    height: 100vh;
+    grid-template-rows: .5fr 1fr 1fr 1fr;
     margin-bottom: 5%;
 }
 
@@ -139,10 +138,10 @@ header {
 /* Port Img */
 
 .portimg-grid-1 {
-    grid-row: 1 / 4;
+    grid-row: 1 /5;
     background: #f8f8f8;
     width: 100%;
-    min-height: 140%;
+    min-height: 128%;
 }
 
 @media screen and (max-width: 480px) {
@@ -240,15 +239,6 @@ li {
     margin-left: 10%;
 }
 
-/* @media screen and (max-width: 480px) {
-    .header-nav
-    li {
-        margin-left: 0;
-        /* font-size: 1.5rem; 
-    }
-} */
-
-
 .home 
 a {
     background-color: #00edff;
@@ -308,10 +298,8 @@ li {
 /* Squares of pain */
 
  .header-grid-3 {
-    grid-row: 2/4;
+    grid-row: 2/5;
     background: #00edff;
-    width: 100%;
-    height: 100%;
 }
 
 @media screen and (max-width: 480px) {
@@ -366,13 +354,15 @@ span {
 .main-photo {
     background-color: black;
     position: relative;
-    height: 80vh;
+    padding: 27rem;
     left: 4%;
     top: 5%;
 }
 
 .black-space {
     background: #231f20;
+    grid-column: 3;
+    grid-row: 2/5;
 }
 
 
@@ -432,6 +422,9 @@ main {
    main {
         display: block;
         text-align: center;
+        background-color: #ffffff;
+        padding: 2% 0;
+        border: solid .5rem #231f20;
     }
 }
 
@@ -475,7 +468,8 @@ p {
 @media screen and (max-width: 480px) {
     .projects {
         margin-top: 5%;
-        height: 75vh;
+        background-color: #00edff;
+        padding: 2% 0;
     }
 }
 
@@ -496,8 +490,7 @@ h2 {
 
 
 .projects-container {
-    display: grid;
-    height: 100vh;
+    display: grid;    
     margin-inline: auto;
     width: 77.5%;    
     grid-template-columns: 1fr 1fr 1fr;
@@ -508,7 +501,6 @@ h2 {
 @media screen and (max-width: 480px) {
     .projects-container{
         display: block;
-        height: 40vh;
     }
 }
 
@@ -536,34 +528,45 @@ h4 {
     font-size: clamp(0.75rem, 3.5vw, 1rem);
 }
 
-/* @media screen and (max-width: 480px) {
+@media screen and (max-width: 480px) {
     h4 {
-        border-top: .3vh solid #00edff;
-        border-right: .3vh solid #00edff;
-        font-size: ;
-    }
-} */
-
-/* first project */
-
-.firstProject {
-    background-image: url(../assets/firstImg.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    display: grid;
+      padding: 0.5rem .5rem 0.5rem 0.5rem;
+      margin-inline: auto ;
+      border: .5vh solid #00edff;
+      margin-bottom: 0;
+  }
 }
 
 
+/* first project */
+
+.first-project {
+    background-image: url(../assets/firstImg-resized.png);
+    background-repeat: no-repeat;
+    background-size: cover;    
+    padding-top: 22rem;
+    display: grid;
+}
+
+.first-cont {
+    grid-column: 1;
+}
+
 /* second project */
 
-.secondProject {
-    background-image: url(../assets/legendsbnb.png);
+.second-project {
+    background-image: url(../assets/legends2-resized.png);
     background-repeat: no-repeat;
     background-size: cover;
     grid-row: 1/2;
     display: grid;
     grid-column: 2/6;
     margin-left: 1%;
+    padding-top: 22rem;
+}
+
+.second-cont {
+    grid-column: 2/4;
 }
 
 /* Projects 3 4 5 */
@@ -571,45 +574,68 @@ h4 {
 
 /* third project */
 
-.thirdProject {    
+.third-project {    
     background-image: url(../assets/rpgdice.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     display: grid;
     grid-row: 2;
+    padding-top: 23rem;
 } 
+
+.third-cont {
+    grid-column: 1;
+    grid-row: 2;
+}
 
 
 /* fourth project */
 
-.fourthProject {
-    background-image: url(../assets/pf2e.jpg);
+.fourth-project {
+    background-image: url(../assets/pf2e-resized.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     display: grid;
     margin-left: 2%;
+    padding-top: 23rem;
+}
+
+.fourth-cont {
+    grid-column: 2;
+    grid-row: 2;
 }
 
 /* fifth project */
 
-.fifthProject {
+.fifth-project {
     background-image: url(../assets/pomotimer.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     display: grid;
     margin-left: 2%;
     grid-column: 3;
+    padding-top: 23rem;
+}
+
+.fifth-cont {
+    grid-column: 3;
+    grid-row: 2;
 }
 
 @media screen and (max-width: 480px) {
-    .firstProject,
-    .secondProject,
-    .thirdProject,
-    .fourthProject,
-    .fifthProject {
-       height: 25%;
+    .first-project,
+    .second-project,
+    .third-project,
+    .fourth-project,
+    .fifth-project {
+       padding-top: 15rem;
+       margin-inline: auto;
+       margin-top: 1%;
+     
     }
 }
+
+
 
 
 
@@ -617,7 +643,7 @@ h4 {
 
 .footer {
     width: 100%;
-    margin-top: 8%;
+    margin-top: 12%;
     background: #231f20;
     padding-bottom: 1%;
 }
@@ -630,15 +656,12 @@ h4 {
 
 .footer-h5-wrap {
     display: flex;
-    justify-content: center;
-    height: 6rem;
+    justify-content: center;    
 }
 
 @media screen and (max-width: 480px) {
     .footer-h5-wrap {
-        display: block;
-        height: fit-content;
-        
+        display: block;             
     }
 }
 
@@ -653,7 +676,7 @@ h5 {
     bottom: 5rem;
     background: white;
     z-index: 2;
-    padding: 2% 2% 4% 2%;
+    padding: 2% 2% 2% 2%;
     border-top: solid 1rem #00edff;
     border-left: solid 1rem #00edff;
     margin-right: 1rem;
@@ -680,7 +703,7 @@ h5 {
 
 @media screen and (max-width: 480px) {
    .footer-grid {
-       margin-top: 5%;     
+          padding: 2% 0;
     }
 }
 
