@@ -127,14 +127,6 @@ header {
     margin-bottom: 5%;
 }
 
-
-/* @media screen and (max-width: 480px){
-    header {
-        height: fit-content;
-        grid-template-columns: 1fr 1fr;
-        margin-bottom: 5%;
-    }
-} */
 /* Port Img */
 
 .portimg-grid-1 {
@@ -143,12 +135,6 @@ header {
     width: 100%;
     min-height: 128%;
 }
-
-/* @media screen and (max-width: 480px) {
-    .portimg-grid-1 {
-        display: none;
-    }
-} */
 
 .side-img-container {
     width: 75%;
@@ -161,12 +147,6 @@ header {
     background-size: contain;
     background-repeat: no-repeat;
 }
-
-/* @media screen and (max-width: 480px) {
-    .side-img {
-        display: none;
-    }
-} */
 
 /* Logo */
 
@@ -189,26 +169,11 @@ img {
     grid-column: 2/4;   
 }
 
-/* @media screen and (max-width: 480px) {
-    .nav-grid-2 {
-        grid-column: 1/4;
-    }
-} */
-
 .nav-section {
     display: flex;
     flex-direction: row;
     padding-top: 2%;
 }
-
-/* @media screen and (max-width: 480px) {
-    .nav-section {
-        flex-direction: column;
-        width: 60%;
-        padding-top: 5%;
-        margin-inline: auto;
-    }
-} */
 
 .header-nav a,
 .header-nav a:visited
@@ -223,13 +188,6 @@ img {
     width: 50%;
 }
 
-/* @media screen and (max-width: 480px) {
-    .header-nav {
-        width: 100%;
-        justify-content: space-evenly;
-        
-    }
-} */
 
 .header-nav
 li {
@@ -261,15 +219,6 @@ a {
     width: 50%;
     justify-content: center;
 }
-
-/* @media screen and (max-width: 480px) {
-    .social-div {
-        width: 100%;
-        margin-top: 6%;
-        margin-bottom: 2%;
-    }
-} */
-
 .social {
     display: flex;
     width: 50%;
@@ -288,20 +237,12 @@ li {
 }
 
 
-
 /* Squares of pain */
 
  .header-grid-3 {
     grid-row: 2/5;
     background: #00edff;
 }
-
-/* @media screen and (max-width: 480px) {
-    .header-grid-3 {
-        grid-column: 1/4;
-        border: solid 2px #231f20
-    }
-} */
 
 
 .header-grid-3
@@ -319,19 +260,6 @@ h1 {
     
 }
 
-/* @media screen and (max-width: 480px) {
-    .header-grid-3
-    h1 {
-        position: revert;
-        display: block;
-        text-align: center;
-        padding: 5% 0;       
-        line-height: 3rem;
-        
-    }
-} */
-
-
 h1
 span {
     background: white;
@@ -339,44 +267,11 @@ span {
     padding: 0 .5rem;
 }
 
-/* .yellow {
-    color: #E7E03B;
-}
-
-.green {
-    color: #82C20A;
-}
-
-.blue {
-    color: #4E9BE1;
-}
-
-.red {
-    color: #D72738;
-} */
-
-@media screen and (max-width: 480px) {
-    h1 
-    .header-span-2 {
-       background: none;
-       padding: none;
-    }
-}
-
-/* @media screen and (max-width: 480px) {
-    .yellow,
-    .green,
-    .blue,
-    .red {
-        color: black
-    }
-} */
-
 .main-photo {
     background-color: #111111;
-    background-image: url(../assets/mainphoto-resized.jpg);
-    background-repeat: no-repeat;
-    background-size: contain;
+    /* background-image: url(../assets/mainphoto-two.jpg); */
+    background-image:url('../assets/gifbackground.gif'); background-repeat:repeat;    
+    background-size: cover;
     background-position: bottom;
     position: relative;
     padding: 27rem;
@@ -390,12 +285,6 @@ span {
     grid-row: 2/5;
 }
 
-
-/* @media screen and (max-width: 480px) {
-    .main-photo {
-        display: none;
-    }
-} */
 
 /* About */
 
@@ -443,16 +332,6 @@ main {
     grid-column-gap: 5%;
 }
 
-/* @media screen and (max-width: 480px) {
-   main {
-        display: block;
-        text-align: center;
-        background-color: #ffffff;
-        padding: 2% 0;
-        border: solid .5rem #231f20;
-    }
-} */
-
 .grid-skill-1 {
     grid-column: 2;
     grid-row: 2;
@@ -490,14 +369,6 @@ p {
     margin-top: 10%
 }
 
-/* @media screen and (max-width: 480px) {
-    .projects {
-        margin-top: 5%;
-        background-color: #00edff;
-        padding: 2% 0;
-    }
-} */
-
 .projects
 h2 {
     margin: 0 0 1% 11.25%;
@@ -523,12 +394,6 @@ h2 {
     grid-row-gap: 1%;  
 }
 
-/* @media screen and (max-width: 480px) {
-    .projects-container{
-        display: block;
-    }
-} */
-
 .projects a,
 .projects a:active
 .projects a:hover
@@ -552,15 +417,6 @@ h4 {
     margin-bottom: 1rem;
     font-size: clamp(0.75rem, 3.5vw, 1rem);
 }
-
-/* @media screen and (max-width: 480px) {
-    h4 {
-      padding: 0.5rem .5rem 0.5rem 0.5rem;
-      margin-inline: auto ;
-      border: .5vh solid #00edff;
-      margin-bottom: 0;
-  }
-} */
 
 
 /* first project */
@@ -647,23 +503,6 @@ h4 {
     grid-row: 2;
 }
 
-/* @media screen and (max-width: 480px) {
-    .first-project,
-    .second-project,
-    .third-project,
-    .fourth-project,
-    .fifth-project {
-       padding-top: 15rem;
-       margin-inline: auto;
-       margin-top: 1%;
-     
-    }
-} */
-
-
-
-
-
 /* Footer */
 
 .footer {
@@ -678,12 +517,6 @@ h4 {
     display: flex;
     justify-content: center;    
 }
-
-/* @media screen and (max-width: 480px) {
-    .footer-h5-wrap {
-        display: block;             
-    }
-} */
 
 
 .footer-h5-wrap
@@ -702,18 +535,6 @@ h5 {
     margin-right: 1rem;
 }
 
-/* @media screen and (max-width: 480px) {
-    .footer-h5-wrap
-    h5 {
-        display: block;
-        position: revert;
-        border-right: solid 1rem #00edff;
-        margin: auto;
-        text-align: center;
-        
-    }
-} */
-
 .footer-grid {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -726,8 +547,6 @@ h5 {
           padding: 2% 0;
     }
 }
-
-
 
 .get-in-touch{
     grid-column: 2;
@@ -750,14 +569,6 @@ span {
     margin-top: 3%;     
 }
 
-/* @media screen and (max-width: 480px) {
-   .end-paragraph {
-       grid-column: 1/4;
-       text-align: center;
-       margin-inline: auto;      
-    }
-} */
-
 .contact {
     grid-column: 2;
     margin-top: 3%;
@@ -770,13 +581,6 @@ a {
     font-size: clamp(.9rem,3vw,1.5rem);;
     padding-right: 1.5rem;
 }
-
-/* @media screen and (max-width: 480px) {
-     .contact
-      a {
-        padding-right: 1rem;
-    }
-} */
 
 .contact
 a 
@@ -797,16 +601,6 @@ span{
     justify-content: center;
 }
 
-/* @media screen and (max-width: 480px) {
-    .foot-note{
-        grid-column: 1/4;
-        padding-right: 1rem;
-        margin-top: 2%;
-   }
-} */
-
-
-
 .foot-note
 p {
     color: #ffffff;
@@ -820,12 +614,6 @@ p {
       display: grid;
       align-content: end;
 }
-
-/* @media screen and (max-width: 480px) {
-    .social-two-wrapper{
-       display: none;
-   }
-} */
 
 .social-two {
     display: flex;
