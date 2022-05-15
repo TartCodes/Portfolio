@@ -103,6 +103,7 @@ table {
 
 html {
     font-size: 16px;
+    scroll-behavior: smooth;
 }
 
   h2 {
@@ -127,6 +128,13 @@ header {
     margin-bottom: 5%;
 }
 
+.header-about-page {
+    display: grid;
+    grid-template-columns: .8fr 1.25fr 1fr;
+    grid-template-rows: .35fr 1fr; 
+    margin-bottom: 0;   
+}
+
 /* Port Img */
 
 .portimg-grid-1 {
@@ -134,6 +142,13 @@ header {
     background: #f8f8f8;
     width: 100%;
     min-height: 128%;
+}
+
+.about-port {
+    grid-row: 1 /5;
+    background: #f8f8f8;
+    width: 100%;
+    min-height: 100%;
 }
 
 .side-img-container {
@@ -187,6 +202,10 @@ img {
     flex-direction: row;
     width: 50%;
 }
+
+/* #projects-link {
+    -webkit-transition: all 0.5s ease;
+} */
 
 
 .header-nav
@@ -247,32 +266,28 @@ li {
 
 .header-grid-3
 /* .black-space */
-h1 {
-    /* position: absolute;
-    z-index: 3;
-    left: 9%;
-    top: 27rem; */
+h1 {   
     font-family: 'Oswald', sans-serif;
     font-weight: bolder;
     font-size: clamp(1rem, 9vw, 5rem);
     line-height: 8rem;
     letter-spacing: .1rem;
-    color: black;    
+    color: #003140;  
 }
 
 .h1-p {
     font-family: 'Oswald', sans-serif;
     font-weight: bolder;
     font-size: clamp(1rem, 9vw, 5rem);
-    line-height: 8rem;
-    letter-spacing: .1rem;
+    line-height: 8rem;    
     padding: 25rem 2rem 1rem 0;
-    text-align: end;   
+    text-align: end;
+    color: #031214;   
 }
 
 h1
 span {
-    background-color: #0186A7;
+    background-color: #003140;
     color: white;
     line-height: initial;
     padding: 0 .5rem;
@@ -280,8 +295,8 @@ span {
 
 .h1-p
 span {
-    background-color: #0186A7;
-    color: white;
+    background-color: white;
+    color: #003140;
     line-height: initial;
     padding: 0 .5rem;
 }
@@ -340,6 +355,56 @@ span {
     border-bottom: solid thin #0186A7;
 }
 
+/*About Page*/
+
+.about-section {
+    display: flex;
+    flex-direction: column;
+    row-gap: 1rem;
+    background-color: #0186A7;
+    grid-column: 2;
+    line-height: 1.8;
+    padding: 1rem;  
+}
+
+.about-section
+h2 {
+    align-self: center;
+    padding: 1rem 0 0 0;
+    background: none;    
+}
+
+.about-section-p {
+    color: white;    
+    font-family: 'Open Sans', sans-serif;
+    width: 100%;
+    font-size: clamp(0.75rem, 3.5vw, 1.25rem);
+   }
+
+.about-section-p
+span {
+    font-weight: bolder;
+}
+
+.about-section a,
+.about-section a:visited,
+.about-section a:hover,
+.about-section a:active { 
+    font-weight: bolder;
+    color: white;
+    border-bottom: 2px solid white;
+}
+
+.my-face {
+    background-image: url(../assets/mystoopidface.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    grid-column: 3;    
+    background-position: center;
+    background-color: #0186A7;
+}
+
+
 /* Skills */
 
 main {
@@ -349,6 +414,10 @@ main {
     width: 97%;
     margin-inline: auto;
     grid-column-gap: 5%;
+}
+
+.proficiencies {
+    grid-column: 3;
 }
 
 .grid-skill-1 {
@@ -365,6 +434,7 @@ main {
     grid-column: 4;
     grid-row: 2;
 }
+
 
 main
 h3 {
@@ -386,7 +456,7 @@ p {
 /* Projects */
 
 .projects {
-    margin-top: 10%
+    margin-top: 5%
 }
 
 .projects
@@ -395,13 +465,6 @@ h2 {
     display: inline-block;
 }
 
- @media screen and (max-width: 480px) {
-    .recent-projects-div
-    h2 {
-        display: block;
-        margin-inline: auto;
-    }
-} 
 
 
 
@@ -562,12 +625,6 @@ h5 {
     margin-top: 2%;    
 }
 
-@media screen and (max-width: 480px) {
-   .footer-grid {
-          padding: 2% 0;
-    }
-}
-
 .get-in-touch{
     grid-column: 2;
 }
@@ -701,6 +758,26 @@ li {
         border: solid 2px #231f20
     }
 
+    .about-section {
+        margin-inline: auto;
+        grid-column: 1/4;
+    }
+
+    .header-about-page {
+        display: grid;
+        grid-template-columns: .8fr 1.25fr 1fr;
+        grid-template-rows: 1fr;
+        margin-bottom: 0;
+    }
+
+    .my-face {
+        grid-column: 1/4;
+        grid-column: 1/4;
+        height: fit-content;
+        margin-inline: auto;    
+        padding-top: 1rem;
+    }
+
     .main-photo
     h1 {
         display: block;        
@@ -716,8 +793,10 @@ li {
     
     .main-photo
     .h1-p {
-        padding: 15rem 1rem 0 0;
+        padding: 15rem 0rem 0 0rem;
         line-height: 6rem;
+        font-size: clamp(1rem, 7.9vw, 5rem);
+        text-align: center;
     }
 
     .main-photo {
@@ -732,6 +811,12 @@ li {
         background-color: #ffffff;
         padding: 2% 0;
         border: solid 0.25rem #0186A7;
+    }
+
+    .proficiencies {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 5%;
     }
 
     .projects {
