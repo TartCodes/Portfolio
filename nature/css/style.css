@@ -490,9 +490,7 @@ footer img {
 
 
 
-
-/* header section @900 */
-
+/* media qs */
  
 @media screen and (max-width: 915px) {
   .greenLogo {
@@ -500,158 +498,104 @@ footer img {
     width: 100%;
     justify-content: center; 
   }
-}
 
-@media screen and (max-width: 915px) {
   .greenLogo img {
     width: 15%;
-   }    
 }
 
-@media screen and (max-width: 915px) {
-  .headingOne h1 {
-    font-size: 1.5rem;
-    text-align: center;
+.headingOne h1 {
+  font-size: 1.5rem;
+  text-align: center;
+}    
+
+.headerDiv p {
+  font-size: .9rem;
+  text-align: center;
+  width: 60%;
+ }   
+
+.firstSection h2  {
+ font-size: 1rem;
+ text-align: center;
+ width: 100%;
+ margin: 0;
  }    
+ .firstSection p {
+   font-size: .75rem;
+   text-align: center;
+   width: 100%;
+   margin: 0 .75rem 0 .75rem;
+}   
+
+/* main photos */
+
+.colOne,.colTwo{
+ display: none
+ }
+
+.imgThree  {
+  margin: 0;
 }
 
-@media screen and (max-width: 915px) {
-  .headerDiv p {
-    font-size: .9rem;
-    text-align: center;
-    width: 60%;
-   }    
-}
-
-/* first  section @900  */
-
-@media screen and (max-width: 915px) {
-
-
-@media screen and (max-width: 915px) {
-  .firstSection h2  {
-    font-size: 1rem;
-    text-align: center;
-    width: 100%;
-    margin: 0;
-    }    
-}
-
-@media screen and (max-width: 915px) {
-  .firstSection p {
-    font-size: .75rem;
-    text-align: center;
-    width: 100%;
-    margin: 0 .75rem 0 .75rem;
- }    
-}
-
-/* main photos @900 */
-
-@media screen and (max-width: 915px) {
-  .colOne,.colTwo{
-    display: none
-    }
-}  
-
-@media screen and (max-width: 915px) {
-  .imgThree  {
-    margin: 0;
+.morePhotos {
+  margin: 4rem 0 4rem 0;
   }
+
+.morePhotos a,.arrow {
+  font-size: .85rem;
+ }
+
+ .morePhotos span {
+  padding: .5rem;
+  
 }
 
-/* See More Photos */
-
-@media screen and (max-width: 915px) {
-  .morePhotos {
-    margin: 4rem 0 4rem 0;
-    }
+.greenSection {
+  height: initial;
 }
 
-@media screen and (max-width: 915px) {
-  .morePhotos a,.arrow {
-    font-size: .85rem;
-    }
-}
-
-@media screen and (max-width: 915px) {
-  .morePhotos span {
-    padding: .5rem;
-    
+.greenSectionDiv p  {
+  font-size: 1rem;
+  width: 99%;
+  line-height: initial;
   }
-}
 
-/* green section @900 */
-
-@media screen and (max-width: 915px) {
-  .greenSection {
-    height: initial;
-  }
-}
-
-@media screen and (max-width: 915px) {
-  .greenSectionDiv p  {
-    font-size: 1rem;
-    width: 99%;
-    line-height: initial;
-    }
-}
-
-@media screen and (max-width: 915px) {
   .greenSection span   {
     display: flex;    
     font-size: .75rem;
     width: 99%;
     padding-bottom: 8%;
   }
-}
 
-/* midSection @900 */
-
-@media screen and (max-width: 915px) {
   .midSection {
     display: block;
     margin: 5rem 0 5rem 0;
   }
-}
 
-@media screen and (max-width: 915px) {
   .midSection h2  {
     font-size: 1rem;
-    text-align: center;
-    
+    text-align: center;    
     margin: 5px .75rem 5px .75rem; 
-  }    
-}
+  }   
 
-@media screen and (max-width: 915px) {
-  .midSection p  {
-    
+  .midSection p  {    
     font-size: .75rem;
     text-align: center;
     width: 100%;
     margin: 5px .75rem 5px .75rem;
-   }    
-}
-
-/* offSet @900 */
-
-@media screen and (max-width: 915px) {
-  .offSet  {
+   }
+   
+   .offSet  {
     margin: 0 .5rem 0 .5rem;
-  }       
-}
-
-@media screen and (max-width: 915px) {
-  .offSetSectionOne  {
+  } 
+  
+.offSetSectionOne  {
   margin: 0;
   display: block;
   float: left; 
-  } 
-}
+  }
 
-@media screen and (max-width: 915px) {
-  .offSetPictureOne, .offSetDiv  {
+.offSetPictureOne, .offSetDiv  {
   float: left;
   display: block;
   width: 100%;
@@ -659,94 +603,86 @@ footer img {
   padding: 0;
   margin: 0; 
   }
-}
-
-@media screen and (max-width: 915px) {
-  .offSetSectionTwo  {
+    
+.offSetSectionTwo  {
   margin: 0;
   display: block;
   float: left;
   padding: 0;
   margin: 0;
-  }   
-}
-
-@media screen and (max-width: 915px) {
+  } 
+  
   .offSetPictureTwo, .offSetDivTwo  {
-  float: left;
-  display: block;
-  width: 100%;
-  text-align: center;
-  padding: 0;
-  margin: 10px 0 0 0; 
-} 
-}
-
-@media screen and (max-width: 915px) {
+    float: left;
+    display: block;
+    width: 100%;
+    text-align: center;
+    padding: 0;
+    margin: 10px 0 0 0;
+  }
+  
   .offSet p {
     font-size: .80rem;
     margin: 1rem 0 1rem 0
   }
-}
 
-@media screen and (max-width: 915px) {
   .offSetHthree,.offSetHthreeTwo {
     font-size: .85rem;
   }
-}
 
-@media screen and (max-width: 915px) {
   .offSetSpanOne,.offSetSpanTwo {
     font-size: .80rem;
   }
-}
 
-/* above map @900*/
-
-@media screen and (max-width: 915px) {
   .aboveMapSection {
     display: block;
     margin: 5rem .75rem 5rem .75rem;
   }
-}
-
-
-@media screen and (max-width: 915px) {
+  
   .aboveMapSection h2  {
     font-size: 1rem;
     text-align: center;
     width: 100%;
     margin: 5px 0 5px 0; 
-  }    
-}
+  }   
 
-@media screen and (max-width: 915px) {
   .aboveMapDiv {
     display: block;
     margin-top: 5px;
   }
-}
 
-@media screen and (max-width: 915px) {
   .aboveMapSection p  {
     display: block;
     font-size: .75rem;
     text-align: center;
     width: 100%;
     margin: 5px 0 5px 0; 
-  }    
-}
-
-/* footer @900 */
-
-
-@media screen and (max-width: 915px) {
+  }
+  
   .endNote, .whiteLogo, .contact {
     display: block;
     text-align: center;
     margin: 0;
     width: 100%;
     padding: .5rem 0 .5rem 0;
-  }    
+  } 
 }
-}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
