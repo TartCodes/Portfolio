@@ -2,7 +2,13 @@ const progressBar = document.querySelector(".outerRing"),
 	minElem = document.querySelector("#minutes"),
 	secElem = document.querySelector("#seconds"),
 	startStop = document.querySelector("#stsp"),
-	setting = document.querySelector("#setting");
+	setting = document.querySelector("#setting"),
+	reset = document.querySelector('#reset'),
+	input = document.querySelector('#input'),
+	button = document.querySelector('#button'),
+	deleteButton = document.querySelector('#delete'),
+	button2 = document.querySelector('#button2')
+
 
 let minutes = document.querySelector("#minutes").innerHTML,
 	seconds = document.querySelector("#seconds").innerHTML,
@@ -13,7 +19,8 @@ let minutes = document.querySelector("#minutes").innerHTML,
 	degTravel = 360 / progressEnd,
 	toggleSettings = false,
 	secRem = 0,
-	minRem = 0;
+	minRem = 0,
+	checkStorage = localStorage.getItem('input') || '|' //keeps local storage
 
 function progressTrack() {
 	progressStart++;
@@ -75,11 +82,13 @@ function resetValues() {
 		  )`;
 }
 
-function resetTimer(){
-    if
+
+reset.onclick = () => {
+	document.querySelector('#minutes').innerHTML = minutes
+	document.querySelector('#seconds').innerHTML = seconds 
 }
 
-startStop.onclick = function () {
+startStop.onclick =  () => {
 	if (startStop.innerHTML === "START") {
 		if (!(parseInt(minutes) === 0 && parseInt(seconds) === 0)) {
 			startStop.innerHTML = "STOP";
@@ -93,7 +102,7 @@ startStop.onclick = function () {
 	}
 };
 
-setting.onclick = function () {
+setting.onclick = () => {
 	if (!toggleSettings) {
 		toggleSettings = true;
 		minElem.contentEditable = true;
@@ -112,3 +121,43 @@ minElem.onblur = function () {
 secElem.onblur = function () {
 	resetValues();
 };
+
+
+//Below code needs fixing
+
+button.addEventListener('click', save)
+deleteButton.addEventListener('click', deleteStorage)
+button2.addEventListener('click', createLi) // temporary show button for debugging
+
+let newArr = checkStorage.split('|')
+
+//supposed to create li and append
+function createLi() {
+	document.getElementById('createdLi').replaceChildren()
+	for(let i = 1; i < newArr.length - 1; i++){	
+	const userList = document.getElementById('createdLi') 
+	const makeLi = document.createElement('li')
+	makeLi.innerText = newArr[i]
+	userList.appendChild(makeLi)
+	}	
+ }
+
+ //save inputs to local storage
+function save() {		
+	let saveInputs = document.getElementById('input').value	
+	checkStorage += `${saveInputs}|`
+	localStorage.setItem('input', checkStorage)
+	createLi()	
+}
+
+//removes the stored information 
+function deleteStorage() {	
+	localStorage.removeItem('input', checkStorage)
+	checkStorage = '|'
+}
+
+
+
+
+
+	
