@@ -44,14 +44,18 @@
 					</div>
 				</div>
 
+                <!-- Rewards EJS -->
 
-		<section>
-			
-					
-			<div>
-				<ul id="createdLi"></ul>
-			</div>
-		</section>		
+                <ul class="all-rewards">
+                    <%for(let i = 0; i < rewards.length; i++) {%>
+                        <li class="reward">
+                             <!-- Output name from the iterated quote object -->
+                            <span><%= pomoRewards[i].name %></span>
+                            <!-- Output quote from the iterated quote object -->
+                            <span><%= pomoRewards[i].rewards %></span>
+                        </li>
+                   <% }%>
+                </ul>		
 		
 		<footer>
 			<section>
