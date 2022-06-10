@@ -36,11 +36,13 @@ function progressTrack() {
 				#00aa51 360deg,
 				#00aa51 360deg
 		  )`;
+		getMessage()
 		clearInterval(progress);
 		startStop.innerHTML = "START";
 		progress = null;
-		progressStart = 0;
+		progressStart = 0;		
 	}
+	
 }
 
 
@@ -55,8 +57,8 @@ function startStopProgress() {
 		progressBar.style.background = `conic-gradient(
 				#17171a 360deg,
 				#17171a 360deg
-		  )`;
-	}
+		  )`;		  
+	}	
 }
 
 
@@ -101,7 +103,6 @@ startStop.onclick =  () => {
 	}
 }
 
-
 setting.onclick = () => {
 	if (!toggleSettings) {
 		toggleSettings = true;
@@ -123,78 +124,21 @@ secElem.onblur = function () {
 };
 
 
-//Below code needs fixing
+//Inserting 'reward' into dom
 
+async function getMessage() {
+	console.log('start of function');
+	
+	const message = await fetch('/message')
+	console.log(message, 'message');
+	let res = await message.json()	
+	console.log('timer is at 0', 'this one', res);
+		
+	document.getElementById('place-reward').innerText = res
+	console.log(res, 'timer has endededed');			
+}
+	
 
-
-
-// // let	checkStorage = localStorage.getItem('input') || '|' //keeps local storage
-// let	checkStorage = JSON.parse(localStorage.getItem('input')) || []
-
-// // addBtn.addEventListener('click', saveToLocalStorage)
-
-// addBtn.addEventListener('click', (e) => {
-// 	e.preventDefault();
-// 	let inputRewardValue = inputReward.value;
-// 	const newLi = document.createElement('li')
-// 	newLi.innerHTML = inputRewardValue;
-// 	userList.append(newLi);
-// 	inputReward.value = ''
-// })
-
-// // deleteButton.addEventListener('click', deleteStorage) //removes localstorage data
-
-// // button2.addEventListener('click', createLi) // temporary show button for debugging
-
-// // let newArr = checkStorage.split('|')
-
-// //supposed to create li and append
-// // function createLi() {
-// // 	let newArr = checkStorage.split('|')
-// // 	document.getElementById('createdLi').replaceChildren()	
-// // 		for(let i = 1; i < newArr.length - 1; i++){				
-// // 			const userList = document.getElementById('createdLi') 
-// // 			const makeLi = document.createElement('li')
-// // 			makeLi.innerText = newArr[i]
-// // 			userList.appendChild(makeLi)
-// // 	}	
-// //  }
-
-
-// //create the li
-// function createLi() {
-// 	let newArr = checkStorage.split('|'); 
-// 	const userList = document.getElementById('createdLi')
-// 	userList.innerHTML = '';
-// 	let list = newArr.map((item) => `<li>${item}</li>`).join('')
-// 	userList.insertAdjacentHTML('beforeend', list)
-// }
-
-
-//  //save inputs to local storage
-// // function save() {		
-// // 	let saveInputs = document.getElementById('input').value	
-// // 	checkStorage += `${saveInputs}|`
-// // 	localStorage.setItem('input', checkStorage)
-// // 	createLi()	
-// // }
-
-// //adams way of doing it
-// function saveToLocalStorage(newInput){
-// 	checkStorage.push(newInput)
-// 	localStorage.setItem('input', JSON.stringify(checkStorage))
-// }
-
-// //removes the stored information 
-// // function deleteStorage() {	
-// // 	localStorage.removeItem('input', checkStorage)
-// // 	checkStorage = '|'
-// // }
-
-// // function deleteStorage(itemToRemove){
-// // 	const index = checkStorage.indexOf(itemToRemove);
-
-// // }
 
 
 

@@ -17,25 +17,26 @@
 		<script src="https://kit.fontawesome.com/d8f5f7035a.js" crossorigin="anonymous"></script>
 	</head>
 	<body>
-		
+		<!-- Header -->
 		<header>
 			<section class="intro">
-				<h1>Pomodoro "Reward-er"</h1>
-				<p>Welcome to my custom 'Pomodoro' app!</p>
+				<h1>Random-oro</h1>
+				<p>A custom 'Pomodoro' app that displays a reward once the timer hits 00:00!</p>
 				 <span>Instructions:</span> 
 				 <p>Use the cog wheel to change timer your liking, then hit start!</p> 
-				 <p>Once the timer ends, a random reward will appear. If you don't like the specified reward, simply select 'pick another'. Enjoy!</p>
+				 <p>Once the timer ends, a random reward will appear. Enjoy!</p>
 				
 			</section> 
 		</header>
-						
+
+		<!--Timer  -->
 				<div class="container">
 					<div class="outerRing">
 						<div class="timer">
 							<div id="time">
-								<span id="minutes">25</span>
+								<span id="minutes">00</span>
 								<span id="colon">:</span>
-								<span id="seconds">00</span>
+								<span id="seconds">01</span>
 							</div>
 								<div id="stsp">START</div>
 								<div id="reset">RESET</div>
@@ -43,27 +44,26 @@
 						</div>
 					</div>
 				</div>
+           
+        <!--Reward -->
+        <section class="reward-section" >
+                <span>Reward:</span>
+                <ul class="rewards">
+                    <li id="place-reward"></li>
+                </ul>
+        </section>
 
-                <!-- Rewards EJS -->
-            <!-- Write Math.random here -->
-                <ul class="all-rewards">
-                   
-                        <li class="reward">                            
-                            <span><%= rewards[Math.floor(Math.random() * rewards.length)]%></span>
-                        </li>                
-                        
-                   
-                </ul>		
-		
+          
+		<!--Footer -->
 		<footer>
-			<section>
-				<ul class="social-two"> 
+			
+				<ul class="social"> 
                     <li><a href="https://github.com/TartCodes" target="_blank"><i class="fa-brands fa-github-square"></i></a></li>
                     <li><a href="https://www.linkedin.com/in/matt-tartaglione/" target="_blank"><i class="fa-brands fa-linkedin"></i></a></li>
                     <li><a href="https://twitter.com/TartCodes" target="_blank"><i class="fa-brands fa-twitter-square"></i></a></li>
                     <li><a href="https://www.instagram.com" target="_blank"><i class="fa-brands fa-instagram-square"></i></a></li>               
                 </ul>
-			</section>
+			
 		</footer>
 		
 

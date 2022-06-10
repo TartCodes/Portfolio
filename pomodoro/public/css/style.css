@@ -23,6 +23,10 @@
   --font-clr: #ffffff;
 }
 
+a {
+  text-decoration: none;
+}
+
 /* ======================
 Header Intro
 ========================= */
@@ -59,19 +63,21 @@ Timer Section
 body {
   background: var(--bg);
   min-height: 100vh;
-  overflow: hidden;
+  /* overflow: hidden; */
 }
 
 .container {
-  height: 600px;
-  width: 600px;
+  /* height: 600px; */ 
+  /* width: 600px; */
   background-color: transparent;
-  position: absolute;
-  transform: translate(-50%, -50%);
-  top: 60%;
-  left: 50%;
-  display: grid;
-  place-items: center;
+  /* position: absolute; */
+  /* transform: translate(-50%, -50%); */
+  /* top: 60%; */
+  /* left: 50%; */
+  display: flex;
+  /* place-items: center; */
+  justify-content: center;
+  margin-top: 2%;
 }
 
 .outerRing {
@@ -148,24 +154,56 @@ body {
 }
 
 /* ======================
-Input Section
+Rewards
 ========================= */
-input {
-  font-family: var(--font-stsp);
-
+.reward-section{
+  display: flex;  
+  margin: 2% 0;
+  flex-direction: column;
+  text-align: center;
 }
 
-button {
+.reward-section
+span {
+  color: white;
   font-family: var(--font-stsp);
-  background-color: var(--font-clr);
-  width: 5rem;
-  height: 1.5rem;
+}
+
+.rewards {
+  display: flex;
+  justify-content: center;  
+  height: 2rem;
+}
+
+.rewards
+li {
+  list-style-type: none;
+  color: white;
+  font-size: 2rem;
+  font-family: var(--font-stsp);
 }
 
 /* ======================
 Footer Section
 ========================= */
 
-/* footer {
+footer {
+  display: flex;
+  justify-content: center;
+}
 
-} */
+.social {
+  display: flex;
+  list-style-type: none;  
+  width: 15%;
+  justify-content: space-evenly;
+  border: solid thin white;
+}
+
+.social
+li
+a {
+  color: white;
+}
+
+

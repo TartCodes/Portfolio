@@ -15,40 +15,33 @@ app.use(bodyParser.json())
 //=======
 // Routes
 //======= 
-// app.get('/', (req,res) => {
-//     res.sendFile(__dirname + '/index.html')
-// })
-
-
-
-
 //ejs
 app.get('/', (req, res) => {
-    res.render('index.ejs', {
-        rewards: [
-            'Go on a hike(long break)', 'Take a walk', 'Stretch/Yoga', 'Have a snack', 'Play a game', 'Talk to a friend/loved one', 'Meditate', 'Coffee/Tea'
-        ]       
-    })
-    
+    res.render('index.ejs')     
+})  
+
+ 
+app.get('/message', (req, res) => {
+    const radomMessage = randomizer(['Go on a hike(long break)', 'Take a walk', 'Stretch/Yoga', 'Have a snack', 'Play a game', 'Talk to a friend/loved one', 'Meditate', 'Coffee/Tea'])
+    res.json(radomMessage)
 })
-// 'reward': 'Go on a hike(long break)',
-// 'rewardOne': 'Take a walk',
-// 'rewardTwo': 'Stretch/Yoga',
-// 'rewardThree': 'Have a snack',
-// 'rewardFour': 'Play a game',
-// 'rewardFive': 'Talk to a friend/loved one',
-// 'rewardSix': 'Meditate, Coffee/Tea'
-//
 
-
-
-
-
-
+function randomizer(arr){
+    const random = Math.random()
+    const response = arr[Math.floor(random * arr.length)]    
+    return response
+}
 
 app.listen(process.env.PORT || PORT , () => {
     //process.env.PORT will default to heroku port first
     console.log(`The server is now running on port ${PORT}`);
 }) 
+
+ 
+    
+
+
+
+
 
 
