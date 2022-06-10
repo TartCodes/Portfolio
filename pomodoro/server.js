@@ -1,17 +1,7 @@
 const express = require('express')
 const app = express()
 const bodyParser = require("body-parser");
-const MongoClient = require("mongodb").MongoClient;
 const PORT = 8001
-
-
-MongoClient.connect(
-    "mongodb+srv://TartCodes:<password>@cluster0.roa15t0.mongodb.net/?retryWrites=true&w=majority", { useUnifiedTopology: true }
-  )
-    .then((client) => {
-      console.log("Connected to Database");
-      const db = client.db("pomoRewards");
-      const rewardsCollection = db.collection('rewards')
 
     
 //=======
@@ -30,22 +20,30 @@ app.use(bodyParser.json())
 // })
 
 
+
+
 //ejs
 app.get('/', (req, res) => {
-    db.collection('rewards').find().toArray()  
-      .then(rewards => {
-        res.render('index.ejs', { rewards: rewards })
-      })
-      .catch(/* ... */)
-  })
+    res.render('index.ejs', {
+        rewards: [
+            'Go on a hike(long break)', 'Take a walk', 'Stretch/Yoga', 'Have a snack', 'Play a game', 'Talk to a friend/loved one', 'Meditate', 'Coffee/Tea'
+        ]       
+    })
+    
+})
+// 'reward': 'Go on a hike(long break)',
+// 'rewardOne': 'Take a walk',
+// 'rewardTwo': 'Stretch/Yoga',
+// 'rewardThree': 'Have a snack',
+// 'rewardFour': 'Play a game',
+// 'rewardFive': 'Talk to a friend/loved one',
+// 'rewardSix': 'Meditate, Coffee/Tea'
+//
 
-//   app.post('/rewards', (req, res) => {
-//     rewardsCollection.insertOne(req.body)
-//       .then(result => {
-//         res.redirect('/')
-//       })
-//       .catch(error => console.error(error))
-//   })
+
+
+
+
 
 
 app.listen(process.env.PORT || PORT , () => {
@@ -54,4 +52,3 @@ app.listen(process.env.PORT || PORT , () => {
 }) 
 
 
-})

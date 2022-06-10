@@ -10,8 +10,8 @@
 		<title>Pomodoro</title>
 
 		
-		<link rel="stylesheet" href="public/css/normalize.css">
-		<link rel="stylesheet" href="public/css/style.css">
+		<link rel="stylesheet" href="css/normalize.css">
+		<link rel="stylesheet" href="css/style.css">
 		<link rel="dns-prefetch" href="https://fonts.googleapis.com">
 		<!-- <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@700&display=swap"> -->
 		<script src="https://kit.fontawesome.com/d8f5f7035a.js" crossorigin="anonymous"></script>
@@ -45,16 +45,14 @@
 				</div>
 
                 <!-- Rewards EJS -->
-
+            <!-- Write Math.random here -->
                 <ul class="all-rewards">
-                    <%for(let i = 0; i < rewards.length; i++) {%>
-                        <li class="reward">
-                             <!-- Output name from the iterated quote object -->
-                            <span><%= pomoRewards[i].name %></span>
-                            <!-- Output quote from the iterated quote object -->
-                            <span><%= pomoRewards[i].rewards %></span>
-                        </li>
-                   <% }%>
+                   
+                        <li class="reward">                            
+                            <span><%= rewards[Math.floor(Math.random() * rewards.length)]%></span>
+                        </li>                
+                        
+                   
                 </ul>		
 		
 		<footer>
@@ -69,7 +67,7 @@
 		</footer>
 		
 
-		<script type="text/javascript" src="public/js/main.js"></script>
+		<script type="text/javascript" src="js/main.js"></script>
 	</body>
 </html>
 

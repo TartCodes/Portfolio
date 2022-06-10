@@ -128,18 +128,6 @@ secElem.onblur = function () {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
 // // let	checkStorage = localStorage.getItem('input') || '|' //keeps local storage
 // let	checkStorage = JSON.parse(localStorage.getItem('input')) || []
 
