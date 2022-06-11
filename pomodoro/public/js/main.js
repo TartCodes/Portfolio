@@ -137,11 +137,3 @@ async function getMessage() {
 	document.getElementById('place-reward').innerText = res
 	console.log(res, 'timer has endededed');			
 }
-	
-
-
-
-
-
-
-	
