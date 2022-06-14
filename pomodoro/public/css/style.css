@@ -234,4 +234,87 @@ a {
   color: white;
 }
 
+/* MEDIA Q's */
 
+
+
+
+/* Smaller Screens */
+  @media screen 
+  and (max-width:1400px)
+  and (min-width:480px) {
+    .container {
+      padding: 20% 0%;
+    }
+
+    header {
+      margin-top: 5%;
+    }
+    
+    header > section {
+      row-gap: 3rem;
+    }
+
+    h1 {
+      font-size: 4em;
+    }
+
+    p {
+      font-size: 2em;
+    }
+
+    .intro span {
+      font-size: 1.5em;      
+    }
+
+    .reward-section
+    span {
+      font-size: 1.5em;
+      width: 10em;
+    }
+
+    .social li a {      
+      font-size: 2em;      
+  }
+
+  .social {
+    width: 15em;
+    margin-top: 10%;
+  }
+
+  .rewards li {   
+    margin: 4.5% 0;
+  }
+
+  .outerRing {
+    width: 600px;
+    height: 600px;
+  }
+
+  .timer {
+    width: 585px;
+    height: 585px;
+  }
+
+  #stsp {
+    font-size: 2rem;
+  }
+
+  #reset {
+    font-size: 1.5rem;
+    margin: 2rem 0;
+  }
+
+  #setting {
+    font-size: 2rem;
+    width: 50px;
+    height: 50px;
+  }
+
+    }
+    
+    @media screen and (min-width:2000px) {
+  .container {
+    padding: 5% 0%;
+  }
+  }

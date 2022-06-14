@@ -89,7 +89,7 @@ reset.onclick = () => {
 	document.querySelector('#seconds').innerHTML = seconds 
 }
 
-
+//fix - when cog is hit, it switches start and stop
 startStop.onclick =  () => {
 	if (startStop.innerHTML === "START") {
 		startStop.innerHTML = "STOP";
