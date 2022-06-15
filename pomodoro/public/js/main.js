@@ -1,4 +1,22 @@
 /* eslint-disable no-mixed-spaces-and-tabs */
+class Clock  {
+	constructor (min, sec){
+		this.min = min
+		this.sec = sec
+		this.running = false
+	}
+	
+	start(){}
+
+	stop(){}	
+
+	settings(){}
+}
+// onreset() {
+// 	clock = new clock (min,sec)
+// }
+let clock = new Clock (25, 0)
+
 const progressBar = document.querySelector(".outerRing"),
 	  minElem = document.querySelector("#minutes"),
 	  secElem = document.querySelector("#seconds"),
@@ -16,7 +34,9 @@ let minutes = document.querySelector("#minutes").innerHTML,
 	degTravel = 360 / progressEnd,
 	toggleSettings = false,
 	secRem = 0,
-	minRem = 0
+	minRem = 0,
+	running = false
+	// myReg = /^[0-9]*$/
 
 function progressTrack() {
 	progressStart++;
@@ -48,11 +68,12 @@ function progressTrack() {
 
 
 function startStopProgress() {
-	if (!progress) {
+	if (!running) {
 		progress = setInterval(progressTrack, speed);
+		running = true	
 	} else {
 		clearInterval(progress);
-		progress = null;
+		running = false;
 		progressStart = 0;
 		progressBar.style.background = `conic-gradient(
 				#17171a 360deg,
@@ -84,13 +105,19 @@ function resetValues() {
 }
 
 
-reset.onclick = () => {
-	document.querySelector('#minutes').innerHTML = minutes
-	document.querySelector('#seconds').innerHTML = seconds 
+reset.onclick = () => {	
+		document.querySelector('#minutes').innerHTML = minutes
+		document.querySelector('#seconds').innerHTML = seconds
+		startStopProgress()	
+		startStop.innerHTML = "START";
 }
 
-//fix - when cog is hit, it switches start and stop
+
 startStop.onclick =  () => {
+// 	// if (clock.running){
+// 	//	clock.stop()
+// // } else { clock.start() }
+// 	}
 	if (startStop.innerHTML === "START") {
 		startStop.innerHTML = "STOP";
 		startStopProgress();
@@ -103,6 +130,7 @@ startStop.onclick =  () => {
 	}
 }
 
+//fix - when cog is hit, it switches start and stop
 setting.onclick = () => {
 	if (!toggleSettings) {
 		toggleSettings = true;
@@ -137,3 +165,4 @@ async function getMessage() {
 	document.getElementById('place-reward').innerText = res
 	console.log(res, 'timer has endededed');			
 }
+
