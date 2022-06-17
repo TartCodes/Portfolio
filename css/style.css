@@ -200,7 +200,8 @@ img {
 .header-nav {
     display: flex;
     flex-direction: row;
-    width: 50%;
+    width: 55%;
+    justify-content: center;
 }
 
 /* #projects-link {
@@ -412,10 +413,11 @@ span {
 main {
     display: grid;
     grid-template-columns: repeat(4, .5fr);
-    grid-template-rows: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
     width: 97%;
     margin-inline: auto;
     grid-column-gap: 5%;
+    grid-row-gap: 5%;
 }
 
 .proficiencies {
@@ -435,6 +437,21 @@ main {
 .grid-skill-3 {
     grid-column: 4;
     grid-row: 2;
+}
+
+.grid-skill-4 {
+    grid-column: 2;
+    grid-row: 3;
+}
+
+.grid-skill-5 {
+    grid-column: 3;
+    grid-row: 3;
+}
+
+.grid-skill-6 {
+    grid-column: 4;
+    grid-row: 3;
 }
 
 

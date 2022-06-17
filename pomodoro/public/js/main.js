@@ -1,21 +1,4 @@
 /* eslint-disable no-mixed-spaces-and-tabs */
-class Clock  {
-	constructor (min, sec){
-		this.min = min
-		this.sec = sec
-		this.running = false
-	}
-	
-	start(){}
-
-	stop(){}	
-
-	settings(){}
-}
-// onreset() {
-// 	clock = new clock (min,sec)
-// }
-let clock = new Clock (25, 0)
 
 const progressBar = document.querySelector(".outerRing"),
 	  minElem = document.querySelector("#minutes"),
