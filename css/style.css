@@ -200,7 +200,7 @@ img {
 .header-nav {
     display: flex;
     flex-direction: row;
-    width: 55%;
+    width: 50%;
     justify-content: center;
 }
 
