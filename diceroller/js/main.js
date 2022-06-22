@@ -1,18 +1,18 @@
-function DiceRoller() {
-    let rollDice, diceSides, diceAmount
 
-    //should generate a number base on the die selected,d4,d6,d8,d10,d12,d20,d100 
-    this.rollDice = function(){
-         let randomNumber = Math.floor(Math.random() * diceAmount) + 1
-         return randomNumber
-}
-    //the ability to pick which die needed from list above ex. a d20 or 2d4, 2d8 etc 
-    this.diceSides = function(){
-        
-}
-
-    this.diceAmount = function(){
-        if (diceAmount)
+class Die {
+    constructor(sides){
+        this.sides = sides
     }
-
+    roll(){
+        //rolls the die
+        return Math.floor(Math.random() * this.sides) + 1        
+    }
 }
+
+let d100 = new Die(100)
+let d20 = new Die(20)
+let d10 = new Die(10)
+let d6 = new Die(6)
+let d4 = new Die(4)
+let d2 = new Die(2)
+
