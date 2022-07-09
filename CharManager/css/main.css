@@ -333,6 +333,22 @@ span {
     	width: 50%;
     	display: inline-block;
 	}
+
+	.shieldac-div{
+		position: relative;
+	}
+
+	.shieldac-div > span:first-child {
+		position: absolute;
+		right: 34px;
+		top: 2px;
+	}
+
+	.shieldac-div > span:last-child {
+		position: absolute;
+		left: 34px;
+		top: 2px;
+	}
 .armor-type-container {
 	display: flex;
     flex-direction: row;    
