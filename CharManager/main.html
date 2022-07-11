@@ -12,10 +12,40 @@
     <title>Document</title>
 </head>
 <body>
-<!-- header -> char name, ancestry, background, class -->
-
-<!-- character name -->
 <section class="main" id="main-container">
+    <!------------>
+    <div class="left-side-bar">            
+        <div>Ancestry:</div>
+            <div>
+                <input class="larger-input" type="text" placeholder="...Dwarf, Elf, Gnome, etc">
+            </div>
+        <div>Heritage:</div>
+            <div>
+                <input class="larger-input" type="text" placeholder="...enter heritage">
+            </div>
+        <div>Background:</div>
+            <div>
+                <input class="larger-input" type="text" placeholder="...Acolyte, Cursed, Deputy, etc">
+            </div>
+        <div>Ancestry Ability:</div>
+            <div>
+                <input class="larger-input" type="text" placeholder="...enter ability">
+            </div>                    
+        <div>Class:</div>
+            <div>
+                <input class="larger-input" type="text" placeholder="...enter class">
+            </div>            
+            <div>Background Ability:</div>
+                <div>    
+                    <textarea name="Background Ability" id="" cols="20" rows="5"></textarea>                
+                </div>
+        <div>Deity:</div>
+            <div>             
+                <input class="larger-input" type="text" placeholder="...Iomedae, Gorum, Desna, etc"> 
+            </div>
+    </div>       
+
+    <!---Chacter Name----->
         <div class="char-container">            
             <div>Character Name:</div>
                 <div>
@@ -36,65 +66,35 @@
             <div>Hero Points:</div>
                 <div>
                     <input class="hero-points" type="number" placeholder="">      
-                </div>                
+                </div>
+                
+            <div>Size:</div>
+               <select name="size-category" id="">
+                    <option value="tiny">Tiny</option>
+                    <option value="small">Small</option>
+                    <option value="medium">Medium</option>
+                    <option value="large">Large</option>
+                    <option value="huge">Huge</option>
+                    <option value="gargantuan">Gargantuan</option>
+                </select>                                   
+                    
+            <div>Alignment:</div>
+                <select name="alignment" id="">
+                    <option value="lg">LG</option>
+                    <option value="ln">LN</option>
+                    <option value="le">LE</option>
+                    <option value="ng">NG</option>
+                    <option value="tn">TN</option>
+                    <option value="ne">NE</option>
+                    <option value="cg">CG</option>
+                    <option value="cn">CN</option>
+                    <option value="ce">CE</option>
+                </select> 
+        
+            <div>Traits:</div>
+                <input class="traits" type="text" placeholder="...Char Traits">           
         </div>  
-    <!-- ancestry and background group -->
-        <div class="general-info-right">            
-            <div>Ancestry:</div>
-                <div>
-                    <input class="larger-input" type="text" placeholder="...Dwarf, Elf, Gnome, etc">
-                </div>
-            <div>Heritage:</div>
-                <div>
-                    <input class="larger-input" type="text" placeholder="...enter heritage">
-                </div>
-            <div>Background:</div>
-                <div>
-                    <input class="larger-input" type="text" placeholder="...Acolyte, Cursed, Deputy, etc">
-                </div>
-            <div>Ancestry Ability:</div>
-                <div>
-                    <input class="larger-input" type="text" placeholder="...enter ability">
-                </div>                    
-            <div>Class:</div>
-                <div>
-                    <input class="larger-input" type="text" placeholder="...enter class">
-                </div>
-
-                <div>Size:</div>
-                   <select name="size-category" id="">
-                        <option value="tiny">Tiny</option>
-                        <option value="small">Small</option>
-                        <option value="medium">Medium</option>
-                        <option value="large">Large</option>
-                        <option value="huge">Huge</option>
-                        <option value="gargantuan">Gargantuan</option>
-                    </select>                                   
-                        
-                <div>Alignment:</div>
-                    <select name="alignment" id="">
-                        <option value="lg">LG</option>
-                        <option value="ln">LN</option>
-                        <option value="le">LE</option>
-                        <option value="ng">NG</option>
-                        <option value="tn">TN</option>
-                        <option value="ne">NE</option>
-                        <option value="cg">CG</option>
-                        <option value="cn">CN</option>
-                        <option value="ce">CE</option>
-                    </select> 
-            
-                <div>Traits:</div>
-                    <input class="traits" type="text" placeholder="...Char Traits">
-                <div>Deity:</div>
-                    <div>             
-                        <input class="larger-input" type="text" placeholder="...Iomedae, Gorum, Desna, etc"> 
-                    </div>
-                <div>Background Ability:</div>
-                    <div>    
-                        <textarea name="Background Ability" id="" cols="20" rows="5"></textarea>                
-                    </div>
-        </div>       
+   
     <!-- ability modifiers, hit points, and speed group -->            
         <div class="ability-container">              
            <div>Ability Scores and Modifier</div>     
