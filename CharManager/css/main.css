@@ -139,7 +139,7 @@ input[type=checkbox] {
 
   /* font styles */
   html,body,input,select,textarea{
-	font-size: 14px;
+	font-size: 16px;
 	font-family: 'David Libre', sans-serif;
   }
 
@@ -168,6 +168,7 @@ select {
 /* textarea resize */
   textarea {
     resize: none;
+	border-radius: 5px;
   }
 
 /* ------------------- */
@@ -179,22 +180,23 @@ select {
 	flex: 1;
 }
 
-/* .main-container-right {
+.main-container-right {
 	flex: 1;
-} */
+	flex-direction: column;
+}
 
 /* Left Side Bar */
 
 .left-side-bar {
 	display: inline-block;
-	width: 26em;
-	
+	width: 20em;
+    text-align: center
 }
 
 /* General Character Information / Top section*/
 
 .char-container{	
-	border: solid 3px black;
+	
 	text-align: center;
     display: flex;
     align-items: center;
@@ -203,6 +205,7 @@ select {
     background-color: rgb(79, 7, 7);
     color: white;
 	border-top: 0;
+	column-gap: 1em;
 }
 .text-border {
 	border: solid 2px black; 
@@ -217,9 +220,61 @@ select {
     justify-content: center;
 }
 
+	/* Hp Container */
+
+.h2-container{
+	display: flex;
+}	
+	.h2-div {
+		/* width: 35em ; */
+		border-bottom: solid 3px black;
+		margin-bottom: 1em;
+	}
+
+h2 {
+	text-align: center;
+	font-size: 1.5em;		
+}
 
 
-/* KEEP MESSING WITH THE HTML LAYOUT ALMOST THERE */
+.hp-container {
+	display: flex;
+    flex-direction: row;
+    column-gap: 1em;
+    width: 80%;
+    margin-bottom: 1em;
+    align-items: center;
+    justify-content: start;	
+}
+
+.resis-cond-container {		
+    display: flex;
+    column-gap: 1em;
+    justify-content: left;
+	margin-bottom: 1em;
+}
+
+
+/*  Ability Modifiers*/
+.ability-container {
+	display: flex;
+	column-gap: 1em;
+}
+
+.mod-div {
+	position: relative;
+    margin-top: 4px;
+	display: flex;
+   	justify-content: center;
+}
+
+.mod-div 
+span {
+	position: absolute;
+    left: -10px;
+    color: white;
+    top: 3px;
+}
 
 /* MODAL WEAPONS */
 
