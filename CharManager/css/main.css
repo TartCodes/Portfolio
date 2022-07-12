@@ -275,15 +275,53 @@ input {
 }
 
 /* class dc */
-.classdc-wrapper{
+.classdc-wrapper {
 	display: flex;
 	width: 100%;
 	justify-content: center;
+	line-height: initial;
+	margin-top: 10px;
 }
 
 .classdc-wrapper
-li{
+li {
 	display: flex;	
+	justify-content: center;	
+}
+
+.classdc-wrapper
+input {
+	line-height: 30px;
+	text-align: center;
+}
+
+/* bottom */
+
+.classdc-bottom{
+	margin-top: 5px;
+}
+
+.classdc-bottom
+input {
+	line-height: 25px;
+}
+
+.classdc-bottom
+select {
+	height: 30px;
+}
+
+.classdc-bottom
+ul{
+	display: flex;
+	flex-direction: row;
+	align-items: flex-end;	
+	text-align: center;
+}
+
+.classdc-bottom
+li {
+	padding-left: 5px;
 }
 
 
