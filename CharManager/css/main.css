@@ -239,35 +239,34 @@ li {
 }
 
 /* Ability scores, AC, HP, Percep */
+/* this needs WORK */
 
 .ability-wrapper{
 	border: solid thin red;	
-	width: 20%;
+	width: 30%;
 	display: flex;
 	justify-content: center;
+	flex-direction: column;
 	align-items: center;
 	line-height: 30px;
   }
-
-  /* .group-2{
+  
+  .group-2
+  ul{	
 	display: flex;
 	flex-direction: column;
-  } */
+  }
 
-.ability-wrapper
-ul {
+  .group-2
+  li {
 	display: flex;
-	flex-direction: column;
-	align-items: center;	
-}
+	justify-content: right;
+  }
 
-.ability-wrapper
-li {
-	display: flex;
-	justify-content: space-around;
-	width: 100%;
-}
-/* FIGURE OUT STUPID BOXES */
+  .group-2 input ~ span{
+	padding-left: 5px;
+  }
+
 
 .ability-wrapper
 input {
@@ -275,11 +274,24 @@ input {
 	text-align: center;
 }
 
+/* class dc */
+.classdc-wrapper{
+	display: flex;
+	width: 100%;
+	justify-content: center;
+}
+
+.classdc-wrapper
+li{
+	display: flex;	
+}
+
+
 /* Armor */
 
 .armor-wrapper {
 	border: solid thin red;
-	width:50%;
+	width:40%;
 	line-height: 30px;
 	display: flex;
 	flex-direction: column;
@@ -331,7 +343,7 @@ input {
 	}
 
 		.shield-wrapper
-		input,li {
+		input {
 			display: flex;			
 			justify-content: center;
 			padding-left: 10px;
@@ -350,7 +362,7 @@ input {
 		display: flex;
 		justify-content: right;
 		margin: 10px 0;
-		width: 75%;
+		width: 80%;
 	}
 
 	.test {
