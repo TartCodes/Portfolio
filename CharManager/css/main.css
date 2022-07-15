@@ -122,11 +122,6 @@ table {
 	flex-direction: row;	
 }  
 
-  .perception-wrapper{
-	border: solid thin red;
-	width: 10%;
-  }
-
   /* cont 3 */
 .container-3 {
 	display: flex;
@@ -388,4 +383,36 @@ input {
 	width: 50px;
   }
 
-  /* here somewhere, need to fix a ton */
+  /* Perception box */
+  .perception-wrapper{
+    border: solid thin red;
+    width: 10%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+	line-height: 30px;
+	font-size: 16px;
+  }
+
+  	.perception-wrapper
+	input {
+		width: 50px;
+		
+	}
+
+	.perception-wrapper
+	select {
+		margin-top: 1em;
+	}
+
+	.senses{
+		display: flex;
+    	flex-direction: column;
+    	align-self: center;
+	}
+
+	.senses
+	textarea {
+		width: 11em
+	}
