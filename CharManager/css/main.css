@@ -114,14 +114,14 @@ table {
 		border: solid thin red;
 		display: flex;
 		flex-direction: row;
-		width: 50%;
+		width: 30%;
   	}
 
   	.ancestry-wrapper {
 		border: solid thin darkgreen;
 		display: flex;
 		flex-direction: column;
-		width: 50%;
+		width: 70%;
   	}
 
 	/* cont 2 */
@@ -135,27 +135,30 @@ table {
 	border: solid thin red;
 	display: flex;
 	flex-direction: row;
+	width: 25%;
   }
 
   .armor-wrapper {
 	border: solid thin red;
+	width: 25%;
   }
 
   .hp-wrapper {
 	border: solid thin red;
+	width: 25%;
   }
 
   .perception-wrapper{
 	border: solid thin red;
   }
 
-  .melee-wrapper {
-	border: solid thin red;
-  }
+  /* cont 3 */
+.container-3 {
+	display: flex;
+	flex-direction: row;
+}
 
-  .ranged-wrapper {
-	border: solid thin red;
-  }
+  
 
   .weaponprof-wrapper{
 	border: solid thin red;

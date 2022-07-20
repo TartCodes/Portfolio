@@ -309,19 +309,68 @@
                 </ul>
             </div>
         </div>
-</section>
+
 <!-- Perception Info -->
 
-<div class="perception-wrapper">
-    <div class="perception">
-        <ul>
-            <span>Perception</span>
-            <li>
-                <li>Wisdom:</li>
-                    <input type="text">
-                <li>Proficiencies:</li>
-                    <input type="text">
-                    <li>
+    <div class="perception-wrapper">
+        <div class="perception">
+            <ul>
+                <span>Perception</span>
+                <li>
+                    <li>Wisdom:</li>
+                        <input type="text">
+                    <li>Proficiencies:</li>
+                        <input type="text">
+                        <li>
+                            <select name="training-1" id="">
+                                <option value="ut">Untrained</option>
+                                <option value="trained">Trained</option>
+                                <option value="expert">Expert</option>
+                                <option value="master">Master</option>
+                                <option value="legendary">Legendary</option>
+                            </select>
+                        </li>
+                </li>
+            </ul>
+        </div>
+
+            <!-- senses text box -->
+        <div class="senses">
+            <span>Senses:</span>
+            <textarea name="senses" id="" cols="25" rows="3"></textarea>
+        </div>
+    </div>
+</section>
+
+<!-- Melee Weapon Info MIGHT BE EASIER TO COMBINE BOTH WRAPPERS RANGED AND MELEE-->
+<section class="container-3">
+    
+
+    </div>
+
+    <div class="weapon-wrapper">
+        <div class="weapon-strikes">
+            <ul>
+                <li>
+                    <span>Move Speed:</span>
+                        <input type="number">
+                            <span>Feet</span>
+                    <span>Move Types & Notes:</span>
+                        <textarea name="movement" id="" cols="30" rows="2"></textarea>
+                </li>
+                <li>
+                    <span>Melee Strikes</span>
+                </li>
+                <li>
+                    <span>Weapon:</span>
+                        <input type="text" placeholder="Weapon Name">
+                    <span>To Hit:</span>
+                        <input type="number" placeholder="Total">
+                    <span>=</span>
+                    <span>Str:</span>
+                        <input type="number">
+                    <span>Prof:</span>
+                        <input type="number">
                         <select name="training-1" id="">
                             <option value="ut">Untrained</option>
                             <option value="trained">Trained</option>
@@ -329,302 +378,512 @@
                             <option value="master">Master</option>
                             <option value="legendary">Legendary</option>
                         </select>
-                    </li>
+                    <span>Item:</span>
+                        <input type="number">
+                        <li>                
+                </li>
+                <li>
+                    <span>Dice:</span>
+                        <input type="text">
+                    <span>Str:</span>
+                        <input type="number">
+                    <span>Dmg Type:</span>
+                        <select name="damage-type-1" id="">
+                            <option value="bludgeon">B</option>
+                            <option value="piercing">P</option>
+                            <option value="slashing">S</option>
+                        </select>
+                    <span>W Spec:</span>
+                        <input type="number">
+                    <span>Other:</span>
+                        <textarea name="other" id="" cols="15" rows="1"></textarea>
+                    <span>Traits:</span>
+                        <textarea name="traits" id="" cols="15" rows="1"></textarea>
+                </li>
+
+                <li>
+                    <span>Weapon:</span>
+                        <input type="text" placeholder="Weapon Name">
+                    <span>To Hit:</span>
+                        <input type="number" placeholder="Total">
+                    <span>=</span>
+                    <span>Str:</span>
+                        <input type="number">
+                    <span>Prof:</span>
+                        <input type="number">
+                        <select name="training-1" id="">
+                            <option value="ut">Untrained</option>
+                            <option value="trained">Trained</option>
+                            <option value="expert">Expert</option>
+                            <option value="master">Master</option>
+                            <option value="legendary">Legendary</option>
+                        </select>
+                    <span>Item:</span>
+                        <input type="number">
+                        <li>                
+                </li>
+
+                <li>
+                    <span>Dice:</span>
+                        <input type="text">
+                    <span>Str:</span>
+                        <input type="number">
+                    <span>Dmg Type:</span>
+                        <select name="damage-type-1" id="">
+                            <option value="bludgeon">B</option>
+                            <option value="piercing">P</option>
+                            <option value="slashing">S</option>
+                        </select>
+                    <span>W Spec:</span>
+                        <input type="number">
+                    <span>Other:</span>
+                        <textarea name="other" id="" cols="15" rows="1"></textarea>
+                    <span>Traits:</span>
+                        <textarea name="traits" id="" cols="15" rows="1"></textarea>
+                </li>
+
+                <li>
+                    <span>Weapon:</span>
+                        <input type="text" placeholder="Weapon Name">
+                    <span>To Hit:</span>
+                        <input type="number" placeholder="Total">
+                    <span>=</span>
+                    <span>Str:</span>
+                        <input type="number">
+                    <span>Prof:</span>
+                        <input type="number">
+                        <select name="training-1" id="">
+                            <option value="ut">Untrained</option>
+                            <option value="trained">Trained</option>
+                            <option value="expert">Expert</option>
+                            <option value="master">Master</option>
+                            <option value="legendary">Legendary</option>
+                        </select>
+                    <span>Item:</span>
+                        <input type="number">
+                </li>
+
+                <li>
+                    <span>Dice:</span>
+                        <input type="text">
+                    <span>Str:</span>
+                        <input type="number">
+                    <span>Dmg Type:</span>
+                        <select name="damage-type-1" id="">
+                            <option value="bludgeon">B</option>
+                            <option value="piercing">P</option>
+                            <option value="slashing">S</option>
+                        </select>
+                    <span>W Spec:</span>
+                        <input type="number">
+                    <span>Other:</span>
+                        <textarea name="other" id="" cols="15" rows="1"></textarea>
+                    <span>Traits:</span>
+                        <textarea name="traits" id="" cols="15" rows="1"></textarea>
+                </li>
+            
+            <!-- Ranged Weapon Info -->
+
+            <li>
+                <span>Ranged Strikes</span>
             </li>
-        </ul>
-    </div>
-        <!-- senses text box -->
-    <div class="senses">
-        <span>Senses:</span>
-        <textarea name="senses" id="" cols="25" rows="3"></textarea>
-    </div>
-</div>
+            <li>
+                <span>Weapon:</span>
+                    <input type="text" placeholder="Weapon Name">
+                <span>To Hit:</span>
+                    <input type="number" placeholder="Total">
+                <span>=</span>
+                <span>Str:</span>
+                    <input type="number">
+                <span>Prof:</span>
+                    <input type="number">
+                    <select name="training-1" id="">
+                        <option value="ut">Untrained</option>
+                        <option value="trained">Trained</option>
+                        <option value="expert">Expert</option>
+                        <option value="master">Master</option>
+                        <option value="legendary">Legendary</option>
+                    </select>
+                <span>Item:</span>
+                    <input type="number">
+                    <li>                
+            </li>
+            <li>
+                <span>Dice:</span>
+                    <input type="text">
+                <span>Special:</span>
+                    <input type="number">
+                <span>Dmg Type:</span>
+                    <select name="damage-type-1" id="">
+                        <option value="bludgeon">B</option>
+                        <option value="piercing">P</option>
+                        <option value="slashing">S</option>
+                    </select>
+                <span>W Spec:</span>
+                    <input type="number">
+                <span>Other:</span>
+                    <textarea name="other" id="" cols="15" rows="1"></textarea>
+                <span>Traits:</span>
+                    <textarea name="traits" id="" cols="15" rows="1"></textarea>
+            </li>
 
-<!-- Melee Weapon Info MIGHT BE EASIER TO COMBINE BOTH WRAPPERS RANGED AND MELEE-->
-<div class="melee-wrapper">
-    <div class="melee-strikes">
+            <li>
+                <span>Weapon:</span>
+                    <input type="text" placSpecial:eholder="Weapon Name">
+                <span>To Hit:</span>
+                    <input type="number" placeholder="Total">
+                <span>=</span>
+                <span>Str:</span>
+                    <input type="number">
+                <span>Prof:</span>
+                    <input type="number">
+                    <select name="training-1" id="">
+                        <option value="ut">Untrained</option>
+                        <option value="trained">Trained</option>
+                        <option value="expert">Expert</option>
+                        <option value="master">Master</option>
+                        <option value="legendary">Legendary</option>
+                    </select>
+                <span>Item:</span>
+                    <input type="number">
+                    <li>                
+            </li>
+
+            <li>
+                <span>Dice:</span>
+                    <input type="text">
+                <span>Special:</span>
+                    <input type="number">
+                <span>Dmg Type:</span>
+                    <select name="damage-type-1" id="">
+                        <option value="bludgeon">B</option>
+                        <option value="piercing">P</option>
+                        <option value="slashing">S</option>
+                    </select>
+                <span>W Spec:</span>
+                    <input type="number">
+                <span>Other:</span>
+                    <textarea name="other" id="" cols="15" rows="1"></textarea>
+                <span>Traits:</span>
+                    <textarea name="traits" id="" cols="15" rows="1"></textarea>
+            </li>
+
+            <li>
+                <span>Weapon:</span>
+                    <input type="text" placeholder="Weapon Name">
+                <span>To Hit:</span>
+                    <input type="number" placeholder="Total">
+                <span>=</span>
+                <span>Str:</span>
+                    <input type="number">
+                <span>Prof:</span>
+                    <input type="number">
+                    <select name="training-1" id="">
+                        <option value="ut">Untrained</option>
+                        <option value="trained">Trained</option>
+                        <option value="expert">Expert</option>
+                        <option value="master">Master</option>
+                        <option value="legendary">Legendary</option>
+                    </select>
+                <span>Item:</span>
+                    <input type="number">
+            </li>
+
+            <li>
+                <span>Dice:</span>
+                    <input type="text">
+                <span>Special:</span>
+                    <input type="number">
+                <span>Dmg Type:</span>
+                    <select name="damage-type-1" id="">
+                        <option value="bludgeon">B</option>
+                        <option value="piercing">P</option>
+                        <option value="slashing">S</option>
+                    </select>
+                <span>W Spec:</span>
+                    <input type="number">
+                <span>Other:</span>
+                    <textarea name="other" id="" cols="15" rows="1"></textarea>
+                <span>Traits:</span>
+                    <textarea name="traits" id="" cols="15" rows="1"></textarea>
+            </li>
+
+            <!-- YOURE HERE MOVE WEAPON PROFS -->
         
+        </ul>  
+        </div>  
     </div>
 
-</div>
+   
+                                    <!-- Weapon Proficiencies
+                                        <div class="weaponprof-wrapper">
+                                            <div class="weaponprof">
 
-<!-- Ranged Weapon Info -->
+                                            </div>
+                                        </div> -->
 
-<div class="ranged-wrapper">
-    <div class="ranged-strikes">
-        
+   
+
+    <!-- Skills -->
+    <div class="skills-wrapper">
+        <div class="skills">
+            <ul>
+                <li>Acrobatics:</li>
+                    <span>Total:</span>
+                        <input type="text">
+                            <span>Dex</span>
+                                <input type="text">
+                                    <span>Prof</span>
+                                        <input type="text">
+                                            <select name="training-2" id="">
+                                                <option value="ut">Untrained</option>
+                                                <option value="trained">Trained</option>
+                                                <option value="expert">Expert</option>
+                                                <option value="master">Master</option>
+                                                <option value="legendary">Legendary</option>
+                                            </select>
+                <li>Arcana:</li>
+                    <span>Total:</span>
+                        <input type="text">
+                            <span>Int</span>
+                                <input type="text">
+                                    <span>Prof</span>
+                                        <input type="text">
+                                            <select name="training" id="">
+                                                <option value="ut">Untrained</option>
+                                                <option value="trained">Trained</option>
+                                                <option value="expert">Expert</option>
+                                                <option value="master">Master</option>
+                                                <option value="legendary">Legendary</option>
+                                            </select>
+                <li>Athletics:</li>
+                    <span>Total:</span>
+                        <input type="text">
+                            <span>Dex</span>
+                                <input type="text">
+                                    <span>Prof</span>
+                                        <input type="text">
+                                          <select name="training" id="">
+                                                <option value="ut">Untrained</option>
+                                                <option value="trained">Trained</option>
+                                                <option value="expert">Expert</option>
+                                                <option value="master">Master</option>
+                                                <option value="legendary">Legendary</option>
+                                            </select>
+                <li>Crafting:</li>
+                    <span>Total:</span>
+                        <input type="text">
+                            <span>Int</span>
+                                <input type="text">
+                                    <span>Prof</span>
+                                        <input type="text">
+                                            <select name="training" id="">
+                                                <option value="ut">Untrained</option>
+                                                <option value="trained">Trained</option>
+                                                <option value="expert">Expert</option>
+                                                <option value="master">Master</option>
+                                                <option value="legendary">Legendary</option>
+                                            </select>
+                <li>Deception:</li>
+                    <span>Total:</span>
+                        <input type="text">
+                            <span>Cha</span>
+                                <input type="text">
+                                    <span>Prof</span>
+                                        <input type="text">
+                                            <select name="training" id="">
+                                                <option value="ut">Untrained</option>
+                                                <option value="trained">Trained</option>
+                                                <option value="expert">Expert</option>
+                                                <option value="master">Master</option>
+                                                <option value="legendary">Legendary</option>
+                                            </select>
+                <li>Diplomacy:</li>
+                    <span>Total:</span>
+                        <input type="text">
+                            <span>Cha</span>
+                                <input type="text">
+                                    <span>Prof</span>
+                                        <input type="text">
+                                            <select name="training" id="">
+                                                <option value="ut">Untrained</option>
+                                                <option value="trained">Trained</option>
+                                                <option value="expert">Expert</option>
+                                                <option value="master">Master</option>
+                                                <option value="legendary">Legendary</option>
+                                            </select>
+                <li>Intimidation:</li>
+                    <span>Total:</span>
+                        <input type="text">
+                            <span>Cha</span>
+                                <input type="text">
+                                    <span>Prof</span>
+                                        <input type="text">
+                                            <select name="training" id="">
+                                                <option value="ut">Untrained</option>
+                                                <option value="trained">Trained</option>
+                                                <option value="expert">Expert</option>
+                                                <option value="master">Master</option>
+                                                <option value="legendary">Legendary</option>
+                                            </select>
+                <li>Lore:</li>
+                    <span>Total:</span>
+                        <input type="text">
+                            <span>Int</span>
+                                <input type="text">
+                                    <span>Prof</span>
+                                        <input type="text">
+                                            <select name="training" id="">
+                                                <option value="ut">Untrained</option>
+                                                <option value="trained">Trained</option>
+                                                <option value="expert">Expert</option>
+                                                <option value="master">Master</option>
+                                                <option value="legendary">Legendary</option>
+                                            </select>
+                <li>Lore:</li>
+                    <span>Total:</span>
+                        <input type="text">
+                            <span>Int</span>
+                                <input type="text">
+                                    <span>Prof</span>
+                                        <input type="text">
+                                            <select name="training" id="">
+                                                <option value="ut">Untrained</option>
+                                                <option value="trained">Trained</option>
+                                                <option value="expert">Expert</option>
+                                                <option value="master">Master</option>
+                                                <option value="legendary">Legendary</option>
+                                            </select>
+                <li>Medicine:</li>  
+                    <span>Total:</span>        
+                        <input type="text"> 
+                            <span>Wis</span>
+                                <input type="text">                   
+                                    <span>Prof</span>
+                                        <input type="text">
+                                            <select name="training" id="">
+                                                <option value="ut">Untrained</option>
+                                                <option value="trained">Trained</option>
+                                                <option value="expert">Expert</option>
+                                                <option value="master">Master</option>
+                                                <option value="legendary">Legendary</option>
+                                            </select>
+                <li>Nature:</li>
+                    <span>Total:</span>
+                        <input type="text">
+                            <span>Wis</span>
+                                <input type="text">
+                                    <span>Prof</span>
+                                        <input type="text">
+                                            <select name="training" id="">
+                                                <option value="ut">Untrained</option>
+                                                <option value="trained">Trained</option>
+                                                <option value="expert">Expert</option>
+                                                <option value="master">Master</option>
+                                                <option value="legendary">Legendary</option>
+                                            </select>
+                <li>Occultism:</li>
+                    <span>Total:</span>
+                        <input type="text">
+                            <span>Int</span>
+                                <input type="text">
+                                    <span>Prof</span>
+                                        <input type="text">
+                                            <select name="training" id="">
+                                                <option value="ut">Untrained</option>
+                                                <option value="trained">Trained</option>
+                                                <option value="expert">Expert</option>
+                                                <option value="master">Master</option>
+                                                <option value="legendary">Legendary</option>
+                                            </select>
+                <li>Performance:</li>
+                    <span>Total:</span>
+                        <input type="text">
+                            <span>Cha</span>
+                                <input type="text">
+                                    <span>Prof</span>
+                                        <input type="text">
+                                            <select name="training" id="">
+                                                <option value="ut">Untrained</option>
+                                                <option value="trained">Trained</option>
+                                                <option value="expert">Expert</option>
+                                                <option value="master">Master</option>
+                                                <option value="legendary">Legendary</option>
+                                            </select>
+                <li>Religion:</li>
+                    <span>Total:</span>
+                        <input type="text">
+                            <span>Wis</span>
+                                <input type="text">
+                                    <span>Prof</span>
+                                        <input type="text">
+                                            <select name="training" id="">
+                                                <option value="ut">Untrained</option>
+                                                <option value="trained">Trained</option>
+                                                <option value="expert">Expert</option>
+                                                <option value="master">Master</option>
+                                                <option value="legendary">Legendary</option>
+                                            </select>
+                <li>Society:</li>
+                    <span>Total:</span>
+                        <input type="text">
+                            <span>Int</span>
+                                <input type="text">
+                                    <span>Prof</span>
+                                        <input type="text">
+                                            <select name="training" id="">
+                                                <option value="ut">Untrained</option>
+                                                <option value="trained">Trained</option>
+                                                <option value="expert">Expert</option>
+                                                <option value="master">Master</option>
+                                                <option value="legendary">Legendary</option>
+                                            </select>
+                <li>Stealth:</li>
+                    <span>Total:</span>
+                        <input type="text">
+                            <span>Dex</span>
+                                <input type="text">
+                                    <span>Prof</span>
+                                        <input type="text">
+                                            <select name="training" id="">
+                                                <option value="ut">Untrained</option>
+                                                <option value="trained">Trained</option>
+                                                <option value="expert">Expert</option>
+                                                <option value="master">Master</option>
+                                                <option value="legendary">Legendary</option>
+                                            </select>
+                <li>Survival:</li>
+                    <span>Total:</span>
+                        <input type="text">
+                            <span>Wis</span>
+                                <input type="text">
+                                    <span>Prof</span>
+                                        <input type="text">
+                                            <select name="training" id="">
+                                                <option value="ut">Untrained</option>
+                                                <option value="trained">Trained</option>
+                                                <option value="expert">Expert</option>
+                                                <option value="master">Master</option>
+                                                <option value="legendary">Legendary</option>
+                                            </select>
+                <li>Thievery:</li>
+                    <span>Total:</span>
+                        <input type="text">
+                            <span>Dex</span>
+                                <input type="text">
+                                    <span>Prof</span>
+                                        <input type="text">
+                                            <select name="training" id="">
+                                                <option value="ut">Untrained</option>
+                                                <option value="trained">Trained</option>
+                                                <option value="expert">Expert</option>
+                                                <option value="master">Master</option>
+                                                <option value="legendary">Legendary</option>
+                                            </select>
+            </ul>
+        </div>
     </div>
-
-</div>
-
-<!-- Weapon Proficiencies -->
-<div class="weaponprof-wrapper">
-    <div class="weaponprof">
-
-    </div>
-</div>
-
-<!-- Skills -->
-<div class="skills-wrapper">
-    <div class="skills">
-        <ul>
-            <li>Acrobatics:</li>
-                <span>Total:</span>
-                    <input type="text">
-                        <span>Dex</span>
-                            <input type="text">
-                                <span>Prof</span>
-                                    <input type="text">
-                                        <select name="training-2" id="">
-                                            <option value="ut">Untrained</option>
-                                            <option value="trained">Trained</option>
-                                            <option value="expert">Expert</option>
-                                            <option value="master">Master</option>
-                                            <option value="legendary">Legendary</option>
-                                        </select>
-            <li>Arcana:</li>
-                <span>Total:</span>
-                    <input type="text">
-                        <span>Int</span>
-                            <input type="text">
-                                <span>Prof</span>
-                                    <input type="text">
-                                        <select name="training" id="">
-                                            <option value="ut">Untrained</option>
-                                            <option value="trained">Trained</option>
-                                            <option value="expert">Expert</option>
-                                            <option value="master">Master</option>
-                                            <option value="legendary">Legendary</option>
-                                        </select>
-            <li>Athletics:</li>
-                <span>Total:</span>
-                    <input type="text">
-                        <span>Dex</span>
-                            <input type="text">
-                                <span>Prof</span>
-                                    <input type="text">
-                                        <select name="training" id="">
-                                            <option value="ut">Untrained</option>
-                                            <option value="trained">Trained</option>
-                                            <option value="expert">Expert</option>
-                                            <option value="master">Master</option>
-                                            <option value="legendary">Legendary</option>
-                                        </select>
-            <li>Crafting:</li>
-                <span>Total:</span>
-                    <input type="text">
-                        <span>Int</span>
-                            <input type="text">
-                                <span>Prof</span>
-                                    <input type="text">
-                                        <select name="training" id="">
-                                            <option value="ut">Untrained</option>
-                                            <option value="trained">Trained</option>
-                                            <option value="expert">Expert</option>
-                                            <option value="master">Master</option>
-                                            <option value="legendary">Legendary</option>
-                                        </select>
-            <li>Deception:</li>
-                <span>Total:</span>
-                    <input type="text">
-                        <span>Cha</span>
-                            <input type="text">
-                                <span>Prof</span>
-                                    <input type="text">
-                                        <select name="training" id="">
-                                            <option value="ut">Untrained</option>
-                                            <option value="trained">Trained</option>
-                                            <option value="expert">Expert</option>
-                                            <option value="master">Master</option>
-                                            <option value="legendary">Legendary</option>
-                                        </select>
-            <li>Diplomacy:</li>
-                <span>Total:</span>
-                    <input type="text">
-                        <span>Cha</span>
-                            <input type="text">
-                                <span>Prof</span>
-                                    <input type="text">
-                                        <select name="training" id="">
-                                            <option value="ut">Untrained</option>
-                                            <option value="trained">Trained</option>
-                                            <option value="expert">Expert</option>
-                                            <option value="master">Master</option>
-                                            <option value="legendary">Legendary</option>
-                                        </select>
-            <li>Intimidation:</li>
-                <span>Total:</span>
-                    <input type="text">
-                        <span>Cha</span>
-                            <input type="text">
-                                <span>Prof</span>
-                                    <input type="text">
-                                        <select name="training" id="">
-                                            <option value="ut">Untrained</option>
-                                            <option value="trained">Trained</option>
-                                            <option value="expert">Expert</option>
-                                            <option value="master">Master</option>
-                                            <option value="legendary">Legendary</option>
-                                        </select>
-            <li>Lore:</li>
-                <span>Total:</span>
-                    <input type="text">
-                        <span>Int</span>
-                            <input type="text">
-                                <span>Prof</span>
-                                    <input type="text">
-                                        <select name="training" id="">
-                                            <option value="ut">Untrained</option>
-                                            <option value="trained">Trained</option>
-                                            <option value="expert">Expert</option>
-                                            <option value="master">Master</option>
-                                            <option value="legendary">Legendary</option>
-                                        </select>
-            <li>Lore:</li>
-                <span>Total:</span>
-                    <input type="text">
-                        <span>Int</span>
-                            <input type="text">
-                                <span>Prof</span>
-                                    <input type="text">
-                                        <select name="training" id="">
-                                            <option value="ut">Untrained</option>
-                                            <option value="trained">Trained</option>
-                                            <option value="expert">Expert</option>
-                                            <option value="master">Master</option>
-                                            <option value="legendary">Legendary</option>
-                                        </select>
-            <li>Medicine:</li>  
-                <span>Total:</span>        <!-- MAKE A DROP DOWN for T,E,M,L */ -->
-                    <input type="text"> 
-                        <span>Wis</span>
-                            <input type="text">                   
-                                <span>Prof</span>
-                                    <input type="text">
-                                        <select name="training" id="">
-                                            <option value="ut">Untrained</option>
-                                            <option value="trained">Trained</option>
-                                            <option value="expert">Expert</option>
-                                            <option value="master">Master</option>
-                                            <option value="legendary">Legendary</option>
-                                        </select>
-            <li>Nature:</li>
-                <span>Total:</span>
-                    <input type="text">
-                        <span>Wis</span>
-                            <input type="text">
-                                <span>Prof</span>
-                                    <input type="text">
-                                        <select name="training" id="">
-                                            <option value="ut">Untrained</option>
-                                            <option value="trained">Trained</option>
-                                            <option value="expert">Expert</option>
-                                            <option value="master">Master</option>
-                                            <option value="legendary">Legendary</option>
-                                        </select>
-            <li>Occultism:</li>
-                <span>Total:</span>
-                    <input type="text">
-                        <span>Int</span>
-                            <input type="text">
-                                <span>Prof</span>
-                                    <input type="text">
-                                        <select name="training" id="">
-                                            <option value="ut">Untrained</option>
-                                            <option value="trained">Trained</option>
-                                            <option value="expert">Expert</option>
-                                            <option value="master">Master</option>
-                                            <option value="legendary">Legendary</option>
-                                        </select>
-            <li>Performance:</li>
-                <span>Total:</span>
-                    <input type="text">
-                        <span>Cha</span>
-                            <input type="text">
-                                <span>Prof</span>
-                                    <input type="text">
-                                        <select name="training" id="">
-                                            <option value="ut">Untrained</option>
-                                            <option value="trained">Trained</option>
-                                            <option value="expert">Expert</option>
-                                            <option value="master">Master</option>
-                                            <option value="legendary">Legendary</option>
-                                        </select>
-            <li>Religion:</li>
-                <span>Total:</span>
-                    <input type="text">
-                        <span>Wis</span>
-                            <input type="text">
-                                <span>Prof</span>
-                                    <input type="text">
-                                        <select name="training" id="">
-                                            <option value="ut">Untrained</option>
-                                            <option value="trained">Trained</option>
-                                            <option value="expert">Expert</option>
-                                            <option value="master">Master</option>
-                                            <option value="legendary">Legendary</option>
-                                        </select>
-            <li>Society:</li>
-                <span>Total:</span>
-                    <input type="text">
-                        <span>Int</span>
-                            <input type="text">
-                                <span>Prof</span>
-                                    <input type="text">
-                                        <select name="training" id="">
-                                            <option value="ut">Untrained</option>
-                                            <option value="trained">Trained</option>
-                                            <option value="expert">Expert</option>
-                                            <option value="master">Master</option>
-                                            <option value="legendary">Legendary</option>
-                                        </select>
-            <li>Stealth:</li>
-                <span>Total:</span>
-                    <input type="text">
-                        <span>Dex</span>
-                            <input type="text">
-                                <span>Prof</span>
-                                    <input type="text">
-                                        <select name="training" id="">
-                                            <option value="ut">Untrained</option>
-                                            <option value="trained">Trained</option>
-                                            <option value="expert">Expert</option>
-                                            <option value="master">Master</option>
-                                            <option value="legendary">Legendary</option>
-                                        </select>
-            <li>Survival:</li>
-                <span>Total:</span>
-                    <input type="text">
-                        <span>Wis</span>
-                            <input type="text">
-                                <span>Prof</span>
-                                    <input type="text">
-                                        <select name="training" id="">
-                                            <option value="ut">Untrained</option>
-                                            <option value="trained">Trained</option>
-                                            <option value="expert">Expert</option>
-                                            <option value="master">Master</option>
-                                            <option value="legendary">Legendary</option>
-                                        </select>
-            <li>Thievery:</li>
-                <span>Total:</span>
-                    <input type="text">
-                        <span>Dex</span>
-                            <input type="text">
-                                <span>Prof</span>
-                                    <input type="text">
-                                        <select name="training" id="">
-                                            <option value="ut">Untrained</option>
-                                            <option value="trained">Trained</option>
-                                            <option value="expert">Expert</option>
-                                            <option value="master">Master</option>
-                                            <option value="legendary">Legendary</option>
-                                        </select>
-        </ul>
-    </div>
-
-</div>
-
+</section>
 
     
 </body>
