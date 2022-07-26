@@ -24,12 +24,13 @@ KNOWN ISSUES
 #DICE-ROLLER
 
 KNOWN ISSUES
-1. Need to start...
+1. Started
+2. Stuck on some issues, coming back to it in the future, going to intagrate it into Char Manager project
 
-#PF2E Project
+#Character Manager
 
 KNOWN ISSUES
-1. Need to start...
+1. started
 
 
 # Premio-Pomodoro
