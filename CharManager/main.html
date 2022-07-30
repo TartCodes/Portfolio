@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="css/main.css">
+    <link href="https://fonts.googleapis.com/css2?family=David+Libre:wght@400;700&family=Montserrat:wght@200&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/d8f5f7035a.js" crossorigin="anonymous"></script>
+    <title>Document</title>
+</head>
+<body>
+<!-- header -> char name, ancestory, background, class -->
+
+<!-- character name -->
+    <div class="char-wrapper">
+        <!-- <textarea name="Character Name" id="" cols="50" rows="3"></textarea> -->
+        <span>Character Name</span>
+        <input type="text" placeholder="...enter name">
+    </div>
+<!-- ancestry and background group -->
+        <div class="ancestry-wrapper">
+            <div class="ancestry">
+                <!-- <textarea name="Character Name" id="" cols="50" rows="3"></textarea> -->
+                <span>Ancestry</span>
+                    <input type="text" placeholder="...enter ancestry">
+                <span>Heritage</span>
+                    <input type="text" placeholder="...enter heritage">
+                <span>Ancestry Ability</span>
+                    <input type="text" placeholder="...enter ability">
+            </div>
+
+            <div class="background">
+                <!-- <textarea name="Character Name" id="" cols="50" rows="3"></textarea> -->
+                <span>Background</span>
+                <input type="text" placeholder="...enter background">
+                <span>Background Ability</span>
+                <textarea name="Background Ability" id="" cols="30" rows="5"></textarea>
+            </div>
+        </div>
+<!-- ability modifiers, hit points, and speed group -->
+        <div class="ability-wrapper">           
+                <span>Ability Scores</span>
+                <ul>
+                    <li>Strength</li>
+                        <input type="text">
+                    <li>Dexterity</li>
+                        <input type="text">
+                    <li>Constitution</li>
+                        <input type="text">
+                    <li>Intelligence</li>
+                        <input type="text">
+                    <li>Wisdom</li>
+                        <input type="text">
+                    <li>Charisma</li>
+                        <input type="text">
+                </ul>            
+                <span>Class DC</span>
+                <div></div>
+        </div>
+<!-- armor class and saving throws -->
+        <div class="armor-wrapper">
+            <span>Armor Class</span>
+            <span>Saving Throws</span>
+        </div>
+
+<!-- Hit Points -->
+<div class="hp-wrapper">
+   <ul>
+    <li>Max:</li>
+        <input type="text">
+    <li>Current:</li>
+        <input type="text">
+    <li>Temporary:</li>
+        <input type="text">
+    <li>Dying:</li>
+        <input type="text">
+    <li>Wounded:</li>
+        <input type="text">
+    <li>Resistances/Immunities:</li>
+        <textarea name="resis-immun" id="" cols="25" rows="3"></textarea>
+    <li>Conditions:</li>
+        <textarea name="conditions" id="" cols="25" rows="3"></textarea>
+   </ul>
+</div>
+<!-- Perception Info -->
+<div class="perception-wrapper">
+    <ul>
+        <span>Perception</span>
+        <li>
+            <li>Wisdom:</li>
+                <input type="text">
+            <li>Proficiencies:</li>
+                <input type="text">
+            <li>Trained</li>
+                <input type="text">
+            <li>Expert:</li>    
+                <input type="text">
+            <li>Master:</li>
+                <input type="text">
+            <li>Legendary:</li>
+                <input type="text">
+        </li>
+    </ul>
+    <div class="senses">
+        <span>Senses:</span>
+        <textarea name="senses" id="" cols="25" rows="3"></textarea>
+    </div>
+</div>
+
+
+
+
+    
+</body>
+<script type="text/javascript" src="js/main.js"></script>
+</html>
