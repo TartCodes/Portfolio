@@ -129,3 +129,19 @@ table {
   .perception-wrapper{
 	border: solid thin red;
   }
+
+  .melee-wrapper {
+	border: solid thin red;
+  }
+
+  .ranged-wrapper {
+	border: solid thin red;
+  }
+
+  .weaponprof-wrapper{
+	border: solid thin red;
+  }
+
+  .skills-wrapper{
+	border: solid thin red;
+  }
