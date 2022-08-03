@@ -15,76 +15,303 @@
 <!-- header -> char name, ancestry, background, class -->
 
 <!-- character name -->
-    <div class="char-wrapper">        
-        <span>Character Name:</span>
-            <input type="text" placeholder="...enter name">
-    </div>
+<section class="container-1">
+        <div class="char-wrapper">
+            <ul>        
+                <li>
+                    <span>Character Name:</span>
+                        <input type="text" placeholder="...enter name">
+                </li>
+                <li>
+                    <span>Level:</span>
+                        <input class="level-hp" type="text" placeholder="">
+                </li>
+                <li>
+                    <span>XP:</span>
+                        <input class="xp "type="text" placeholder="">
+                </li>
+                <li>
+                    <span>Hero Points:</span>
+                        <input class="level-hp" type="text" placeholder="">
+                </li>
+            </ul>
+        </div>
 <!-- ancestry and background group -->
         <div class="ancestry-wrapper">
-            <div class="ancestry">                
-                <span>Ancestry:</span>
-                    <input type="text" placeholder="...enter ancestry">
-                <span>Heritage:</span>
-                    <input type="text" placeholder="...enter heritage">
-                <span>Ancestry Ability:</span>
-                    <input type="text" placeholder="...enter ability">
-            </div>
-
-            <div class="background">                
-                <span>Background:</span>
-                    <input type="text" placeholder="...enter background">
+            <div class="ancestry">
+                <ul>
+                    <li>             
+                        <span>Ancestry:</span>
+                            <input type="text" placeholder="...enter ancestry">
+                    </li> 
+                    <li>
+                        <span>Heritage:</span>
+                            <input type="text" placeholder="...enter heritage">
+                    </li>
+                    <li>
+                        <span>Background:</span>
+                            <input type="text" placeholder="...enter background">
+                    </li>
+                    <li>
+                        <span>Ancestry Ability:</span>
+                            <input type="text" placeholder="...enter ability">
+                    </li>
+                    <li>
+                        <span>Class:</span>
+                            <input type="text" placeholder="...enter class">
+                    </li>
+                    <li>
+                        <span>Size:</span>
+                            <input type="text" placeholder="...enter size">
+                    </li>
+                    <li>
+                        <span>Alignment:</span>
+                            <input type="text" placeholder="...enter alignment">
+                    </li>
+                    <li>
+                        <span>Traits:</span>
+                            <input type="text" placeholder="...enter traits">
+                    </li>
+                    <li>
+                        <span>Deity:</span>
+                            <input type="text" placeholder="...enter deity">
+                    </li>
+                </ul>  
+            </div>          
                 <span>Background Ability:</span>
                     <textarea name="Background Ability" id="" cols="30" rows="5"></textarea>
             </div>
-        </div>
+     </div>
+</section>
 <!-- ability modifiers, hit points, and speed group -->
-        <div class="ability-wrapper">           
-                <span>Ability Scores</span>
-                <ul>
-                    <li>Strength</li>
-                        <input type="text">
-                    <li>Dexterity</li>
-                        <input type="text">
-                    <li>Constitution</li>
-                        <input type="text">
-                    <li>Intelligence</li>
-                        <input type="text">
-                    <li>Wisdom</li>
-                        <input type="text">
-                    <li>Charisma</li>
-                        <input type="text">
-                </ul>            
-                <span>Class DC</span>
-                <div></div>
+<section class="container-2">
+        <div class="ability-wrapper">          
+            <ul> 
+                <span>Ability Modifiers and Scores</span>
+                <li>
+                    <span>+</span>
+                    <input type="text">
+                    Strength:
+                    <input type="text">
+                </li>
+                <li>
+                    <span>+</span>
+                    <input type="text">
+                    Dexterity:
+                    <input type="text">
+                </li>
+                <li>
+                    <span>+</span>
+                    <input type="text">
+                    Constitution:
+                    <input type="text">
+                </li>
+                <li>
+                    <span>+</span>
+                    <input type="text">
+                    Intelligence:
+                    <input type="text">
+                </li>
+                <li>
+                    <span>+</span>
+                    <input type="text">
+                    Wisdom:
+                    <input type="text">
+                </li>
+                <li>
+                    <span>+</span>
+                    <input type="text">
+                    Charisma:
+                    <input type="text">
+                </li>
+                <li>                           
+                    <span>Class DC:</span>
+                    <input type="text" placeholder="">
+                    <span>= DC Base 10</span>
+                    <input type="text" placeholder="Key">
+                    <input type="text" placeholder="Prof">
+                    <select name="training-3" id="">
+                        <option value="ut">Untrained</option>
+                        <option value="trained">Trained</option>
+                        <option value="expert">Expert</option>
+                        <option value="master">Master</option>
+                        <option value="legendary">Legendary</option>
+                    </select>
+                    <input type="text" placeholder="Item">
+                </li> 
+            </ul>               
         </div>
+
 <!-- armor class and saving throws -->
         <div class="armor-wrapper">
             <span>Armor Class</span>
-            <span>Saving Throws</span>
+            <ul>
+                <li>
+                    <span>AC:</span>
+                        <input type="text" placeholder="AC">
+                </li>
+                <li>
+                    <span>Dex:</span>
+                        <input type="text" placeholder="bonus"> 
+                            <span>Cap:</span>
+                        <input type="text"> 
+                </li>                
+                <li>
+                    <select name="training-4" id="">
+                        <option value="ut">Untrained</option>
+                        <option value="trained">Trained</option>
+                        <option value="expert">Expert</option>
+                        <option value="master">Master</option>
+                        <option value="legendary">Legendary</option>
+                    </select>
+                </li>
+                <li>
+                    <span>Item:</span>
+                </li>
+                <li>
+                    <span>Unarmored:</span>
+                        <select name="training-4" id="">
+                            <option value="ut">Untrained</option>
+                            <option value="trained">Trained</option>
+                            <option value="expert">Expert</option>
+                            <option value="master">Master</option>
+                            <option value="legendary">Legendary</option>
+                        </select>
+                </li>
+                <li>
+                    <span>Light:</span>
+                        <select name="training-4" id="">
+                            <option value="ut">Untrained</option>
+                            <option value="trained">Trained</option>
+                            <option value="expert">Expert</option>
+                            <option value="master">Master</option>
+                            <option value="legendary">Legendary</option>
+                        </select>
+                </li>
+                <li>
+                    <span>Medium:</span>
+                        <select name="training-4" id="">
+                            <option value="ut">Untrained</option>
+                            <option value="trained">Trained</option>
+                            <option value="expert">Expert</option>
+                            <option value="master">Master</option>
+                            <option value="legendary">Legendary</option>
+                        </select>
+                </li>
+                <li>
+                    <span>Heavy</span>
+                        <select name="training-4" id="">
+                            <option value="ut">Untrained</option>
+                            <option value="trained">Trained</option>
+                            <option value="expert">Expert</option>
+                            <option value="master">Master</option>
+                            <option value="legendary">Legendary</option>
+                        </select>
+                </li>
+                <li>
+                    <span>Shield:</span>
+                    <span>+</span>
+                        <input type="text" placeholder="AC">
+                </li>
+                <li>
+                    <span>Hardness:</span>
+                        <input type="text"> 
+                </li>
+                <li>
+                    <span>Max HP:</span>
+                        <input type="text"> 
+                    <span>BT(Break Threshold):</span>
+                        <input type="text"> 
+                </li>
+                <li>
+                    <span>Current HP:</span>
+                        <input type="text"> 
+                </li>
+            </ul>
+            <ul>
+                <li>
+                    <span>Saving Throws</span>
+                </li>
+                <li>
+                    <span>Fortitude</span>
+                        <input type="text"> 
+                        <span>Con:</span>
+                        <input type="text"> 
+                        <span>Prof:</span>
+                        <input type="text">
+                        <span>Item:</span>
+                        <input type="text">
+                        <select name="training-4" id="">
+                            <option value="ut">Untrained</option>
+                            <option value="trained">Trained</option>
+                            <option value="expert">Expert</option>
+                            <option value="master">Master</option>
+                            <option value="legendary">Legendary</option>
+                        </select> 
+                </li>
+                <li>
+                    <span>Reflex</span>
+                        <input type="text"> 
+                        <span>Con:</span>
+                        <input type="text"> 
+                        <span>Prof:</span>
+                        <input type="text">
+                        <span>Item:</span>
+                        <input type="text">
+                        <select name="training-4" id="">
+                            <option value="ut">Untrained</option>
+                            <option value="trained">Trained</option>
+                            <option value="expert">Expert</option>
+                            <option value="master">Master</option>
+                            <option value="legendary">Legendary</option>
+                        </select> 
+                </li>
+                <li>
+                    <span>Will</span>
+                        <input type="text"> 
+                        <span>Con:</span>
+                        <input type="text"> 
+                        <span>Prof:</span>
+                        <input type="text">
+                        <span>Item:</span>
+                        <input type="text">
+                        <select name="training-4" id="">
+                            <option value="ut">Untrained</option>
+                            <option value="trained">Trained</option>
+                            <option value="expert">Expert</option>
+                            <option value="master">Master</option>
+                            <option value="legendary">Legendary</option>
+                        </select> 
+                </li>
+                <li>
+                    <textarea name="Notes" id="" cols="30" rows="3">Notes:</textarea>
+                </li>
         </div>
 
 <!-- Hit Points -->
-<div class="hp-wrapper">
-    <div class="hit-points"> 
-        <ul>
-         <li>Max:</li>
-             <input type="text">
-         <li>Current:</li>
-             <input type="text">
-         <li>Temporary:</li>
-             <input type="text">
-         <li>Dying:</li>
-             <input type="text">
-         <li>Wounded:</li>
-             <input type="text">
-         <li>Resistances/Immunities:</li>
-             <textarea name="resis-immun" id="" cols="25" rows="3"></textarea>
-         <li>Conditions:</li>
-             <textarea name="conditions" id="" cols="25" rows="3"></textarea>
-        </ul>
-    </div>
-</div>
+        <div class="hp-wrapper">
+            <div class="hit-points"> 
+                <ul>
+                 <li>Max:</li>
+                     <input type="text">
+                 <li>Current:</li>
+                     <input type="text">
+                 <li>Temporary:</li>
+                     <input type="text">
+                 <li>Dying:</li>
+                     <input type="text">
+                 <li>Wounded:</li>
+                     <input type="text">
+                 <li>Resistances/Immunities:</li>
+                     <textarea name="resis-immun" id="" cols="25" rows="3"></textarea>
+                 <li>Conditions:</li>
+                     <textarea name="conditions" id="" cols="25" rows="3"></textarea>
+                </ul>
+            </div>
+        </div>
+</section>
 <!-- Perception Info -->
+
 <div class="perception-wrapper">
     <div class="perception">
         <ul>
@@ -94,14 +321,15 @@
                     <input type="text">
                 <li>Proficiencies:</li>
                     <input type="text">
-                <li>Trained</li>
-                    <input type="text">
-                <li>Expert:</li>    
-                    <input type="text">     <!-- MAKE THIS A DROP DOWN */ -->
-                <li>Master:</li>
-                    <input type="text">
-                <li>Legendary:</li>
-                    <input type="text">
+                    <li>
+                        <select name="training-1" id="">
+                            <option value="ut">Untrained</option>
+                            <option value="trained">Trained</option>
+                            <option value="expert">Expert</option>
+                            <option value="master">Master</option>
+                            <option value="legendary">Legendary</option>
+                        </select>
+                    </li>
             </li>
         </ul>
     </div>
@@ -147,7 +375,7 @@
                             <input type="text">
                                 <span>Prof</span>
                                     <input type="text">
-                                        <select name="training" id="">
+                                        <select name="training-2" id="">
                                             <option value="ut">Untrained</option>
                                             <option value="trained">Trained</option>
                                             <option value="expert">Expert</option>

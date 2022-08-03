@@ -104,18 +104,37 @@ table {
     width: 30px;
   }
 
-  /* containers */
+/* containers */
+	/* cont 1 */
+ .container-1 {
+	display: flex;
+	flex-direction: row;
+ }
+  	.char-wrapper{
+		border: solid thin red;
+		display: flex;
+		flex-direction: row;
+		width: 50%;
+  	}
 
-  .char-wrapper{
-	border: solid thin red;
-  }
+  	.ancestry-wrapper {
+		border: solid thin darkgreen;
+		display: flex;
+		flex-direction: column;
+		width: 50%;
+  	}
 
-  .ancestry-wrapper {
-	border: solid thin red;
-  }
+	/* cont 2 */
+.container-2 {
+	display: flex;
+	flex-direction: row;
+
+}
 
   .ability-wrapper{
 	border: solid thin red;
+	display: flex;
+	flex-direction: row;
   }
 
   .armor-wrapper {
@@ -145,3 +164,13 @@ table {
   .skills-wrapper{
 	border: solid thin red;
   }
+
+
+
+/* Text Box Sizes */
+  .level-hp{
+	width: 25px;
+  }
+
+/* Header - name,level,xp,ancestry,background,heritage,class,size,alignment,traits,deity,hero-points */
+
