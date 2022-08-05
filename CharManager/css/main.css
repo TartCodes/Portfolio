@@ -100,9 +100,13 @@ table {
     resize: none;
   }
 
-  ul input {
+  /* ul input {
     width: 30px;
-  }
+  } */
+  
+  input {
+	display: flex;
+}
 
 /* containers */
 	/* cont 1 */
@@ -110,27 +114,13 @@ table {
 	display: flex;
 	flex-direction: row;
  }
-  	.char-wrapper{
-		border: solid thin red;
-		display: flex;
-		flex-direction: row;
-		width: 30%;
-  	}
-
-  	.ancestry-wrapper {
-		border: solid thin darkgreen;
-		display: flex;
-		flex-direction: column;
-		width: 70%;
-  	}
-
-	/* cont 2 */
+  	
+/* cont 2 */
 .container-2 {
 	display: flex;
 	flex-direction: row;
 
 }
-
   .ability-wrapper{
 	border: solid thin red;
 	display: flex;
@@ -170,10 +160,101 @@ table {
 
 
 
-/* Text Box Sizes */
-  .level-hp{
-	width: 25px;
-  }
 
 /* Header - name,level,xp,ancestry,background,heritage,class,size,alignment,traits,deity,hero-points */
+.char-wrapper{
+	border: solid thin red;
+	display: flex;
+	flex-direction:	row;
+	width: 30%;
+	line-height: 30px;
+	
+	align-items: center;
+  }
+
+.container-1 
+span {
+	display: flex;
+	justify-content: center;
+}
+
+.container-1 
+ul {
+	width: 100%;
+}
+
+.container-1 
+li {	
+    display: flex;
+    flex-direction: column;
+}
+
+.container-1 
+.larger-input {
+	width: 50%;
+}
+
+.container-1 input {
+	display: flex;
+	align-self: center;
+	width: 60px;
+	text-align: center;
+}
+
+/* ancestry */
+
+.ancestry-wrapper {
+	border: solid thin darkgreen;
+	display: flex;
+	flex-direction: column;
+	width: 70%;
+  }
+
+.ancestry {
+	display: flex;	
+	width: 100%;
+	line-height: 30px;
+}
+
+.ancestry span {
+	justify-content: start;
+	
+}
+
+.ancestry
+input {
+	align-self: flex-start;
+}
+
+.ancestry
+textarea {
+	width: 50%;
+}
+
+.group-1 {
+	display: flex;	
+	justify-content: center;
+	width: 60%;
+}
+
+.group-1
+select {
+	width: 100px;
+	text-align: center;
+}
+
+.group-1
+span {
+	justify-content: flex-start;
+	width: 50%;
+}
+.group-1
+li {
+	flex-direction:column;
+}
+
+.group-1
+.traits {
+	width: 100%;
+}
 

@@ -20,19 +20,23 @@
             <ul>        
                 <li>
                     <span>Character Name:</span>
-                        <input type="text" placeholder="...enter name">
+                        <input class="larger-input" type="text" placeholder="...enter name">
+                </li>
+                <li>
+                    <span>Player Name:</span>
+                        <input class="larger-input" type="text" placeholder="...enter name">
                 </li>
                 <li>
                     <span>Level:</span>
-                        <input class="level-hp" type="text" placeholder="">
+                        <input class="other" type="number" placeholder="">
                 </li>
                 <li>
                     <span>XP:</span>
-                        <input class="xp "type="text" placeholder="">
+                        <input class="xp" type="number" placeholder="">
                 </li>
                 <li>
                     <span>Hero Points:</span>
-                        <input class="level-hp" type="text" placeholder="">
+                        <input class="hero-points" type="number" placeholder="">
                 </li>
             </ul>
         </div>
@@ -42,46 +46,65 @@
                 <ul>
                     <li>             
                         <span>Ancestry:</span>
-                            <input type="text" placeholder="...enter ancestry">
+                            <input class="larger-input" type="text" placeholder="...Dwarf, Elf, Gnome, etc">
                     </li> 
                     <li>
                         <span>Heritage:</span>
-                            <input type="text" placeholder="...enter heritage">
+                            <input class="larger-input" type="text" placeholder="...enter heritage">
                     </li>
                     <li>
                         <span>Background:</span>
-                            <input type="text" placeholder="...enter background">
+                            <input class="larger-input" type="text" placeholder="...Acolyte, Cursed, Deputy, etc">
                     </li>
                     <li>
                         <span>Ancestry Ability:</span>
-                            <input type="text" placeholder="...enter ability">
+                            <input class="larger-input" type="text" placeholder="...enter ability">
                     </li>
                     <li>
                         <span>Class:</span>
-                            <input type="text" placeholder="...enter class">
+                            <input class="larger-input" type="text" placeholder="...enter class">
                     </li>
+
+                    <div class="group-1">
+                        <li>
+                            <span>Size:</span>
+                                <select name="size-category" id="">
+                                    <option value="tiny">Tiny</option>
+                                    <option value="small">Small</option>
+                                    <option value="medium">Medium</option>
+                                    <option value="large">Large</option>
+                                    <option value="huge">Huge</option>
+                                    <option value="gargantuan">Gargantuan</option>
+                                </select>      
+                        
+                            <span>Alignment:</span>
+                                <select name="alignment" id="">
+                                    <option value="lg">LG</option>
+                                    <option value="ln">LN</option>
+                                    <option value="le">LE</option>
+                                    <option value="ng">NG</option>
+                                    <option value="tn">TN</option>
+                                    <option value="ne">NE</option>
+                                    <option value="cg">CG</option>
+                                    <option value="cn">CN</option>
+                                    <option value="ce">CE</option>
+                                </select>      
+                        
+                            <span>Traits:</span>
+                                <input class="traits" type="text" placeholder="...Char Traits">
+                        </li>
+                    </div>
+
                     <li>
-                        <span>Size:</span>
-                            <input type="text" placeholder="...enter size">
-                    </li>
-                    <li>
-                        <span>Alignment:</span>
-                            <input type="text" placeholder="...enter alignment">
-                    </li>
-                    <li>
-                        <span>Traits:</span>
-                            <input type="text" placeholder="...enter traits">
-                    </li>
-                    <li>
-                        <span>Deity:</span>
-                            <input type="text" placeholder="...enter deity">
-                    </li>
-                </ul>  
-            </div>          
-                <span>Background Ability:</span>
-                    <textarea name="Background Ability" id="" cols="30" rows="5"></textarea>
-            </div>
-     </div>
+                      <span>Deity:</span>
+                            <input class="larger-input" type="text" placeholder="...Iomedae, Gorum, Desna, etc"> 
+                    </li>  
+
+                    <span>Background Ability:</span>
+                        <textarea name="Background Ability" id="" cols="20" rows="5"></textarea>
+                </ul> 
+            </div> 
+        </div>     
 </section>
 <!-- ability modifiers, hit points, and speed group -->
 <section class="container-2">
@@ -607,20 +630,53 @@
                 <span>Traits:</span>
                     <textarea name="traits" id="" cols="15" rows="1"></textarea>
             </li>
-
-            <!-- YOURE HERE MOVE WEAPON PROFS -->
+              <!-- Weapon Proficiencies  -->
+            <li>
+                <span>Weapon Proficiencies</span>
+                    <span>Simple:</span>
+                        <select name="training-5" id="">
+                            <option value="ut">Untrained</option>
+                            <option value="trained">Trained</option>
+                            <option value="expert">Expert</option>
+                            <option value="master">Master</option>
+                            <option value="legendary">Legendary</option>
+                        </select>
+                <span>Martial:</span>
+                    <select name="training-5" id="">
+                        <option value="ut">Untrained</option>
+                        <option value="trained">Trained</option>
+                        <option value="expert">Expert</option>
+                        <option value="master">Master</option>
+                        <option value="legendary">Legendary</option>
+                    </select>
+                <span>Other:</span>
+                    <select name="training-5" id="">
+                        <option value="ut">Untrained</option>
+                        <option value="trained">Trained</option>
+                        <option value="expert">Expert</option>
+                        <option value="master">Master</option>
+                        <option value="legendary">Legendary</option>
+                    </select>
+                    <textarea name="" id="" cols="30" rows="2"></textarea>
+                <span>Other:</span>
+                    <select name="training-5" id="">
+                        <option value="ut">Untrained</option>
+                        <option value="trained">Trained</option>
+                        <option value="expert">Expert</option>
+                        <option value="master">Master</option>
+                        <option value="legendary">Legendary</option>
+                    </select>
+                    <textarea name="" id="" cols="30" rows="2"></textarea>
+            </li>
         
         </ul>  
         </div>  
     </div>
 
    
-                                    <!-- Weapon Proficiencies
-                                        <div class="weaponprof-wrapper">
-                                            <div class="weaponprof">
-
-                                            </div>
-                                        </div> -->
+                                  
+                                      
+                                       
 
    
 
@@ -880,6 +936,10 @@
                                                 <option value="master">Master</option>
                                                 <option value="legendary">Legendary</option>
                                             </select>
+                <li>
+                    <span>Languages:</span>
+                        <textarea name="" id="" cols="30" rows="1"></textarea>
+                </li>
             </ul>
         </div>
     </div>
