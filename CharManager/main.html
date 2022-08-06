@@ -168,8 +168,8 @@
         </div>
 
 <!-- armor class and saving throws -->
-        <div class="armor-wrapper">
-            <span>Armor Class</span> 
+    <div class="armor-wrapper">
+            <h4>Armor Class</h4>
                 <div class="ac-wrapper">
                     <ul>               
                         <li>
@@ -249,7 +249,7 @@
                 <li>
                     <span>Shield:</span>
                     <span>+</span>
-                        <input type="number" placeholder="AC">
+                        <input type="number" placeholder="">
                 </li>
                 <li>
                     <span>Hardness:</span>
@@ -274,19 +274,12 @@
             <!-- fix this, put each ST in its own wrapper then css -->      
                     <div>
                         <h4>Saving Throws</h4>
-                    </div>                       
-                          <!-- <li>
-                            <span>Reflex</span>
-                                <input type="number">
-                        </li>
-                        <li>
-                            <span>Will</span>
-                                <input type="number">
-                        </li> -->                      
-                <div class="fortitude-wrapper">
+                    </div>             
+                                              
+                <div class="saves-wrapper">
                     <ul>
                         <li>                        
-                            <span>Fortitude = &nbsp </span>
+                            <span>Fortitude:</span>
                                 <input type="number">
                         </li>                  
                         <li>
@@ -313,76 +306,115 @@
                     </ul>
                 </div>
                    <!-- reflex -->
-                   <!-- youre here ADD UL -->
-                    <li>
-                        <span>Con:</span>
-                            <input type="number"> 
-                    </li>    
-                    <li>
-                        <span>Prof:</span>
-                            <input type="number">
-                    </li>    
-                    <li>
-                        <span>Item:</span>
-                            <input type="number">
-                    </li>    
-                    <li>
-                        <select name="training-4" id="">
-                            <option value="ut">Untrained</option>
-                            <option value="trained">Trained</option>
-                            <option value="expert">Expert</option>
-                            <option value="master">Master</option>
-                            <option value="legendary">Legendary</option>
-                        </select> 
-                    </li>
+                   <div class="saves-wrapper">
+                    <ul>
+                        <li>                        
+                            <span>Reflex:</span>
+                                <input type="number">
+                        </li>                  
+                        <li>
+                            <span>Con:</span>
+                                <input type="number"> 
+                        </li>    
+                        <li>
+                            <span>Prof:</span>
+                                <input type="number">
+                        </li>    
+                        <li>
+                            <span>Item:</span>
+                                <input type="number">                               
+                        </li>    
+                        <li>
+                            <select name="training-6" id="">
+                                <option value="ut">Untrained</option>
+                                <option value="trained">Trained</option>
+                                <option value="expert">Expert</option>
+                                <option value="master">Master</option>
+                                <option value="legendary">Legendary</option>
+                            </select> 
+                        </li>
+                    </ul>
+                </div>
                
                 <!-- will -->
-                <li>
-                    <span>Con:</span>
-                        <input type="number"> 
-                </li>    
-                <li>
-                    <span>Prof:</span>
-                        <input type="number">
-                </li>    
-                <li>
-                    <span>Item:</span>
-                        <input type="number">
-                </li>    
-                <li>
-                    <select name="training-4" id="">
-                        <option value="ut">Untrained</option>
-                        <option value="trained">Trained</option>
-                        <option value="expert">Expert</option>
-                        <option value="master">Master</option>
-                        <option value="legendary">Legendary</option>
-                    </select> 
-                </li>
-            </div>
-                <li>
-                    <textarea name="Notes" id="" cols="30" rows="3">Notes:</textarea>
-                </li>
-            </ul>
-        </div>
+                <div class="saves-wrapper">
+                    <ul>
+                        <li>                        
+                            <span>Will:</span>
+                                <input type="number">
+                        </li>                  
+                        <li>
+                            <span>Con:</span>
+                                <input type="number"> 
+                        </li>    
+                        <li>
+                            <span>Prof:</span>
+                                <input type="number">
+                        </li>    
+                        <li>
+                            <span>Item:</span>
+                                <input type="number">                               
+                        </li>    
+                        <li>
+                            <select name="training-7" id="">
+                                <option value="ut">Untrained</option>
+                                <option value="trained">Trained</option>
+                                <option value="expert">Expert</option>
+                                <option value="master">Master</option>
+                                <option value="legendary">Legendary</option>
+                            </select> 
+                        </li>
+                    </ul>
+                </div>
+    </div>
 
 <!-- Hit Points -->
         <div class="hp-wrapper">
-            <div class="hit-points"> 
+            <div class="hit-points">
+                <h4>Health/Resists/Conditions</h4> 
                 <ul>
-                 <li>Max:</li>
-                     <input type="text">
-                 <li>Current:</li>
-                     <input type="text">
-                 <li>Temporary:</li>
-                     <input type="text">
-                 <li>Dying:</li>
-                     <input type="text">
-                 <li>Wounded:</li>
-                     <input type="text">
-                 <li>Resistances/Immunities:</li>
-                     <textarea name="resis-immun" id="" cols="25" rows="3"></textarea>
-                 <li>Conditions:</li>
-                     <textarea name="conditions" id="" cols="25" rows="3"></textarea>
+                    <li>
+                       <span>Max:</span>
+                    </li>
+                    <li>
+                        <input type="number">
+                    </li>
+                    <li>
+                        <span>Current:</span>
+                    </li>
+                    <li>
+                        <input type="number">
+                    </li>
+                    <li>
+                        <span>Temporary:</span>
+                    </li>
+                    <li>
+                        <input type="number">
+                    </li>
+                    <li>
+                        <span>Dying:</span>
+                    </li>
+                    <li>
+                        <input type="number">
+                    </li>
+                    <li>
+                        <span>Wounded:</span>
+                    </li>
+                    <li>
+                        <input type="number">
+                    </li>
+                    <li>
+                        <span>Resistances/Immunities:</span>                        
+                    </li>
+                    <li>
+                        <textarea name="resis-immun" id="" cols="25" rows="3"></textarea>
+                    </li>
+                    <li>
+                        <span>Conditions:</span>
+                    </li>
+                    <li>
+                        <textarea name="conditions" id="" cols="25" rows="3"></textarea>
+                    </li>
                 </ul>
             </div>
         </div>

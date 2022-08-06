@@ -119,13 +119,8 @@ table {
 /* cont 2 */
 .container-2 {
 	display: flex;
-	flex-direction: row;
-}
-
-  .hp-wrapper {
-	border: solid thin red;
-	width: 20%;
-  }
+	flex-direction: row;	
+}  
 
   .perception-wrapper{
 	border: solid thin red;
@@ -255,6 +250,7 @@ li {
 	width: 20%;
 	display: flex;
 	justify-content: center;
+	align-items: center;
 	line-height: 30px;
   }
 
@@ -292,6 +288,7 @@ input {
 	line-height: 30px;
 	display: flex;
 	flex-direction: column;
+	row-gap: 5px;
   }
 
   .armor-wrapper > span {
@@ -306,7 +303,7 @@ input {
   	.ac-wrapper
 	ul {
 		display: flex;
-		justify-content: space-evenly;		
+		justify-content: center;
 	}
 
 	.ac-wrapper
@@ -314,6 +311,7 @@ input {
 		display: flex;
 		flex-direction: row;
 		margin: 5px 0;
+		padding-left: 10px;
 	}
 
 	.armor-type-wrapper
@@ -322,37 +320,70 @@ input {
 		flex-direction: row;
 		line-height: normal;
 		margin: 10px 0;
-		justify-content: space-evenly;
+		justify-content: center;
 	}
 		.armor-type-wrapper
 		li {
 			text-align: center;
+			padding-left: 10px;
 		}
 	/*shield info  */
 	.shield-wrapper
 	ul {
 		display: flex;
 		flex-direction: row;
-		justify-content: space-evenly;
+		justify-content: center;
 	}
 
 		.shield-wrapper
 		input,li {
 			display: flex;			
 			justify-content: center;
+			padding-left: 10px;
 		}
 
-		/* saving throws */
+		
+		h4 {
+			display: flex;
+			justify-content: center;
+			margin: 5px 0;
+		}
 
-	.fortitude-wrapper{
+/* saving throws */
+
+	.saves-wrapper{
 		display: flex;
-		justify-content: space-evenly;
+		justify-content: right;
+		margin: 10px 0;
+		width: 75%;
 	}
 
-		.fortitude-wrapper
+	.test {
+		display: flex;
+		justify-content: center;
+	}
+
+		.saves-wrapper
 		ul {
-			display: flex;
-			
+			display: flex;			
 		}
 
+		.saves-wrapper
+		li {
+			padding-left: 10px;
+		}
 
+/* HP Section */
+
+.hp-wrapper {
+	border: solid thin red;
+	width: 20%;
+	display: flex;
+	justify-content: center;
+	align-items: center;	
+  }
+
+  .hp-wrapper
+  input {
+	width: 50px;
+  }
