@@ -151,10 +151,10 @@
             <!-- </div>   -->
                 <li>                           
                     <span>Class DC:</span>
-                    <input type="text" placeholder="">
+                        <input type="number" placeholder="">
                     <span>= DC Base 10</span>
-                    <input type="text" placeholder="Key">
-                    <input type="text" placeholder="Prof">
+                        <input type="number" placeholder="Key">
+                    <input type="number" placeholder="Prof">
                     <select name="training-3" id="">
                         <option value="ut">Untrained</option>
                         <option value="trained">Trained</option>
@@ -162,7 +162,7 @@
                         <option value="master">Master</option>
                         <option value="legendary">Legendary</option>
                     </select>
-                    <input type="text" placeholder="Item">
+                    <input type="number" placeholder="Item">
                 </li> 
             </ul>               
         </div>
@@ -171,30 +171,20 @@
         <div class="armor-wrapper">
             <span>Armor Class</span>
             <ul>
-                <li>
-                    <span>AC:</span>
-                        <input type="text" placeholder="AC">
-                </li>
-                <li>
-                    <span>Dex:</span>
-                        <input type="text" placeholder="bonus"> 
-                            <span>Cap:</span>
-                        <input type="text"> 
-                </li>                
-                <li>
-                    <select name="training-4" id="">
-                        <option value="ut">Untrained</option>
-                        <option value="trained">Trained</option>
-                        <option value="expert">Expert</option>
-                        <option value="master">Master</option>
-                        <option value="legendary">Legendary</option>
-                    </select>
-                </li>
-                <li>
-                    <span>Item:</span>
-                </li>
-                <li>
-                    <span>Unarmored:</span>
+                <div class="ac-wrapper">
+                    <li>
+                        <span>AC:</span>
+                            <input type="number" placeholder="">
+                    </li>
+                    <li>
+                        <span>Dex:</span>
+                            <input type="number" placeholder=""> 
+                            <li>
+                                <span>Cap:</span>
+                                <input type="number">
+                            </li> 
+                    </li>                
+                    <li>
                         <select name="training-4" id="">
                             <option value="ut">Untrained</option>
                             <option value="trained">Trained</option>
@@ -202,55 +192,72 @@
                             <option value="master">Master</option>
                             <option value="legendary">Legendary</option>
                         </select>
-                </li>
-                <li>
-                    <span>Light:</span>
-                        <select name="training-4" id="">
-                            <option value="ut">Untrained</option>
-                            <option value="trained">Trained</option>
-                            <option value="expert">Expert</option>
-                            <option value="master">Master</option>
-                            <option value="legendary">Legendary</option>
-                        </select>
-                </li>
-                <li>
-                    <span>Medium:</span>
-                        <select name="training-4" id="">
-                            <option value="ut">Untrained</option>
-                            <option value="trained">Trained</option>
-                            <option value="expert">Expert</option>
-                            <option value="master">Master</option>
-                            <option value="legendary">Legendary</option>
-                        </select>
-                </li>
-                <li>
-                    <span>Heavy</span>
-                        <select name="training-4" id="">
-                            <option value="ut">Untrained</option>
-                            <option value="trained">Trained</option>
-                            <option value="expert">Expert</option>
-                            <option value="master">Master</option>
-                            <option value="legendary">Legendary</option>
-                        </select>
-                </li>
+                    </li>
+                    <li>
+                        <span>Item:</span>
+                            <input type="number">
+                    </li>
+            </div>
+            <div class="armor-type-wrapper">
+                    <li>
+                        <span>Unarmored:</span>
+                            <select name="training-4" id="">
+                                <option value="ut">Untrained</option>
+                                <option value="trained">Trained</option>
+                                <option value="expert">Expert</option>
+                                <option value="master">Master</option>
+                                <option value="legendary">Legendary</option>
+                            </select>
+                    </li>
+                    <li>
+                        <span>Light:</span>
+                            <select name="training-4" id="">
+                                <option value="ut">Untrained</option>
+                                <option value="trained">Trained</option>
+                                <option value="expert">Expert</option>
+                                <option value="master">Master</option>
+                                <option value="legendary">Legendary</option>
+                            </select>
+                    </li>
+                    <li>
+                        <span>Medium:</span>
+                            <select name="training-4" id="">
+                                <option value="ut">Untrained</option>
+                                <option value="trained">Trained</option>
+                                <option value="expert">Expert</option>
+                                <option value="master">Master</option>
+                                <option value="legendary">Legendary</option>
+                            </select>
+                    </li>
+                    <li>
+                        <span>Heavy:</span>
+                            <select name="training-4" id="">
+                                <option value="ut">Untrained</option>
+                                <option value="trained">Trained</option>
+                                <option value="expert">Expert</option>
+                                <option value="master">Master</option>
+                                <option value="legendary">Legendary</option>
+                            </select>
+                    </li>
+                </div>
                 <li>
                     <span>Shield:</span>
                     <span>+</span>
-                        <input type="text" placeholder="AC">
+                        <input type="number" placeholder="AC">
                 </li>
                 <li>
                     <span>Hardness:</span>
-                        <input type="text"> 
+                        <input type="number"> 
                 </li>
                 <li>
                     <span>Max HP:</span>
-                        <input type="text"> 
+                        <input type="number"> 
                     <span>BT(Break Threshold):</span>
-                        <input type="text"> 
+                        <input type="number"> 
                 </li>
                 <li>
                     <span>Current HP:</span>
-                        <input type="text"> 
+                        <input type="number"> 
                 </li>
             </ul>
             <ul>

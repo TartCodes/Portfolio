@@ -120,12 +120,6 @@ table {
 	display: flex;
 	flex-direction: row;
 }
-  
-
-  .armor-wrapper {
-	border: solid thin red;
-	width: 25%;
-  }
 
   .hp-wrapper {
 	border: solid thin red;
@@ -280,7 +274,7 @@ li {
 	justify-content: space-around;
 	width: 100%;
 }
-/* YOURE HERE FIGURE OUT STUPID BOXES */
+/* FIGURE OUT STUPID BOXES */
 
 .ability-wrapper
 input {
@@ -288,3 +282,41 @@ input {
 	text-align: center;
 }
 
+/* Armor */
+
+.armor-wrapper {
+	border: solid thin red;
+	width: 25%;
+	line-height: 30px;
+	display: flex;
+	flex-direction: column;
+  }
+
+  .armor-wrapper > span {
+	text-align: center;
+  }
+
+  .armor-wrapper
+  input {
+	width: 40px;
+  }
+
+  	.ac-wrapper {
+		display: flex;
+		justify-content: center;
+		word-spacing: 10px;
+	}
+
+	.ac-wrapper
+	li {
+		display: flex;
+		flex-direction: row;
+		
+	}
+
+	.armor-type-wrapper {
+		display: flex;
+		flex-direction: row;
+		line-height: normal;
+		text-align: center;
+	}
