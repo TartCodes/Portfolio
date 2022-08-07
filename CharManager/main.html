@@ -169,36 +169,38 @@
 
 <!-- armor class and saving throws -->
         <div class="armor-wrapper">
-            <span>Armor Class</span>
-            <ul>
+            <span>Armor Class</span> 
                 <div class="ac-wrapper">
-                    <li>
-                        <span>AC:</span>
-                            <input type="number" placeholder="">
-                    </li>
-                    <li>
-                        <span>Dex:</span>
-                            <input type="number" placeholder=""> 
-                            <li>
-                                <span>Cap:</span>
+                    <ul>               
+                        <li>
+                            <span>AC:</span>
+                                <input type="number" placeholder="">
+                        </li>
+                        <li>
+                            <span>Dex:</span>
+                                <input type="number" placeholder=""> 
+                                <li>
+                                    <span>Cap:</span>
+                                    <input type="number">
+                                </li> 
+                        </li>                
+                        <li>
+                            <select name="training-4" id="">
+                                <option value="ut">Untrained</option>
+                                <option value="trained">Trained</option>
+                                <option value="expert">Expert</option>
+                                <option value="master">Master</option>
+                                <option value="legendary">Legendary</option>
+                            </select>
+                        </li>
+                        <li>
+                            <span>Item:</span>
                                 <input type="number">
-                            </li> 
-                    </li>                
-                    <li>
-                        <select name="training-4" id="">
-                            <option value="ut">Untrained</option>
-                            <option value="trained">Trained</option>
-                            <option value="expert">Expert</option>
-                            <option value="master">Master</option>
-                            <option value="legendary">Legendary</option>
-                        </select>
-                    </li>
-                    <li>
-                        <span>Item:</span>
-                            <input type="number">
-                    </li>
+                        </li>
+                    </ul>
             </div>
             <div class="armor-type-wrapper">
+                <ul>
                     <li>
                         <span>Unarmored:</span>
                             <select name="training-4" id="">
@@ -239,80 +241,79 @@
                                 <option value="legendary">Legendary</option>
                             </select>
                     </li>
+                </ul>
                 </div>
                 <!-- shield info -->
-                <div class="shield-wrapper">
-                    <li>
-                        <span>Shield:</span>
-                        <span>+</span>
-                            <input type="number" placeholder="AC">
-                    </li>
-                    <li>
-                        <span>Hardness:</span>
-                            <input type="number"> 
-                    </li>
-                    <li>
-                        <span>Max HP:</span>
-                            <input type="number">                     
-                    </li>
-                    <li>
-                        <span>Break:</span>
-                            <input type="number"> 
-                    </li>
-                    <li>
-                        <span>Current HP:</span>
-                            <input type="number"> 
-                    </li>
-                </div>
+        <div class="shield-wrapper">
+            <ul>
+                <li>
+                    <span>Shield:</span>
+                    <span>+</span>
+                        <input type="number" placeholder="AC">
+                </li>
+                <li>
+                    <span>Hardness:</span>
+                        <input type="number"> 
+                </li>
+                <li>
+                    <span>Max HP:</span>
+                        <input type="number">                     
+                </li>
+                <li>
+                    <span>Break:</span>
+                        <input type="number"> 
+                </li>
+                <li>
+                    <span>Current HP:</span>
+                        <input type="number"> 
+                </li>            
             </ul>
+        </div>
+            <!-- saving throws -->            
 
-            <!-- saving throws -->
-            
-
-            <!-- fix this, put each ST in its own wrapper then css -->
-            <ul>               
-                    <li>
-                        <span>Saving Throws</span>
-                    </li>
-                    <div class="saves-header">
-                        <li>                        
-                            <span>Fortitude</span>
-                                <input type="number">
-                        </li>
-                          <li>
+            <!-- fix this, put each ST in its own wrapper then css -->      
+                    <div>
+                        <h4>Saving Throws</h4>
+                    </div>                       
+                          <!-- <li>
                             <span>Reflex</span>
                                 <input type="number">
                         </li>
                         <li>
                             <span>Will</span>
                                 <input type="number">
+                        </li> -->                      
+                <div class="fortitude-wrapper">
+                    <ul>
+                        <li>                        
+                            <span>Fortitude = &nbsp </span>
+                                <input type="number">
+                        </li>                  
+                        <li>
+                            <span>Con:</span>
+                                <input type="number"> 
+                        </li>    
+                        <li>
+                            <span>Prof:</span>
+                                <input type="number">
+                        </li>    
+                        <li>
+                            <span>Item:</span>
+                                <input type="number">                               
+                        </li>    
+                        <li>
+                            <select name="training-4" id="">
+                                <option value="ut">Untrained</option>
+                                <option value="trained">Trained</option>
+                                <option value="expert">Expert</option>
+                                <option value="master">Master</option>
+                                <option value="legendary">Legendary</option>
+                            </select> 
                         </li>
-                    </div>    
-                <div class="saves-wrapper">
-                  
-                    <li>
-                        <span>Con:</span>
-                            <input type="number"> 
-                    </li>    
-                    <li>
-                        <span>Prof:</span>
-                            <input type="number">
-                    </li>    
-                    <li>
-                        <span>Item:</span>
-                            <input type="number">
-                    </li>    
-                    <li>
-                        <select name="training-4" id="">
-                            <option value="ut">Untrained</option>
-                            <option value="trained">Trained</option>
-                            <option value="expert">Expert</option>
-                            <option value="master">Master</option>
-                            <option value="legendary">Legendary</option>
-                        </select> 
-                    </li>
-              
+                    </ul>
+                </div>
                    <!-- reflex -->
+                   <!-- youre here ADD UL -->
                     <li>
                         <span>Con:</span>
                             <input type="number"> 

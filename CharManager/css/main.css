@@ -303,7 +303,8 @@ input {
 	width: 40px;
   }
 
-  	.ac-wrapper {
+  	.ac-wrapper
+	ul {
 		display: flex;
 		justify-content: space-evenly;		
 	}
@@ -315,7 +316,8 @@ input {
 		margin: 5px 0;
 	}
 
-	.armor-type-wrapper {
+	.armor-type-wrapper
+	ul {
 		display: flex;
 		flex-direction: row;
 		line-height: normal;
@@ -327,7 +329,8 @@ input {
 			text-align: center;
 		}
 	/*shield info  */
-	.shield-wrapper {
+	.shield-wrapper
+	ul {
 		display: flex;
 		flex-direction: row;
 		justify-content: space-evenly;
@@ -340,15 +343,16 @@ input {
 		}
 
 		/* saving throws */
-.saves-header {
-	display: flex;
-	flex-direction: row;
-	justify-content: space-evenly;
-}
 
-.saves-wrapper {
-	display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    text-align: center;
-}
+	.fortitude-wrapper{
+		display: flex;
+		justify-content: space-evenly;
+	}
+
+		.fortitude-wrapper
+		ul {
+			display: flex;
+			
+		}
+
+
