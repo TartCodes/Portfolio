@@ -106,6 +106,7 @@ table {
   
   input {
 	display: flex;
+	text-align: center;
 }
 
 /* containers */
@@ -123,11 +124,12 @@ table {
 
   .hp-wrapper {
 	border: solid thin red;
-	width: 25%;
+	width: 20%;
   }
 
   .perception-wrapper{
 	border: solid thin red;
+	width: 10%;
   }
 
   /* cont 3 */
@@ -250,7 +252,7 @@ li {
 
 .ability-wrapper{
 	border: solid thin red;	
-	width: 25%;
+	width: 20%;
 	display: flex;
 	justify-content: center;
 	line-height: 30px;
@@ -286,7 +288,7 @@ input {
 
 .armor-wrapper {
 	border: solid thin red;
-	width: 25%;
+	width:50%;
 	line-height: 30px;
 	display: flex;
 	flex-direction: column;
@@ -303,20 +305,50 @@ input {
 
   	.ac-wrapper {
 		display: flex;
-		justify-content: center;
-		word-spacing: 10px;
+		justify-content: space-evenly;		
 	}
 
 	.ac-wrapper
 	li {
 		display: flex;
 		flex-direction: row;
-		
+		margin: 5px 0;
 	}
 
 	.armor-type-wrapper {
 		display: flex;
 		flex-direction: row;
 		line-height: normal;
-		text-align: center;
+		margin: 10px 0;
+		justify-content: space-evenly;
 	}
+		.armor-type-wrapper
+		li {
+			text-align: center;
+		}
+	/*shield info  */
+	.shield-wrapper {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-evenly;
+	}
+
+		.shield-wrapper
+		input,li {
+			display: flex;			
+			justify-content: center;
+		}
+
+		/* saving throws */
+.saves-header {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-evenly;
+}
+
+.saves-wrapper {
+	display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    text-align: center;
+}
