@@ -95,10 +95,21 @@ table {
     box-sizing: border-box;
   }
 
+
+
 /* input */
 
 input {
 	text-align: center;
+	border-radius: 5px;
+	font-weight: 700;
+	padding: 1px;
+	line-height: 1.1em;
+}
+
+input {
+	border: none;
+	outline-width: 0;
 }
 
 .number-input{
@@ -116,14 +127,43 @@ input[type=number] {
   -moz-appearance: textfield;
 }
 
+.hero-points-div
+input{
+	border-radius: 5px;
+}
+
+input[type=checkbox] {
+	accent-color: black;
+	cursor: pointer;	
+  }
+
   /* font styles */
-  html,body,input,select{
+  html,body,input,select,textarea{
 	font-size: 14px;
 	font-family: 'David Libre', sans-serif;
   }
 
+  input:placeholder-shown{
+	font-weight: 400;
+  }
+
+  header{
+	font-size: 2em;
+	border: solid 3px black;
+	text-align: center;
+  }
+
+
+/* html,body */
+  html,body{
+	background-color: rgb(79, 7, 7);
+	color: white;
+  }
+
   
-  
+select {
+	border-radius: 5px;
+}
 
 /* textarea resize */
   textarea {
@@ -139,9 +179,9 @@ input[type=number] {
 	flex: 1;
 }
 
-.modal-container-right {
+/* .main-container-right {
 	flex: 1;
-}
+} */
 
 /* Left Side Bar */
 
@@ -153,25 +193,30 @@ input[type=number] {
 
 /* General Character Information / Top section*/
 
-.char-container{
-	border: solid thin red;
+.char-container{	
+	border: solid 3px black;
 	text-align: center;
-	display: flex;
-	flex-direction: column;
+    display: flex;
+    align-items: center;
+    height: 10vh;
+    /* width: 50vw; */
+    background-color: rgb(79, 7, 7);
+    color: white;
+	border-top: 0;
 }
-
-
-/* Character Info */
-
-.hero-points-div
-input{
+.text-border {
+	border: solid 2px black; 
 	border-radius: 5px;
+	text-align: center;
+	padding: .5em 1em;
 }
 
-input[type=checkbox] {
-	accent-color: rgb(79, 7, 7);
-	cursor: pointer;	
-  }
+.hero-points-div{
+	display: flex;
+    width: 5em;
+    justify-content: center;
+}
+
 
 
 /* KEEP MESSING WITH THE HTML LAYOUT ALMOST THERE */

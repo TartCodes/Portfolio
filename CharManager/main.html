@@ -12,6 +12,10 @@
     <title>Document</title>
 </head>
 <body>
+
+    <header>
+        <h1>Character Manager</h1>        
+    </header>
 <section class="main" id="main-container">
     <!------------>
     <div class="left-side-bar">            
@@ -46,87 +50,100 @@
     </div>       
 
     <!---Chacter Name----->
-<section class="main-container-right">
+<!-- <section class="main-container-right"> -->
 
-    <div class="char-container">            
-            <div>Character Name:</div>
-                <div>
-                    <input class="larger-input" type="text" placeholder="...character name">
-                </div>                
-            <div>Player Name:</div>
-                <div>     
-                    <input class="larger-input" type="text" placeholder="...your name">   
-                </div>                
-             <div>Level:</div>
-                <div>
-                    <input class="other" type="number" placeholder="">            
-                </div>                
-            <div>XP:</div>
-                <div>
-                    <input class="xp" type="number" placeholder="">
-                </div>                
-            <div>Hero Points:</div>
-                <div class="hero-points-div">
-                    <input type="checkbox" value="None" name="check">
-                    <input type="checkbox" value="None" name="check">  
-                    <input type="checkbox" value="None" name="check">        
+    <div class="char-container">
+            <div class="text-border">          
+                <div>Character Name</div>
+                    <div>
+                        <input class="larger-input" type="text">
+                    </div> 
+            </div>
+            <div class="text-border">                  
+                <div>Player Name</div>
+                    <div>     
+                        <input class="larger-input" type="text">   
+                    </div>
+            </div> 
+            <div class="text-border">                
+                <div>Level</div>
+                    <div>
+                        <input cclass="number-input" lass="number-input center" class="number-input" type="number" placeholder="">            
+                    </div> 
+            </div>
+            <div class="text-border">                
+                <div>XP</div>
+                    <div>
+                        <input cclass="number-input" lass="number-input" class="number-input" type="number" placeholder="">
+                    </div>
+            </div>
+            <div class="text-border">                 
+                <div>Hero Points</div>
+                    <div class="hero-points-div">
+                        <input type="checkbox" value="None" name="check">
+                        <input type="checkbox" value="None" name="check">  
+                        <input type="checkbox" value="None" name="check">        
                 </div>
-                
-            <div>Size:</div>
-               <select name="size-category" id="">
-                    <option value="tiny">Tiny</option>
-                    <option value="small">Small</option>
-                    <option value="medium">Medium</option>
-                    <option value="large">Large</option>
-                    <option value="huge">Huge</option>
-                    <option value="gargantuan">Gargantuan</option>
-                </select>                                   
-                    
-            <div>Alignment:</div>
-                <select name="alignment" id="">
-                    <option value="lg">LG</option>
-                    <option value="ln">LN</option>
-                    <option value="le">LE</option>
-                    <option value="ng">NG</option>
-                    <option value="tn">TN</option>
-                    <option value="ne">NE</option>
-                    <option value="cg">CG</option>
-                    <option value="cn">CN</option>
-                    <option value="ce">CE</option>
-                </select> 
-        
-            <div>Traits:</div>
-                <div>
-                    <input class="traits" type="text" placeholder="...Char Traits">           
-                </div>
+            </div>
+            <div class="text-border">    
+                <div>Size</div>
+                   <select name="size-category" id="">
+                        <option value="tiny">Tiny</option>
+                        <option value="small">Small</option>
+                        <option value="medium">Medium</option>
+                        <option value="large">Large</option>
+                        <option value="huge">Huge</option>
+                        <option value="gargantuan">Gargantuan</option>
+                    </select>                                   
+            </div>
+            <div class="text-border">        
+                <div>Alignment</div>
+                    <select name="alignment" id="">
+                        <option value="lg">LG</option>
+                        <option value="ln">LN</option>
+                        <option value="le">LE</option>
+                        <option value="ng">NG</option>
+                        <option value="tn">TN</option>
+                        <option value="ne">NE</option>
+                        <option value="cg">CG</option>
+                        <option value="cn">CN</option>
+                        <option value="ce">CE</option>
+                    </select> 
+            </div>
+            <div class="text-border"> 
+                <div>Traits</div>
+                    <div>
+                        <input class="traits" type="text" placeholder="...Char Traits">           
+                    </div>
+            </div>
             
             <!-- Hit Points -->
-        <!-- <div class="hp-container">            -->
-
-            <div>Health/Resists/Conditions</div>             
+       <div class="hp-container">       
+            
+        <div>Health/Resists/Conditions</div>             
             <div>Max:</div>                   
                 <div>
-                    <input class="number-input" type="number">
+                    <input cclass="number-input" lass="number-input" class="number-input" type="number">
                 </div>
                     
             <div>Current:</div>                    
                 <div>
-                    <input class="number-input" type="number">
+                    <input cclass="number-input" lass="number-input" class="number-input" type="number">
                 </div>
                     
             <div>Temporary:</div>                
                 <div>
-                    <input class="number-input" type="number">
+                    <input cclass="number-input" lass="number-input" class="number-input" type="number">
                 </div>
 
             <div>Dying:</div>
                 <div>
-                    <input class="number-input" type="number">
+                    <input cclass="number-input" lass="number-input" class="number-input" type="number">
                 </div>
 
             <div>Wounded:</div>
                 <div>
-                    <input class="number-input" type="number">
+                    <input cclass="number-input" lass="number-input" class="number-input" type="number">
                 </div>
 
             <div>Resistances/Immunities:</div>                       
@@ -139,59 +156,59 @@
                 <div>
                     <textarea name="conditions" id="" cols="25" rows="3"></textarea>
                 </div>     
-        </div>
+    </div>
    
     <!-- ability modifiers, hit points, and speed group -->            
         <div class="ability-container">              
            <div>Ability Scores and Modifier</div>     
                 <div class="ability-scores">Strength:</div>
                     <div>                                               
-                        <input class="score-total" type="number"> 
+                        <input class="number-input" type="number"> 
                     </div>
                 <div>+</div>
                     <div>
-                        <input type="number"> 
+                        <input class="number-input" type="number"> 
                     </div>            
                 <div class="ability-scores">Dexterity:</div>
                     <div>
-                        <input class="score-total" type="number">
+                        <input class="number-input" type="number">
                     </div>
                 <div>+</div>
                     <div>       
-                        <input type="number">  
+                        <input class="number-input" type="number">  
                     </div>        
                 <div class="ability-scores">Constitution:</div>
                     <div>
-                        <input class="score-total" type="number">
+                        <input class="number-input" type="number">
                     </div>
                 <div>+</div>
                     <div>
-                        <input type="number">
+                        <input class="number-input" type="number">
                     </div>                            
                 <div class="ability-scores">Intelligence:</div>
                     <div>
-                        <input class="score-total" type="number">
+                        <input class="number-input" type="number">
                     </div>
                 <div>+</div>
                     <div>
-                        <input type="number">
+                        <input class="number-input" type="number">
                     </div>            
                 <div class="ability-scores">Wisdom:</div>
                 <div>
-                    <input class="score-total" type="number">
+                    <input class="number-input" type="number">
                 </div>
                 <div>+</div>
                     <div>
-                        <input type="number">
+                        <input class="number-input" type="number">
                     </div>
             
                 <div class="ability-scores">Charisma:</div>
                     <div>
-                        <input class="score-total" type="number">
+                        <input class="number-input" type="number">
                     </div>
                 <div>+</div>
                     <div>
-                        <input type="number">
+                        <input class="number-input" type="number">
                     </div>
         </div>
 
@@ -199,15 +216,15 @@
             <div>Class DC:</div>          
             <div>Base 10</div>                                        
                 <div>   
-                    <input type="number" placeholder="">           
+                    <input class="number-input" type="numbe">           
                 </div>          
             <div>Key:</div>
                 <div>                                
-                    <input type="number" placeholder=""> 
+                    <input class="number-input" type="number"> 
                 </div>
             <div>Prof:</div>
                 <div>                     
-                    <input type="number" placeholder="">
+                    <input class="number-input" type="number">
                 </div>
             <div>                                                                  
                 <select name="training-3" id="">
@@ -220,7 +237,7 @@
             </div>        
             <div>Item:</div>
                 <div>
-                    <input type="number" placeholder="">
+                    <input class="number-input" type="number">
                 </div>                                       
         </div>
 
@@ -229,15 +246,15 @@
         <div>Armor Class</div>                 
         <div>AC:</div>
             <div>
-                <input type="number" placeholder="">
+                <input class="number-input" type="number">
             </div>
         <div>Dex:</div>
             <div>
-                <input type="number" placeholder=""> 
+                <input class="number-input" type="number"> 
             </div>            
         <div>Cap:</div>
             <div>
-                <input type="number">
+                <input class="number-input" type="number">
             </div>          
         <div>
             <select name="training-4" id="">
@@ -250,7 +267,7 @@
         </div>    
         <div>Item:</div>
             <div>
-                <input type="number">
+                <input class="number-input" type="number">
             </div>
     </div>
     <!--armor type  -->
@@ -304,27 +321,27 @@
         <div>Shield:</div>
         <div>+</div>
             <div>
-                <input type="number" placeholder="">
+                <input class="number-input" type="number">
             </div>
 
         <div>Hardness:</div>
             <div>
-                <input type="number"> 
+                <input class="number-input" type="number"> 
             </div>
     
         <div>Max HP:</div>
             <div>
-                <input type="number">                     
+                <input class="number-input" type="number">                     
             </div>
     
         <div>Break:</div>
             <div>
-                <input type="number"> 
+                <input class="number-input" type="number"> 
             </div>
     
         <div>Current HP:</div>
             <div>   
-                <input type="number"> 
+                <input class="number-input" type="number"> 
             </div>     
     </div>
     <!-- saving throws -->     
@@ -332,22 +349,22 @@
         <div class="titles">Saving Throws</div>                                         
         <div>Fortitude:</div>
             <div>
-                <input type="number">
+                <input class="number-input" type="number">
             </div>             
         
         <div>Con:</div>
             <div>
-                <input type="number"> 
+                <input class="number-input" type="number"> 
             </div>
         
         <div>Prof:</div>
             <div>
-                <input type="number">
+                <input class="number-input" type="number">
             </div>
         
         <div>Item:</div>
             <div>
-                <input type="number">                               
+                <input class="number-input" type="number">                               
             </div>
                 <div>
                     <select name="training-4" id="">
@@ -361,22 +378,22 @@
         <!-- reflex -->                                                
         <div>Reflex:</div>
             <div>
-                <input type="number">
+                <input class="number-input" type="number">
             </div>         
     
         <div>Con:</div>
             <div>
-                <input type="number"> 
+                <input class="number-input" type="number"> 
             </div>
     
         <div>Prof:</div>
             <div>
-                <input type="number">
+                <input class="number-input" type="number">
             </div>
     
         <div>Item:</div>
             <div>
-                <input type="number">                               
+                <input class="number-input" type="number">                               
             </div>
                 <div>
                     <select name="training-6" id="">
@@ -390,22 +407,22 @@
      <!-- will -->                                         
         <div>Will:</div>
             <div>
-                <input type="number">
+                <input class="number-input" type="number">
             </div>         
     
         <div>Con:</div>
             <div>
-                <input type="number"> 
+                <input class="number-input" type="number"> 
             </div>
     
         <div>Prof:</div>
             <div>
-                <input type="number">
+                <input class="number-input" type="number">
             </div>
     
         <div>Item:</div>
             <div>
-                <input type="number">                               
+                <input class="number-input" type="number">                               
             </div>
                 <div>
                     <select name="training-7" id="">
@@ -423,27 +440,27 @@
             <div>Health/Resists/Conditions</div>             
             <div>Max:</div>                   
                 <div>
-                    <input type="number">
+                    <input class="number-input" type="number">
                 </div>
                     
             <div>Current:</div>                    
                 <div>
-                    <input type="number">
+                    <input class="number-input" type="number">
                 </div>
                     
             <div>Temporary:</div>                
                 <div>
-                    <input type="number">
+                    <input class="number-input" type="number">
                 </div>
 
             <div>Dying:</div>
                 <div>
-                    <input type="number">
+                    <input class="number-input" type="number">
                 </div>
 
             <div>Wounded:</div>
                 <div>
-                    <input type="number">
+                    <input class="number-input" type="number">
                 </div>
 
             <div>Resistances/Immunities:</div>                       
@@ -462,17 +479,17 @@
     <div class="perception-container">           
         <div>Perception</div>
             <div>
-                <input type="number">
+                <input class="number-input" type="number">
             </div>
 
         <div>Wisdom:</div>                
             <div>
-               <input type="number">
+               <input class="number-input" type="number">
             </div>
 
         <div>Proficiencies:</div>            
             <div>
-                <input type="number">
+                <input class="number-input" type="number">
             </div>
 
                 <div>
@@ -512,20 +529,20 @@
                             </select>
                                 <span>Damage Dice:</span>
                                     <div class="damage-dice">                            
-                                        <input class="number-input" type="number">
+                                        <input cclass="number-input" lass="number-input" class="number-input" type="number">
                                         <span>d</span>
-                                        <input class="number-input" type="number">
+                                        <input cclass="number-input" lass="number-input" class="number-input" type="number">
                                         <span>+</span>
-                                        <input class="number-input" type="number">
+                                        <input cclass="number-input" lass="number-input" class="number-input" type="number">
                                     </div>
                                 <span>To Hit:</span>
                                     <div class="to-hit">
                                         <span>+</span>
-                                        <input class="number-input" type="number">
+                                        <input cclass="number-input" lass="number-input" class="number-input" type="number">
                                         <span>+</span>
-                                        <input class="number-input" type="number">
+                                        <input cclass="number-input" lass="number-input" class="number-input" type="number">
                                         <span>+</span>
-                                        <input class="number-input" type="number">
+                                        <input cclass="number-input" lass="number-input" class="number-input" type="number">
                         </div>
                         <button id="add-weapon">
                             Add Weapon
@@ -994,7 +1011,7 @@
                         <textarea name="" id="" cols="30" rows="1"></textarea>
                     </div> 
     </div>
-</section>
+<!-- </section> -->
 </section>
 
     
