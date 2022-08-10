@@ -1,0 +1,257 @@
+<div class="weapon-strikes">
+            
+                
+    <div>Move Speed:</div>
+        <input type="number">
+            <div>Feet</div>
+    <div>Move Types & Notes:</div>
+        <textarea name="movement" id="" cols="30" rows="2"></textarea>
+
+
+    <div>Melee Strikes</div>
+
+
+    <div>Weapon:</div>
+        <input type="text" placeholder="Weapon Name">
+    <div>To Hit:</div>
+        <input type="number" placeholder="Total">
+    <div>=</div>
+    <div>Str:</div>
+        <input type="number">
+    <div>Prof:</div>
+        <input type="number">
+        <select name="training-1" id="">
+            <option value="ut">Untrained</option>
+            <option value="trained">Trained</option>
+            <option value="expert">Expert</option>
+            <option value="master">Master</option>
+            <option value="legendary">Legendary</option>
+        </select>
+    <div>Item:</div>
+        <input type="number">
+                        
+
+
+    <div>Dice:</div>
+        <input type="text">
+    <div>Str:</div>
+        <input type="number">
+    <div>Dmg Type:</div>
+        <select name="damage-type-1" id="">
+            <option value="bludgeon">B</option>
+            <option value="piercing">P</option>
+            <option value="slashing">S</option>
+        </select>
+    <div>W Spec:</div>
+        <input type="number">
+    <div>Other:</div>
+        <textarea name="other" id="" cols="15" rows="1"></textarea>
+    <div>Traits:</div>
+        <textarea name="traits" id="" cols="15" rows="1"></textarea>
+
+
+
+    <div>Weapon:</div>
+        <input type="text" placeholder="Weapon Name">
+    <div>To Hit:</div>
+        <input type="number" placeholder="Total">
+    <div>=</div>
+    <div>Str:</div>
+        <input type="number">
+    <div>Prof:</div>
+        <input type="number">
+        <select name="training-1" id="">
+            <option value="ut">Untrained</option>
+            <option value="trained">Trained</option>
+            <option value="expert">Expert</option>
+            <option value="master">Master</option>
+            <option value="legendary">Legendary</option>
+        </select>
+    <div>Item:</div>
+        <input type="number">
+                        
+
+
+
+    <div>Dice:</div>
+        <input type="text">
+    <div>Str:</div>
+        <input type="number">
+    <div>Dmg Type:</div>
+        <select name="damage-type-1" id="">
+            <option value="bludgeon">B</option>
+            <option value="piercing">P</option>
+            <option value="slashing">S</option>
+        </select>
+    <div>W Spec:</div>
+        <input type="number">
+    <div>Other:</div>
+        <textarea name="other" id="" cols="15" rows="1"></textarea>
+    <div>Traits:</div>
+        <textarea name="traits" id="" cols="15" rows="1"></textarea>
+
+
+
+    <div>Weapon:</div>
+        <input type="text" placeholder="Weapon Name">
+    <div>To Hit:</div>
+        <input type="number" placeholder="Total">
+    <div>=</div>
+    <div>Str:</div>
+        <input type="number">
+    <div>Prof:</div>
+        <input type="number">
+        <select name="training-1" id="">
+            <option value="ut">Untrained</option>
+            <option value="trained">Trained</option>
+            <option value="expert">Expert</option>
+            <option value="master">Master</option>
+            <option value="legendary">Legendary</option>
+        </select>
+    <div>Item:</div>
+        <input type="number">
+
+
+
+    <div>Dice:</div>
+        <input type="text">
+    <div>Str:</div>
+        <input type="number">
+    <div>Dmg Type:</div>
+        <select name="damage-type-1" id="">
+            <option value="bludgeon">B</option>
+            <option value="piercing">P</option>
+            <option value="slashing">S</option>
+        </select>
+    <div>W Spec:</div>
+        <input type="number">
+    <div>Other:</div>
+        <textarea name="other" id="" cols="15" rows="1"></textarea>
+    <div>Traits:</div>
+        <textarea name="traits" id="" cols="15" rows="1"></textarea>
+
+
+
+
+
+<div>Ranged Strikes</div>
+
+
+<div>Weapon:</div>
+    <input type="text" placeholder="Weapon Name">
+<div>To Hit:</div>
+    <input type="number" placeholder="Total">
+<div>=</div>
+<div>Str:</div>
+    <input type="number">
+<div>Prof:</div>
+    <input type="number">
+    <select name="training-1" id="">
+        <option value="ut">Untrained</option>
+        <option value="trained">Trained</option>
+        <option value="expert">Expert</option>
+        <option value="master">Master</option>
+        <option value="legendary">Legendary</option>
+    </select>
+<div>Item:</div>
+    <input type="number">
+                    
+
+
+<div>Dice:</div>
+    <input type="text">
+<div>Special:</div>
+    <input type="number">
+<div>Dmg Type:</div>
+    <select name="damage-type-1" id="">
+        <option value="bludgeon">B</option>
+        <option value="piercing">P</option>
+        <option value="slashing">S</option>
+    </select>
+<div>W Spec:</div>
+    <input type="number">
+<div>Other:</div>
+    <textarea name="other" id="" cols="15" rows="1"></textarea>
+<div>Traits:</div>
+    <textarea name="traits" id="" cols="15" rows="1"></textarea>
+
+
+
+<div>Weapon:</div>
+    <input type="text" placSpecial:eholder="Weapon Name">
+<div>To Hit:</div>
+    <input type="number" placeholder="Total">
+<div>=</div>
+<div>Str:</div>
+    <input type="number">
+<div>Prof:</div>
+    <input type="number">
+    <select name="training-1" id="">
+        <option value="ut">Untrained</option>
+        <option value="trained">Trained</option>
+        <option value="expert">Expert</option>
+        <option value="master">Master</option>
+        <option value="legendary">Legendary</option>
+    </select>
+<div>Item:</div>
+    <input type="number">
+                    
+
+
+
+<div>Dice:</div>
+    <input type="text">
+<div>Special:</div>
+    <input type="number">
+<div>Dmg Type:</div>
+    <select name="damage-type-1" id="">
+        <option value="bludgeon">B</option>
+        <option value="piercing">P</option>
+        <option value="slashing">S</option>
+    </select>
+<div>W Spec:</div>
+    <input type="number">
+<div>Other:</div>
+    <textarea name="other" id="" cols="15" rows="1"></textarea>
+<div>Traits:</div>
+    <textarea name="traits" id="" cols="15" rows="1"></textarea>
+
+
+
+<div>Weapon:</div>
+    <input type="text" placeholder="Weapon Name">
+<div>To Hit:</div>
+    <input type="number" placeholder="Total">
+<div>=</div>
+<div>Str:</div>
+    <input type="number">
+<div>Prof:</div>
+    <input type="number">
+    <select name="training-1" id="">
+        <option value="ut">Untrained</option>
+        <option value="trained">Trained</option>
+        <option value="expert">Expert</option>
+        <option value="master">Master</option>
+        <option value="legendary">Legendary</option>
+    </select>
+<div>Item:</div>
+    <input type="number">
+
+
+
+<div>Dice:</div>
+    <input type="text">
+<div>Special:</div>
+    <input type="number">
+<div>Dmg Type:</div>
+    <select name="damage-type-1" id="">
+        <option value="bludgeon">B</option>
+        <option value="piercing">P</option>
+        <option value="slashing">S</option>
+    </select>
+<div>W Spec:</div>
+    <input type="number">
+<div>Other:</div>
+    <textarea name="other" id="" cols="15" rows="1"></textarea>
+<div>Traits:</div>
+    <textarea name="traits" id="" cols="15" rows="1"></textarea>
