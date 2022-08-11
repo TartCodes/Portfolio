@@ -41,19 +41,21 @@
                 </div>
         <div>Deity:</div>
             <div>             
-                <input class="larger-input" type="text" placeholder="...Iomedae, Gorum, Desna, etc"> 
+                <input class="larger-input" type="text" placeholder="...Iomedae, Gorum, Desna"> 
             </div>
     </div>       
 
     <!---Chacter Name----->
-        <div class="char-container">            
+<section class="main-container-right">
+
+    <div class="char-container">            
             <div>Character Name:</div>
                 <div>
-                    <input class="larger-input" type="text" placeholder="...enter name">
+                    <input class="larger-input" type="text" placeholder="...character name">
                 </div>                
             <div>Player Name:</div>
                 <div>     
-                    <input class="larger-input" type="text" placeholder="...enter name">   
+                    <input class="larger-input" type="text" placeholder="...your name">   
                 </div>                
              <div>Level:</div>
                 <div>
@@ -64,8 +66,10 @@
                     <input class="xp" type="number" placeholder="">
                 </div>                
             <div>Hero Points:</div>
-                <div>
-                    <input class="hero-points" type="number" placeholder="">      
+                <div class="hero-points-div">
+                    <input type="checkbox" value="None" name="check">
+                    <input type="checkbox" value="None" name="check">  
+                    <input type="checkbox" value="None" name="check">        
                 </div>
                 
             <div>Size:</div>
@@ -92,8 +96,50 @@
                 </select> 
         
             <div>Traits:</div>
-                <input class="traits" type="text" placeholder="...Char Traits">           
-        </div>  
+                <div>
+                    <input class="traits" type="text" placeholder="...Char Traits">           
+                </div>
+            
+            <!-- Hit Points -->
+        <!-- <div class="hp-container">            -->
+
+            <div>Health/Resists/Conditions</div>             
+            <div>Max:</div>                   
+                <div>
+                    <input class="number-input" type="number">
+                </div>
+                    
+            <div>Current:</div>                    
+                <div>
+                    <input class="number-input" type="number">
+                </div>
+                    
+            <div>Temporary:</div>                
+                <div>
+                    <input class="number-input" type="number">
+                </div>
+
+            <div>Dying:</div>
+                <div>
+                    <input class="number-input" type="number">
+                </div>
+
+            <div>Wounded:</div>
+                <div>
+                    <input class="number-input" type="number">
+                </div>
+
+            <div>Resistances/Immunities:</div>                       
+
+                <div>
+                    <textarea name="resis-immun" id="" cols="25" rows="3"></textarea>
+                </div>
+
+            <div>Conditions:</div>
+                <div>
+                    <textarea name="conditions" id="" cols="25" rows="3"></textarea>
+                </div>     
+        </div>
    
     <!-- ability modifiers, hit points, and speed group -->            
         <div class="ability-container">              
@@ -372,7 +418,7 @@
                 </div>            
     </div>
 
-    <!-- Hit Points -->
+    <!-- Hit Points
         <div class="hp-container">           
             <div>Health/Resists/Conditions</div>             
             <div>Max:</div>                   
@@ -410,7 +456,7 @@
                 <div>
                     <textarea name="conditions" id="" cols="25" rows="3"></textarea>
                 </div>     
-        </div>
+        </div> -->
 
     <!-- Perception Info -->
     <div class="perception-container">           
@@ -450,7 +496,45 @@
 
     <!-- Weapons -->
     <div class="weapon-container">
-        <div class="simple-button">Add Weapon</div>   
+        <div class="simple-button">
+            <button id="open-modal">Add Weapon</button> 
+        </div>
+            <div class="modal-container" id="modal_container">
+                <div class="modal">
+                    <span>Weapon Name:</span>
+                        <input type="text">
+                    <span>Weapon Details</span>
+                        <span>Type:</span>
+                            <select class="damage-type" name="damagetype" id="">
+                                <option value="b">Blunt</option>
+                                <option value="p">Piercing</option>
+                                <option value="s">Slashing</option>                        
+                            </select>
+                                <span>Damage Dice:</span>
+                                    <div class="damage-dice">                            
+                                        <input class="number-input" type="number">
+                                        <span>d</span>
+                                        <input class="number-input" type="number">
+                                        <span>+</span>
+                                        <input class="number-input" type="number">
+                                    </div>
+                                <span>To Hit:</span>
+                                    <div class="to-hit">
+                                        <span>+</span>
+                                        <input class="number-input" type="number">
+                                        <span>+</span>
+                                        <input class="number-input" type="number">
+                                        <span>+</span>
+                                        <input class="number-input" type="number">
+                        </div>
+                        <button id="add-weapon">
+                            Add Weapon
+                        </button>
+                        <button id="modal-close">
+                            Close Window
+                        </button>
+                </div>
+            </div>  
         <!-- Weapon Proficiencies  -->            
         <div>Weapon Proficiencies</div>
             <div>Simple:</div>
@@ -910,6 +994,7 @@
                         <textarea name="" id="" cols="30" rows="1"></textarea>
                     </div> 
     </div>
+</section>
 </section>
 
     
