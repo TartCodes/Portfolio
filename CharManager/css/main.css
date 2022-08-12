@@ -248,12 +248,28 @@ h2 {
 }
 
 .resis-cond-container {		
-    display: flex;
+	display: flex;
     column-gap: 1em;
-    justify-content: left;
-	margin-bottom: 1em;
+    justify-content: left;    
+    align-items: center;
 }
 
+/* defenses */
+	.classdc-container {
+		display: flex;
+	}
+
+	.armor-container {
+		display: flex;
+	}
+
+	.armor-type-container {
+		display: flex;
+	}
+
+	.shield-container {
+		display: flex;
+	}
 
 /*  Ability Modifiers*/
 .ability-container {
@@ -276,6 +292,33 @@ span {
     top: 3px;
 }
 
+
+
+/* Saving throws */	
+
+.saving-throws-container{
+	display: flex;
+	flex-direction: column;
+}
+	.saves {
+		display: flex;
+		flex-direction: row;
+		align-items: flex-end;
+	}
+
+.titles {
+	align-content: center;
+	text-align: center;
+	font-size: 1.25em;
+	margin-bottom: .5em;
+}
+
+.saves-text{	
+	border-radius: 5px;
+    text-align: center;
+    padding: 0.5em 1em;
+    width: 5em;
+}
 /* MODAL WEAPONS */
 
 .modal-container {

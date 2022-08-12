@@ -226,7 +226,7 @@
     </div>
 
     <!-- resistance and conditions -->
-        <div class="resis-cond-container">
+    <div class="resis-cond-container">
             <div class="text-border">    
                 <div>Resistances/Immunities:</div> 
                     <div>
@@ -240,8 +240,129 @@
                         <textarea name="conditions" id="" cols="25" rows="3"></textarea>
                     </div> 
                 </div>  
-        </div>   
+               
+    <!-- saving throws -->     
+        <div class="saving-throws-container">           
+            <div class="titles">Saving Throws</div>
+            
+            <div class="saves">
+                <div class="saves-text">
+                    <div>Fort</div>
+                        <div>
+                            <input class="number-input" type="number">
+                        </div>             
+                </div>
+                <div class="saves-text">    
+                    <div>Con</div>
+                        <div>
+                            <input class="number-input" type="number"> 
+                        </div>
+                </div>
+                <div class="saves-text">
+                    <div>Prof</div>
+                        <div>
+                            <input class="number-input" type="number">
+                        </div>
+                </div>
+                <div class="saves-text">
+                    <div>Item</div>
+                        <div>
+                            <input class="number-input" type="number">                               
+                        </div>
+                </div>
+                <div class="saves-text">
+                            <div>
+                                <select name="training-4" id="">
+                                    <option value="ut">Untrained</option>
+                                    <option value="trained">Trained</option>
+                                    <option value="expert">Expert</option>
+                                    <option value="master">Master</option>
+                                    <option value="legendary">Legendary</option>
+                                </select> 
+                            </div>
+                </div>
+            </div>                 
+            <!-- reflex -->
+            <div class="saves">                                               
+                <div class="saves-text">
+                    <div>Reflex</div>
+                        <div>
+                            <input class="number-input" type="number">
+                        </div>             
+                </div>
+                <div class="saves-text">    
+                    <div>Dex</div>
+                        <div>
+                            <input class="number-input" type="number"> 
+                        </div>
+                </div>
+                <div class="saves-text">
+                    <div>Prof</div>
+                        <div>
+                            <input class="number-input" type="number">
+                        </div>
+                </div>
+                <div class="saves-text">
+                    <div>Item</div>
+                        <div>
+                            <input class="number-input" type="number">                               
+                        </div>
+                </div>
+                <div class="saves-text">
+                            <div>
+                                <select name="training-4" id="">
+                                    <option value="ut">Untrained</option>
+                                    <option value="trained">Trained</option>
+                                    <option value="expert">Expert</option>
+                                    <option value="master">Master</option>
+                                    <option value="legendary">Legendary</option>
+                                </select> 
+                            </div>
+                </div>
+        </div> 
+            <!-- will --> 
+            <div class="saves">                                      
+                <div class="saves-text">
+                    <div>Will</div>
+                        <div>
+                            <input class="number-input" type="number">
+                        </div>             
+                </div>
+                <div class="saves-text">    
+                    <div>Wis</div>
+                        <div>
+                            <input class="number-input" type="number"> 
+                        </div>
+                </div>
+                <div class="saves-text">
+                    <div>Prof</div>
+                        <div>
+                            <input class="number-input" type="number">
+                        </div>
+                </div>
+                <div class="saves-text">
+                    <div>Item</div>
+                        <div>
+                            <input class="number-input" type="number">                               
+                        </div>
+                </div>
+                <div class="saves-text">
+                            <div>
+                                <select name="training-4" id="">
+                                    <option value="ut">Untrained</option>
+                                    <option value="trained">Trained</option>
+                                    <option value="expert">Expert</option>
+                                    <option value="master">Master</option>
+                                    <option value="legendary">Legendary</option>
+                                </select> 
+                            </div>
+                </div>
+            </div>            
+        </div>    
+    </div>          
 
+        <!-- dc's, shield, ac -->
+    
         <div class="classdc-container">
             <div>Class DC:</div>          
             <div>Base 10</div>                                        
@@ -275,6 +396,7 @@
 <!-- NEED ARMOR TO THE RIGHT OF RESISTENCES -->
 
     <!-- armor class and saving throws -->
+
     <div class="armor-container">
         <div>Armor Class</div>                 
         <div>AC:</div>
@@ -350,7 +472,7 @@
             </div>          
     </div>
     <!-- shield info -->
-    <div class="shield-wrapper">          
+    <div class="shield-container">          
         <div>Shield:</div>
         <div>+</div>
             <div>
@@ -377,96 +499,7 @@
                 <input class="number-input" type="number"> 
             </div>     
     </div>
-    <!-- saving throws -->     
-    <div class="saving-throws-container">           
-        <div class="titles">Saving Throws</div>                                         
-        <div>Fortitude:</div>
-            <div>
-                <input class="number-input" type="number">
-            </div>             
-        
-        <div>Con:</div>
-            <div>
-                <input class="number-input" type="number"> 
-            </div>
-        
-        <div>Prof:</div>
-            <div>
-                <input class="number-input" type="number">
-            </div>
-        
-        <div>Item:</div>
-            <div>
-                <input class="number-input" type="number">                               
-            </div>
-                <div>
-                    <select name="training-4" id="">
-                        <option value="ut">Untrained</option>
-                        <option value="trained">Trained</option>
-                        <option value="expert">Expert</option>
-                        <option value="master">Master</option>
-                        <option value="legendary">Legendary</option>
-                    </select> 
-                </div>                 
-        <!-- reflex -->                                                
-        <div>Reflex:</div>
-            <div>
-                <input class="number-input" type="number">
-            </div>         
     
-        <div>Con:</div>
-            <div>
-                <input class="number-input" type="number"> 
-            </div>
-    
-        <div>Prof:</div>
-            <div>
-                <input class="number-input" type="number">
-            </div>
-    
-        <div>Item:</div>
-            <div>
-                <input class="number-input" type="number">                               
-            </div>
-                <div>
-                    <select name="training-6" id="">
-                        <option value="ut">Untrained</option>
-                        <option value="trained">Trained</option>
-                        <option value="expert">Expert</option>
-                        <option value="master">Master</option>
-                        <option value="legendary">Legendary</option>
-                    </select> 
-                </div>
-     <!-- will -->                                         
-        <div>Will:</div>
-            <div>
-                <input class="number-input" type="number">
-            </div>         
-    
-        <div>Con:</div>
-            <div>
-                <input class="number-input" type="number"> 
-            </div>
-    
-        <div>Prof:</div>
-            <div>
-                <input class="number-input" type="number">
-            </div>
-    
-        <div>Item:</div>
-            <div>
-                <input class="number-input" type="number">                               
-            </div>
-                <div>
-                    <select name="training-7" id="">
-                        <option value="ut">Untrained</option>
-                        <option value="trained">Trained</option>
-                        <option value="expert">Expert</option>
-                        <option value="master">Master</option>
-                        <option value="legendary">Legendary</option>
-                    </select> 
-                </div>            
-    </div>    
 
     <!-- Perception Info -->
     <div class="perception-container">           
