@@ -320,6 +320,19 @@ span {
     justify-content: center;
 	margin: 1em 0;
 }
+
+	#shield-info {
+		border: solid 2px black;
+		display: none;		
+	}
+
+	.shield-header {
+	    align-content: center;
+    	text-align: center;
+    	font-size: 1.25em;    	
+    	width: 50%;
+    	display: inline-block;
+	}
 .armor-type-container {
 	display: flex;
     flex-direction: row;    
@@ -333,10 +346,10 @@ span {
 	.armor-type-text {
 		border-radius: 5px;
     	text-align: center;
-    	padding: 0.5em 1em;
-    	
+    	padding: 0.5em 1em;    	
 	}
 
+	
 
 /* MODAL WEAPONS */
 
@@ -382,13 +395,13 @@ span {
 
 	
 button {
-	background-color: rgb(79, 7, 7);
-	color: white;
-	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
-	border: 0;
-	border-radius: 5px;
-	padding: 8px 15px;
-	
+	background-color: gold;
+    color: black;
+    box-shadow: 0 2px 4px rgb(0 0 0 / 20%);
+    border: 0;
+    border-radius: 5px;
+    font-weight: 700;
+    padding: 8px 15px;	
 }
 
 /* ------------------------ */
