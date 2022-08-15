@@ -311,7 +311,8 @@ span {
 
 .classdc-container,
 .armor-container,
-.shield-container {
+.shield-container,
+.perception-container {
 	display: flex;
     flex-direction: row;
     column-gap: 0.5em;
@@ -365,7 +366,11 @@ span {
     	padding: 0.5em 1em;    	
 	}
 
-	
+/* small sense box */
+	.senses {
+		text-align:  center;
+		width: 50%;
+	}
 
 /* MODAL WEAPONS */
 
