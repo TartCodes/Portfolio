@@ -530,45 +530,104 @@
     <!-- Weapons -->
     <div class="weapon-container">
         <span class="titles">Weapon Information</span>
-        <div class="simple-button">
-            <button id="open-modal">Add Weapon</button> 
+        <div id="weapon-button">
+            <button>Add Weapon</button>
         </div>
-            <div class="modal-container" id="modal_container">
-                <div class="modal">
-                    <span>Weapon Name:</span>
-                        <input type="text">
-                    <span>Weapon Details</span>
-                        <span>Type:</span>
-                            <select class="damage-type" name="damagetype" id="">
-                                <option value="b">Blunt</option>
-                                <option value="p">Piercing</option>
-                                <option value="s">Slashing</option>                        
-                            </select>
-                                <span>Damage Dice:</span>
-                                    <div class="damage-dice">                            
-                                        <input class="number-input" lass="number-input" class="number-input" type="number">
-                                        <span>d</span>
-                                        <input class="number-input" lass="number-input" class="number-input" type="number">
-                                        <span>+</span>
-                                        <input class="number-input" lass="number-input" class="number-input" type="number">
-                                    </div>
-                                <span>To Hit:</span>
-                                    <div class="to-hit">
-                                        <span>+</span>
-                                        <input class="number-input" lass="number-input" class="number-input" type="number">
-                                        <span>+</span>
-                                        <input class="number-input" lass="number-input" class="number-input" type="number">
-                                        <span>+</span>
-                                        <input class="number-input" lass="number-input" class="number-input" type="number">
-                        </div>
-                        <button id="add-weapon">
-                            Add Weapon
-                        </button>
-                        <button id="modal-close">
-                            Close Window
-                        </button>
+        <!-- Melee -->       
+           
+            <div class="melee-weapon-div" id="melee-weapon">
+                <div>
+                    <div>
+                        <span>Weapon Name</span>
+                    </div>
+                    <input type="text" name="" id="">
                 </div>
-            </div>  
+
+                <div class="damage-die">
+                    <div>
+                        <span>Attack</span>
+                    </div>
+                    <input class="number-input" type="number">
+                    <span>d</span>
+                    <input class="number-input" type="number">
+                    <select name="weapon-dmg-type" id="">
+                        <option value="P">P</option>
+                        <option value="S">S</option>
+                        <option value="B">B</option>                        
+                    </select>
+                </div>
+
+                <div class="versatile">
+                    <div>
+                        <span>Versatile</span>
+                    </div>
+                    <select name="weapon-dmg-type" id="">
+                        <option value="blank"></option>
+                        <option value="P">P</option>
+                        <option value="S">S</option>
+                        <option value="B">B</option>                        
+                    </select>
+                </div>
+
+                <div class="other-traits">
+                    <div>
+                        <span>Other Traits</span>
+                    </div>
+                    <div>
+                        <textarea name="" id="" cols="30" rows="2"></textarea>
+                    </div>
+                </div>
+            </div>      
+
+            <!-- Ranged -->
+            <div class="range-weapon-div">
+                <div>
+                    <div>
+                        <span>Weapon Name</span>
+                    </div>
+                    <input type="text" name="" id="">
+                </div>
+
+                <div class="damage-die">
+                    <div>
+                        <span>Attack</span>
+                    </div>
+                    <input class="number-input" type="number">
+                    <span>d</span>
+                    <input class="number-input" type="number">
+                    <select name="weapon-dmg-type" id="">
+                        <option value="P">P</option>
+                        <option value="S">S</option>
+                        <option value="B">B</option>                        
+                    </select>
+                </div>
+                
+
+                <div class="range">
+                    <div>
+                        <span>Range</span>
+                    </div>
+                    <input class="number-input" type="number">
+                </div>
+
+                <div class="reload">
+                    <div>
+                        <span>Reload</span>
+                    </div>
+                    <input class="number-input" type="number">
+                </div>
+
+                <div class="other-traits">
+                    <div>
+                        <span>Other Traits</span>
+                    </div>
+                    <div>
+                        <textarea name="" id="" cols="30" rows="2"></textarea>
+                    </div>
+                </div>
+         
+    </div>
+            
         <!-- Weapon Proficiencies  -->            
         <div>Weapon Proficiencies</div>
             <div>Simple:</div>

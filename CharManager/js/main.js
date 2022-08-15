@@ -1,22 +1,22 @@
-//modal button for weapon
-const open = document.getElementById('open-modal');
-const modalContainer = document.getElementById('modal_container');
-const close = document.getElementById('modal-close');
+//button for weapon
+const addWeaponBtn = document.getElementById('weapon-button')
 //show shield info button
 const shieldButton = document.getElementById('shield-button')
 let showHideShield = document.getElementById('shield-info')
 //text swap for shield button
 
 
+// Adding/Removing Weapons
 
-// modal button for adding a weapon
-open.addEventListener('click', () => {
-    modalContainer.classList.add('show')
-})
+    // I want to click the add weapon button to appened the already created
+        // div(s) the the li? 
 
-close.addEventListener('click', () => {
-    modalContainer.classList.remove('show')
-})
+addWeaponBtn.onclick = function () {
+    let weaponContainer = document.querySelector('#weapon-container')
+    let meleeWeapon = document.querySelector('#melee-weapon')
+    weaponContainer.appendChild(meleeWeapon)
+}
+
 
 //button for showing and hiding shield information
 shieldButton.onclick = function() {    
