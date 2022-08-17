@@ -215,9 +215,10 @@ select {
 }
 
 .hero-points-div{
-	display: flex;
-    width: 5em;
+	display: block;
+    width: 5.75em;
     justify-content: center;
+    text-align: center;
 }
 
 	/* Hp Container */
@@ -390,6 +391,22 @@ span {
     margin-top: 1em;
 }
 
+
+.weapon-prof-container{
+	display: flex;
+	text-align: center;
+	justify-content: center;
+	flex-direction: column;
+}
+
+	.weapon-prof-divs{
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		column-gap: 1em;
+		margin: .5em 0;		
+	}
+
 .melee-weapon-div,
 .range-weapon-div {
 	display: flex;    
@@ -397,7 +414,11 @@ span {
     column-gap: 1em;
 	width: 100%;
 	justify-content: center;
-	
+		
+}
+
+.weapon-prof-list {
+	align-items: center;
 }
 
 button {
@@ -417,3 +438,16 @@ button {
 	}
 
 /* ------------------------ */
+
+/* skills */
+
+.skills-container {
+	display: flex;
+	flex-direction: column;
+}
+
+.skills-div {
+	display: flex;
+	flex-direction: row;
+	column-gap: .5em;
+}

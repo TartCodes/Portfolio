@@ -525,14 +525,61 @@
             <div>
                 <textarea name="senses" id="" cols="25" rows="3"></textarea>
             </div>        
-    </div>   
+    </div>    
 
     <!-- Weapons -->
-    <div class="weapon-container">
-        <span class="titles">Weapon Information</span>
-        <div id="weapon-button">
-            <button>Add Weapon</button>
+<div class="weapon-container">
+    <span class="titles">Weapon Information</span>    
+
+<!-- Weapon Proficiencies  -->
+<div class="weapon-prof-container">
+    <div>         
+        <span>Proficiencies</span>
+    </div>
+    <div class="weapon-prof-divs">
+        <div>         
+            <div>Unarmed</div>
+            <div class="weapon-prof-checks">
+                <input type="checkbox" value="None" name="check">
+                <input type="checkbox" value="None" name="check">  
+                <input type="checkbox" value="None" name="check">
+                <input type="checkbox" value="None" name="check">        
+            </div>    
+        </div>    
+        <div>         
+            <div>Simple</div>
+            <div class="weapon-prof-checks">
+                <input type="checkbox" value="None" name="check">
+                <input type="checkbox" value="None" name="check">  
+                <input type="checkbox" value="None" name="check">
+                <input type="checkbox" value="None" name="check">        
+            </div>    
         </div>
+        <div>            
+            <div>Martial</div>
+            <div class="weapon-prof-checks">
+                <input type="checkbox" value="None" name="check">
+                <input type="checkbox" value="None" name="check">  
+                <input type="checkbox" value="None" name="check">
+                <input type="checkbox" value="None" name="check">        
+            </div>
+        </div>
+        <div>            
+            <div>Advanced</div>
+            <div class="weapon-prof-checks">
+                <input type="checkbox" value="None" name="check">
+                <input type="checkbox" value="None" name="check">  
+                <input type="checkbox" value="None" name="check">
+                <input type="checkbox" value="None" name="check">        
+            </div>
+        </div>
+    </div>     
+</div>  
+
+<div id="weapon-button">
+    <button>Add Weapon</button>
+</div>
+      
         <!-- Melee -->       
            
             <div class="melee-weapon-div" id="melee-weapon">
@@ -556,6 +603,16 @@
                         <option value="B">B</option>                        
                     </select>
                 </div>
+
+                <div class="weapon-prof-list">
+                    <div>Type</div>
+                    <select name="weapon-prof-list" id="">
+                        <option value="Unarmed">Unarmed</option>
+                        <option value="Simple">Simple</option>
+                        <option value="Martial">Martial</option>
+                        <option value="Advanced">Advanced</option>                        
+                    </select>
+                </div>               
 
                 <div class="versatile">
                     <div>
@@ -601,7 +658,16 @@
                         <option value="B">B</option>                        
                     </select>
                 </div>
-                
+
+                <div class="weapon-prof-list">
+                    <div>Type</div>
+                    <select name="weapon-prof-list" id="">
+                        <option value="Unarmed">Unarmed</option>
+                        <option value="Simple">Simple</option>
+                        <option value="Martial">Martial</option>
+                        <option value="Advanced">Advanced</option>                        
+                    </select>
+                </div>        
 
                 <div class="range">
                     <div>
@@ -625,60 +691,30 @@
                         <textarea name="" id="" cols="30" rows="2"></textarea>
                     </div>
                 </div>
-         
-    </div>
-            
-        <!-- Weapon Proficiencies  -->            
-        <div>Weapon Proficiencies</div>
-            <div>Simple:</div>
-                <div>
-                    <select name="training-5" id="">
-                        <option value="ut">Untrained</option>
-                        <option value="trained">Trained</option>
-                        <option value="expert">Expert</option>
-                        <option value="master">Master</option>
-                        <option value="legendary">Legendary</option>
-                    </select>
-                </div>
-        <div>Martial:</div>
-            <div>
-                <select name="training-5" id="">
-                    <option value="ut">Untrained</option>
-                    <option value="trained">Trained</option>
-                    <option value="expert">Expert</option>
-                    <option value="master">Master</option>
-                    <option value="legendary">Legendary</option>
-                </select>
-            </div>
-        <div>Other:</div>
-            <div>
-                <select name="training-5" id="">
-                    <option value="ut">Untrained</option>
-                    <option value="trained">Trained</option>
-                    <option value="expert">Expert</option>
-                    <option value="master">Master</option>
-                    <option value="legendary">Legendary</option>
-                </select>
-            </div>
-                <div>
-                    <textarea name="" id="" cols="30" rows="2"></textarea>
-                </div>       
-    </div>
+            </div> 
+</div>  
+          
+        
 
     <!-- Skills -->
-    <div class="skills-container">                    
-            <div>Acrobatics</div>
-                <div>Total:</div>
+    <div class="skills-container">
+        <div class="skills-div">
+            <div>                 
+                <span>Acrobatics</span>
+            </div> 
+                <div>
+                    <span>Total</span>
+                </div>
                     <div>
-                        <input type="text">
+                        <input class="number-input" type="number">
                     </div>
                 <div>Dex</div>
                     <div>
-                        <input type="text">
+                        <input class="number-input" type="number">
                     </div>
                 <div>Prof</div>
                     <div>
-                        <input type="text">
+                        <input class="number-input" type="number">
                     </div>
                         <div>
                             <select name="training-2" id="">
@@ -689,19 +725,20 @@
                                 <option value="legendary">Legendary</option>
                             </select>
                         </div>
-
+        </div>
+        <div class="skills-div"> 
                 <div>Arcana</div>
                 <div>Total:</div>
                     <div>
-                        <input type="text">
+                        <input class="number-input" type="number">
                     </div>
                 <div>Int</div>
                     <div>
-                        <input type="text">
+                        <input class="number-input" type="number">
                     </div>
                 <div>Prof</div>
                     <div>
-                        <input type="text">
+                        <input class="number-input" type="number">
                     </div>
                         <div>
                             <select name="training-2" id="">
@@ -712,19 +749,20 @@
                                 <option value="legendary">Legendary</option>
                             </select>
                         </div>
-
+        </div>
+        <div class="skills-div">  
                 <div>Athletics</div>
                 <div>Total:</div>
                     <div>
-                        <input type="text">
+                        <input class="number-input" type="number">
                     </div>
                 <div>Dex</div>
                     <div>
-                        <input type="text">
+                        <input class="number-input" type="number">
                     </div>
                 <div>Prof</div>
                     <div>
-                        <input type="text">
+                        <input class="number-input" type="number">
                     </div>
                         <div>
                             <select name="training-2" id="">
@@ -735,19 +773,20 @@
                                 <option value="legendary">Legendary</option>
                             </select>
                         </div>
-
+        </div>
+        <div class="skills-div"> 
                 <div>Crafting</div>
                 <div>Total:</div>
                     <div>
-                        <input type="text">
+                        <input class="number-input" type="number">
                     </div>
                 <div>Int</div>
                     <div>
-                        <input type="text">
+                        <input class="number-input" type="number">
                     </div>
                 <div>Prof</div>
                     <div>
-                        <input type="text">
+                        <input class="number-input" type="number">
                     </div>
                         <div>
                             <select name="training-2" id="">
@@ -758,19 +797,20 @@
                                 <option value="legendary">Legendary</option>
                             </select>
                         </div>
-
+        </div>
+        <div class="skills-div"> 
                 <div>Deception</div>
                 <div>Total:</div>
                     <div>
-                        <input type="text">
+                        <input class="number-input" type="number">
                     </div>
                 <div>Cha</div>
                     <div>
-                        <input type="text">
+                        <input class="number-input" type="number">
                     </div>
                 <div>Prof</div>
                     <div>
-                        <input type="text">
+                        <input class="number-input" type="number">
                     </div>
                         <div>
                             <select name="training-2" id="">
@@ -781,19 +821,20 @@
                                 <option value="legendary">Legendary</option>
                             </select>
                         </div>
-
+        </div>
+        <div class="skills-div"> 
                 <div>Diplomacy</div>
                 <div>Total:</div>
                     <div>
-                        <input type="text">
+                        <input class="number-input" type="number">
                     </div>
                 <div>Cha</div>
                     <div>
-                        <input type="text">
+                        <input class="number-input" type="number">
                     </div>
                 <div>Prof</div>
                     <div>
-                        <input type="text">
+                        <input class="number-input" type="number">
                     </div>
                         <div>
                             <select name="training-2" id="">
@@ -804,20 +845,20 @@
                                 <option value="legendary">Legendary</option>
                             </select>
                         </div>                
-
-
+        </div>
+        <div class="skills-div"> 
                 <div>Intimidation</div>
                 <div>Total:</div>
                     <div>
-                        <input type="text">
+                        <input class="number-input" type="number">
                     </div>
                 <div>Cha</div>
                     <div>
-                        <input type="text">
+                        <input class="number-input" type="number">
                     </div>
                 <div>Prof</div>
                     <div>
-                        <input type="text">
+                        <input class="number-input" type="number">
                     </div>
                         <div>
                             <select name="training-2" id="">
@@ -828,19 +869,20 @@
                                 <option value="legendary">Legendary</option>
                             </select>
                         </div>
-
+        </div>
+        <div class="skills-div"> 
                 <div>Lore</div>
                 <div>Total:</div>
                     <div>
-                        <input type="text">
+                        <input class="number-input" type="number">
                     </div>
                 <div>Int</div>
                     <div>
-                        <input type="text">
+                        <input class="number-input" type="number">
                     </div>
                 <div>Prof</div>
                     <div>
-                        <input type="text">
+                        <input class="number-input" type="number">
                     </div>
                         <div>
                             <select name="training-2" id="">
@@ -851,19 +893,20 @@
                                 <option value="legendary">Legendary</option>
                             </select>
                         </div>
-
+        </div>
+        <div class="skills-div"> 
                 <div>Lore(2)</div>
                 <div>Total:</div>
                     <div>
-                        <input type="text">
+                        <input class="number-input" type="number">
                     </div>
                 <div>Int</div>
                     <div>
-                        <input type="text">
+                        <input class="number-input" type="number">
                     </div>
                 <div>Prof</div>
                     <div>
-                        <input type="text">
+                        <input class="number-input" type="number">
                     </div>
                         <div>
                             <select name="training-2" id="">
@@ -874,19 +917,20 @@
                                 <option value="legendary">Legendary</option>
                             </select>
                         </div>
-
+        </div>
+        <div class="skills-div"> 
                 <div>Medicine</div>
                 <div>Total:</div>
                     <div>
-                        <input type="text">
+                        <input class="number-input" type="number">
                     </div>
                 <div>Wis</div>
                     <div>
-                        <input type="text">
+                        <input class="number-input" type="number">
                     </div>
                 <div>Prof</div>
                     <div>
-                        <input type="text">
+                        <input class="number-input" type="number">
                     </div>
                         <div>
                             <select name="training-2" id="">
@@ -897,19 +941,20 @@
                                 <option value="legendary">Legendary</option>
                             </select>
                         </div>
-
+        </div>
+        <div class="skills-div"> 
                 <div>Nature</div>
                 <div>Total:</div>
                     <div>
-                        <input type="text">
+                        <input class="number-input" type="number">
                     </div>
                 <div>Wis</div>
                     <div>
-                        <input type="text">
+                        <input class="number-input" type="number">
                     </div>
                 <div>Prof</div>
                     <div>
-                        <input type="text">
+                        <input class="number-input" type="number">
                     </div>
                         <div>
                             <select name="training-2" id="">
@@ -920,19 +965,20 @@
                                 <option value="legendary">Legendary</option>
                             </select>
                         </div>
-
+        </div>
+        <div class="skills-div"> 
                 <div>Occultism</div>
                 <div>Total:</div>
                     <div>
-                        <input type="text">
+                        <input class="number-input" type="number">
                     </div>
                 <div>Int</div>
                     <div>
-                        <input type="text">
+                        <input class="number-input" type="number">
                     </div>
                 <div>Prof</div>
                     <div>
-                        <input type="text">
+                        <input class="number-input" type="number">
                     </div>
                         <div>
                             <select name="training-2" id="">
@@ -943,19 +989,20 @@
                                 <option value="legendary">Legendary</option>
                             </select>
                         </div>
-
+        </div>
+        <div class="skills-div"> 
                 <div>Performance</div>
                 <div>Total:</div>
                     <div>
-                        <input type="text">
+                        <input class="number-input" type="number">
                     </div>
                 <div>Cha</div>
                     <div>
-                        <input type="text">
+                        <input class="number-input" type="number">
                     </div>
                 <div>Prof</div>
                     <div>
-                        <input type="text">
+                        <input class="number-input" type="number">
                     </div>
                         <div>
                             <select name="training-2" id="">
@@ -966,19 +1013,20 @@
                                 <option value="legendary">Legendary</option>
                             </select>
                         </div>
-
+        </div>
+        <div class="skills-div"> 
                 <div>Religion</div>
                 <div>Total:</div>
                     <div>
-                        <input type="text">
+                        <input class="number-input" type="number">
                     </div>
                 <div>Wis</div>
                     <div>
-                        <input type="text">
+                        <input class="number-input" type="number">
                     </div>
                 <div>Prof</div>
                     <div>
-                        <input type="text">
+                        <input class="number-input" type="number">
                     </div>
                         <div>
                             <select name="training-2" id="">
@@ -989,19 +1037,20 @@
                                 <option value="legendary">Legendary</option>
                             </select>
                         </div>
-
+        </div>
+        <div class="skills-div"> 
                 <div>Society</div>
                 <div>Total:</div>
                     <div>
-                        <input type="text">
+                        <input class="number-input" type="number">
                     </div>
                 <div>Int</div>
                     <div>
-                        <input type="text">
+                        <input class="number-input" type="number">
                     </div>
                 <div>Prof</div>
                     <div>
-                        <input type="text">
+                        <input class="number-input" type="number">
                     </div>
                         <div>
                             <select name="training-2" id="">
@@ -1012,19 +1061,20 @@
                                 <option value="legendary">Legendary</option>
                             </select>
                         </div>
-
+        </div>
+        <div class="skills-div"> 
                 <div>Stealth</div>
                 <div>Total:</div>
                     <div>
-                        <input type="text">
+                        <input class="number-input" type="number">
                     </div>
                 <div>Dex</div>
                     <div>
-                        <input type="text">
+                        <input class="number-input" type="number">
                     </div>
                 <div>Prof</div>
                     <div>
-                        <input type="text">
+                        <input class="number-input" type="number">
                     </div>
                         <div>
                             <select name="training-2" id="">
@@ -1035,19 +1085,20 @@
                                 <option value="legendary">Legendary</option>
                             </select>
                         </div>
-
+        </div>
+        <div class="skills-div"> 
                 <div>Survival</div>
                 <div>Total:</div>
                     <div>
-                        <input type="text">
+                        <input class="number-input" type="number">
                     </div>
                 <div>Wis</div>
                     <div>
-                        <input type="text">
+                        <input class="number-input" type="number">
                     </div>
                 <div>Prof</div>
                     <div>
-                        <input type="text">
+                        <input class="number-input" type="number">
                     </div>
                         <div>
                             <select name="training-2" id="">
@@ -1058,19 +1109,20 @@
                                 <option value="legendary">Legendary</option>
                             </select>
                         </div>
-
+        </div>
+        <div class="skills-div"> 
                 <div>Thievery</div>
                 <div>Total:</div>
                     <div>
-                        <input type="text">
+                        <input class="number-input" type="number">
                     </div>
                 <div>Dex</div>
                     <div>
-                        <input type="text">
+                        <input class="number-input" type="number">
                     </div>
                 <div>Prof</div>
                     <div>
-                        <input type="text">
+                        <input class="number-input" type="number">
                     </div>
                         <div>
                             <select name="training-2" id="">
@@ -1081,11 +1133,13 @@
                                 <option value="legendary">Legendary</option>
                             </select>
                         </div>
-                
+        </div>
+        <div class="skills-div">     
                 <div>Languages:</div>
                     <div>
                         <textarea name="" id="" cols="30" rows="1"></textarea>
                     </div> 
+        </div>
     </div>
 </section>
 </section>
