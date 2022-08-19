@@ -189,7 +189,8 @@ select {
 
 .left-side-bar {
 	display: inline-block;
-	width: 20em;
+	/* width: 20em; */
+	width: 20%;
     text-align: center
 }
 
@@ -444,11 +445,20 @@ button {
 
 /* skills */
 
-.skills-container {
+/* .skills-container {
 	width: 70%;
     display: grid;  
 	justify-content: center; 
     grid-template-columns: .25fr .25fr;	
+} */
+
+.skills-container{
+	width: 65%;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: right; */
+    /* grid-template-columns: .25fr .25fr; */
+    text-align: end;
 }
 
 .skills-div {
