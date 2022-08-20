@@ -280,10 +280,11 @@ span {
 
 .titles {
 	align-content: center;
-	text-align: center;
-	font-size: 1.25em;
-	margin-bottom: .5em;
-	border: solid 2px gold;
+    text-align: center;
+    font-size: 1.25em;
+    margin-bottom: 0.5em;
+    border: solid 2px gold;
+    grid-column: 1/3;
 }
 
 .saves-text{	
@@ -384,7 +385,7 @@ span {
 
 /* WEAPONS */
 
-.weapon-container {    
+.weapon-container{    
 	width: 70%;
     display: flex;
     flex-direction: column;
@@ -406,6 +407,10 @@ span {
 		column-gap: 1em;
 		margin: .5em 0;		
 	}
+	
+	.weapon-prof-list {
+		align-items: center;
+	}
 
 .melee-weapon-div,
 .range-weapon-div {
@@ -417,9 +422,7 @@ span {
 		
 }
 
-.weapon-prof-list {
-	align-items: center;
-}
+
 
 button {
 	background-color: gold;
@@ -442,12 +445,22 @@ button {
 /* skills */
 
 .skills-container {
-	display: flex;
-	flex-direction: column;
+	width: 70%;
+    display: grid;  
+	justify-content: center; 
+    grid-template-columns: .25fr .25fr;	
 }
 
 .skills-div {
-	display: flex;
-	flex-direction: row;
+	display: flex;	
 	column-gap: .5em;
+}
+
+.lore-type{
+	width: 4.5rem;
+}
+
+.skills-cont-1, .skills-cont-2{
+	text-align: end;
+	padding-right: 40%;
 }
