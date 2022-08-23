@@ -23,6 +23,10 @@ if (process.env.NODE_ENV === 'development'){
 
 // EJS
 app.set('view engine', 'ejs')
+app.use(express.static('public'))
+
+// Routes
+app.use('/', require('./routes/index'))
 
 const PORT = process.env.PORT || 3000
 
