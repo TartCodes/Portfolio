@@ -1,20 +1,19 @@
 const express = require('express')
 const dotenv = require('dotenv')
 const { config } = require('process')
-const morgan = require('morgan') //shows errors and status (Ex. in the terminal shows how long a request took etc or if any errors occurred)
-// const exphbs = require('express-handlebars')
+const mongoose = require('mongoose')
+const morgan = require('morgan') 
 const passport = require('passport')
 const session = require('express-session')
+const MongoStore = require('connect-mongo')
 const connectDB = require('../CharManager/config/db')
+
 
 // load config
 dotenv.config({path: 'config/config.env'})
 
 // Passport Config
 require('./config/passport')(passport)
-
-
-
 
 
 connectDB()
@@ -35,12 +34,14 @@ app.set('view engine', 'ejs')
 app.use(express.static('public'))
 
 // Sessions
-app.use(session({
+app.use(
+    session({
     secret: 'keyboard cat',
     resave: false,
-    saveUninitialized: false
-    
-  }))
+    saveUninitialized: false,
+    store: MongoStore.create({mongoUrl: process.env.MONGO_URI,})    
+  })
+  )
 
 
 //Passport Middleware
@@ -50,6 +51,7 @@ app.use(passport.session())
 
 // Routes
 app.use('/', require('./routes/index'))
+app.use('/auth', require('./routes/auth'))
 
 const PORT = process.env.PORT || 3000
 
