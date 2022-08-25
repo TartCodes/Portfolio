@@ -20,68 +20,68 @@ const CharacterSchema = new mongoose.Schema({
     class: {
         type: String
     },
-    backgroundAbility: {
+    backgroundAbility: {   //textarea test
         type: String
     },
     deity: {
         type: String
     },
     acrobatics: { //skills
-        type: String
+        type: Number
     },
     arcana: {
-        type: String
+        type: Number
     },
     athletics: {
-        type: String
+        type: Number
     },
     crafting: {
-        type: String
+        type: Number
     },
     deception: {
-        type: String
+        type: Number
     },
     diplomacy: {
-        type: String
+        type: Number
     },
     intimidation: {
-        type: String
+        type: Number
     },
     firstLore: {
         type: String
     },
     firstLoreB: {
-        type: String
+        type: Number
     },
     secondLore: {
         type: String
     },
     secondLoreB: {
-        type: String
+        type: Number
     },
     medicine: {
-        type: String
+        type: Number
     },
     nature: {
-        type: String
+        type: Number
     },
     occultism: {
-        type: String
+        type: Number
     },
     performance: {
-        type: String
+        type: Number
     },
     society: {
-        type: String
+        type: Number
     },
     stealth: {
-        type: String
+        type: Number
     },
     survival: {
-        type: String
+        type: Number
     },
     thievery: {
-        type: String
+        type: Number
     },                      //main container 
     charName: {
         type: String
@@ -94,8 +94,13 @@ const CharacterSchema = new mongoose.Schema({
     },
     xp: {
         type: String
-    }
-
+    },
+    size: {
+        type: String,
+        enum: ['tiny', 'small', 'medium', 'large', 'huge', 'gargantuan'],
+        require: true
+    },
+    
 
 
 
