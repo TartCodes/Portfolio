@@ -14,6 +14,7 @@
     
 </head>
 <body>
+<form action="/postCharacter" method="POST"> 
     <header>
         <div>
             <h1>Character Manager</h1>
@@ -24,12 +25,14 @@
                 <button>Logout</button>            
             </a>
         </div>
-        
-        
+        <div>
+            <input type="submit" name="" value="save" class="btn" id="">
+            
+        </div>       
             
                
     </header>
-<form action="/main" method="POST"> 
+
 <section class="main" id="main-container">
     <!------------>
     
@@ -54,26 +57,28 @@
             <div>Class:</div>
                 <div>
                     <input class="larger-input" type="text" placeholder="" name="class">
-                </div>            
-                <div>Background Ability:</div>
-                    <div>    
-                        <textarea  id="" cols="20" rows="5" name="backgroundAbility"></textarea>                
-                    </div>
+                </div>
+        </form>            
+            <div>Background Ability:</div>
+                <div>    
+                    <textarea  id="" cols="20" rows="5" name="body"></textarea>                
+                </div>
             <div>Deity:</div>
                 <div>             
-                    <input class="larger-input" type="text" placeholder=""> 
+                    <input class="larger-input" type="text" name="deity" placeholder=""> 
                 </div>
             
                  <div class="title-div">
                         <span class="titles">Skills</span>    
                     </div>
         </fieldset> 
+    
             <section class="skills-container">
                
                 <!-- <div class="skills-cont-1"> -->
                     <div>                 
                         <span>Acrobatics =</span>
-                        <input class="number-input" type="number">
+                        <input class="number-input" name="acrobatics" type="number">
                     </div>
                     <div>                 
                         <span>Arcana =</span>
@@ -399,14 +404,14 @@
             <div class="text-border">    
                 <div>Resistances/Immunities:</div> 
                     <div>
-                        <textarea name="resis-immun" id="" cols="25" rows="3"></textarea>
+                        <textarea name="body" id="" cols="25" rows="3"></textarea>
                     </div>
                 </div>
 
             <div class="text-border">    
                 <div>Conditions:</div>
                     <div>
-                        <textarea name="conditions" id="" cols="25" rows="3"></textarea>
+                        <textarea name="body" id="" cols="25" rows="3"></textarea>
                     </div> 
                 </div>  
                
@@ -693,7 +698,7 @@
     <div class="senses">
         <div>Senses:</div>
             <div>
-                <textarea name="senses" id="" cols="25" rows="3"></textarea>
+                <textarea name="body" id="" cols="25" rows="3"></textarea>
             </div>        
     </div>    
 
@@ -801,7 +806,7 @@
                         <span>Other Traits</span>
                     </div>
                     <div>
-                        <textarea name="" id="" cols="30" rows="2"></textarea>
+                        <textarea name="body" id="" cols="30" rows="2"></textarea>
                     </div>
                 </div>
             </div>      
@@ -858,7 +863,7 @@
                         <span>Other Traits</span>
                     </div>
                     <div>
-                        <textarea name="" id="" cols="30" rows="2"></textarea>
+                        <textarea name="body" id="" cols="30" rows="2"></textarea>
                     </div>
                 </div>
             </div> 
@@ -867,8 +872,19 @@
     </section> <!--main container right-->
     
 </section> <!-- main container--> 
- </form> 
+ <!-- </form> -->
 
 </body>
 <script type="text/javascript" src="js/main.js"></script>
+
+<!-- ckeditor, might try it out in the future, linked and script below -->
+<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/ckeditor/4.19.1/ckeditor.js" integrity="sha512-Ooi9IbjM2SIDjQ02ENbPFuuORT8F8Rc+rowcYfLneDwKRxw1+gVVj5tciVmV/APnA/Ys+qy1MbNKK3k2EaAHcw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script> -->
+
+<!-- <script>
+    CKEDITOR.replace('body', {
+        plugins: 'wysiwygarea, toolbar, basicstyles, link'
+    })
+</script> -->
+<!-- ---------------- -->
+
 </html>

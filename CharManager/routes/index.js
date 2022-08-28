@@ -2,6 +2,8 @@ const express = require('express')
 const router = express.Router()
 const { ensureAuth, ensureGuest } = require('../middleware/auth')
 
+const Character = require('../models/Character')
+
 // @desc Login/Landing page
 // @route GET /
 router.get('/', ensureGuest, (req, res) => {
@@ -9,11 +11,18 @@ router.get('/', ensureGuest, (req, res) => {
 })
 
 // @desc main page 
-// @route GET /main (main.ejs i think for my project?)
-router.get('/charSheet', ensureAuth, (req, res) => {
-    res.render('CharSheet', {
-        name: req.user.firstName,
-    })
+// @route GET /charSheet
+router.get('/charSheet', ensureAuth, async (req, res) => {
+    try {
+        const character = await Character.find({ user: req.user.id })
+        res.render('CharSheet', {
+            name: req.user.firstName,
+            character
+        })
+    } catch (err) {
+        console.error(err);
+        res.render('errors/500')
+    }    
 })
 
 

@@ -24,26 +24,26 @@ const UserSchema = new mongoose.Schema({
         type: Date,
         default: Date.now //automatically puts the date and time
     },
-    character: {
-       ancestry: {
-        type: String
-       },
-       heritage: {
-        type: String
-       },
-       background: {
-        type: String
-       },
-       ancestryAbility: {
-        type: String
-       },
-       class: {
-        type: String
-       },
-       charName: {
-        type: String
-       }
-    }  
+    // character: {
+    //    ancestry: {
+    //     type: String
+    //    },
+    //    heritage: {
+    //     type: String
+    //    },
+    //    background: {
+    //     type: String
+    //    },
+    //    ancestryAbility: {
+    //     type: String
+    //    },
+    //    class: {
+    //     type: String
+    //    },
+    //    charName: {
+    //     type: String
+    //    }
+    // }  
 })
 
 module.exports = mongoose.model('User', UserSchema)

@@ -5,6 +5,7 @@ const { config } = require('process')
 const mongoose = require('mongoose')
 const morgan = require('morgan') 
 const passport = require('passport')
+const methodOverride = require('method-override') //????
 const session = require('express-session')
 const MongoStore = require('connect-mongo')
 const connectDB = require('../CharManager/config/db')
@@ -19,12 +20,29 @@ require('./config/passport')(passport)
 
 connectDB()
 
-
+//Body Parser
+app.use(express.urlencoded({ extended: true }))
+app.use(express.json())
 
 // logging
 if (process.env.NODE_ENV === 'development'){
     app.use(morgan('dev'))
 }
+
+//Method Override
+// app.use(
+//     methodOverride((req, res) => {
+//       if (req.body && typeof req.body === 'object' && '_method' in req.body) {
+//         // look in urlencoded POST bodies and delete it
+//         let method = req.body._method
+//         delete req.body._method
+//         return method
+//       }
+//     })
+//   )
+
+
+
 
 // EJS
 app.set('view engine', 'ejs')
@@ -49,6 +67,7 @@ app.use(passport.session())
 // Routes
 app.use('/', require('./routes/index'))
 app.use('/auth', require('./routes/auth'))
+app.use('/postCharacter', require('./routes/postCharacter')) //not sure about this 
 
 const PORT = process.env.PORT || 3000
 

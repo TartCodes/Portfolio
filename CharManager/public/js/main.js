@@ -37,12 +37,12 @@ shieldButton.addEventListener('click', function shieldButtonTextSwap() {
 })
 
 //mouse out functions 
-document.getElementById('mouse-out').addEventListener('mouseout', saveData)
+// document.getElementById('mouse-out').addEventListener('mouseout', saveData)
 
-function saveData(){
-    console.log('please fucking work');
-    window.location.reload
-}
+// function saveData(){
+//     console.log('please fucking work');
+//     window.location.reload
+// }
 
 //checklist
 
