@@ -25,9 +25,22 @@ const UserSchema = new mongoose.Schema({
         default: Date.now //automatically puts the date and time
     },
     character: {
-        charName: {
-            type: String
-        }
+       ancestry: {
+        type: String
+       },
+       heritage: {
+        type: String
+       },
+       background: {
+        type: String
+       },
+       ancestryAbility: {
+        type: String
+       },
+       class: {
+        type: String
+       },
+
     }  
 })
 

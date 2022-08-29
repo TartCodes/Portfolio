@@ -21,43 +21,48 @@
         </div>
         <div>
             <a href="auth/logout">
-            <button>Logout</button>
+                <button>Logout</button>            
             </a>
-        </div>       
+        </div>
+        
+        
+            
+               
     </header>
+<form action="/main" method="POST"> 
 <section class="main" id="main-container">
     <!------------>
+    
     <div class="left-side-bar">            
-        <div>Ancestry:</div>
-        <form action="">
+        <div>Ancestry:</div>        
             <div>
-                <input class="larger-input" type="text" placeholder="...Dwarf, Elf, Gnome, etc">
+                <input class="larger-input" type="text" placeholder="" name="ancestry">
             </div>
         <div>Heritage:</div>
             <div>
-                <input class="larger-input" type="text" placeholder="...enter heritage">
+                <input class="larger-input" type="text" placeholder="" name="heritage">
             </div>
         <div>Background:</div>
             <div>
-                <input class="larger-input" type="text" placeholder="...Acolyte, Cursed, Deputy, etc">
+                <input class="larger-input" type="text" placeholder="" name="background">
             </div>
         <div>Ancestry Ability:</div>
             <div>
-                <input class="larger-input" type="text" placeholder="...enter ability">
+                <input class="larger-input" type="text" placeholder="" name="ancestryAbility">
             </div>                    
         <div>Class:</div>
             <div>
-                <input class="larger-input" type="text" placeholder="...enter class">
+                <input class="larger-input" type="text" placeholder="" name="class">
             </div>            
             <div>Background Ability:</div>
                 <div>    
-                    <textarea name="Background Ability" id="" cols="20" rows="5"></textarea>                
+                    <textarea  id="" cols="20" rows="5" name="backgroundAbility"></textarea>                
                 </div>
         <div>Deity:</div>
             <div>             
-                <input class="larger-input" type="text" placeholder="...Iomedae, Gorum, Desna"> 
+                <input class="larger-input" type="text" placeholder=""> 
             </div>
-        </form>
+       
              <div class="title-div">
                     <span class="titles">Skills</span>    
                 </div>
@@ -858,9 +863,11 @@
                 </div>
             </div> 
     </div>           
-        
+       
     </section> <!--main container right-->
-</section> <!-- main container-->  
+    
+</section> <!-- main container--> 
+ </form> 
 
 </body>
 <script type="text/javascript" src="js/main.js"></script>
