@@ -154,8 +154,16 @@ input[type=checkbox] {
     display: flex;
     justify-content: space-evenly;
     padding: 25px 0;
+    align-items: center;
   }
 
+  h3 {
+    display: flex;
+    margin-top: 1em;
+    text-align: left;
+    font-size: .5em;
+    column-gap: 5px;
+  }
 
 /* html,body */
   html,body{

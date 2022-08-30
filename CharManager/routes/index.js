@@ -11,7 +11,9 @@ router.get('/', ensureGuest, (req, res) => {
 // @desc main page 
 // @route GET /main (main.ejs i think for my project?)
 router.get('/main', ensureAuth, (req, res) => {
-    res.render('Main')
+    res.render('Main', {
+        name: req.user.firstName,
+    })
 })
 
 

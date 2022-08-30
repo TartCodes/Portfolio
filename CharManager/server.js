@@ -24,11 +24,6 @@ const app = express()
 if (process.env.NODE_ENV === 'development'){
     app.use(morgan('dev'))
 }
-
-// Handlebars ----dont think I'm using this, I'm using EJS? then REACT one learned
-// app.engine('.hbs', exphbs({defaultLayout: 'main', extname: '.hbs'}))
-// app.set('view engine', '.hbs')
-
 // EJS
 app.set('view engine', 'ejs')
 app.use(express.static('public'))

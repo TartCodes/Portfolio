@@ -23,7 +23,12 @@ const UserSchema = new mongoose.Schema({
     createdAt: {
         type: Date,
         default: Date.now //automatically puts the date and time
-    }
+    },
+    character: {
+        charName: {
+            type: String
+        }
+    }  
 })
 
 module.exports = mongoose.model('User', UserSchema)

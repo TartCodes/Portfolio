@@ -36,3 +36,28 @@ shieldButton.addEventListener('click', function shieldButtonTextSwap() {
     }
 })
 
+//mouse out functions 
+document.getElementById('mouse-out').addEventListener('mouseout', saveData)
+
+function saveData(){
+    console.log('please fucking work');
+    window.location.reload
+}
+
+//checklist
+
+// const dyingCheckList = Array.from(document.getElementsByClassName('dying'))
+// dyingCheckList.forEach(e => e.addEventListener('change', setBoxes))
+
+// function setBoxes(){
+//     console.log('setBoxes');
+//     // dyingCheckList.forEach(e => {
+//     //     e.checked === true ?
+//     // })
+//     const boxes = this.template.querySelectorAll('.dying');
+//     boxes.forEach(box => box.checked = event.target.name === box.name);
+// }
+
+// TRYING TO GET CHECK BOX TO JUST HAVE ONE AT A TIME CHECKED
+
+// wrap form, every input needs a name (NAME NOT ID), add everything into character object shcema within user (all the names of the inputs) -> create save button, 

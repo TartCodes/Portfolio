@@ -15,7 +15,10 @@
 </head>
 <body>
     <header>
-        <h1>Character Manager</h1> 
+        <div>
+            <h1>Character Manager</h1>
+            <h3>Welcome <%=`${name}` %></h3>
+        </div>
         <div>
             <a href="auth/logout">
             <button>Logout</button>
@@ -26,6 +29,7 @@
     <!------------>
     <div class="left-side-bar">            
         <div>Ancestry:</div>
+        <form action="">
             <div>
                 <input class="larger-input" type="text" placeholder="...Dwarf, Elf, Gnome, etc">
             </div>
@@ -53,7 +57,7 @@
             <div>             
                 <input class="larger-input" type="text" placeholder="...Iomedae, Gorum, Desna"> 
             </div>
-
+        </form>
              <div class="title-div">
                     <span class="titles">Skills</span>    
                 </div>
@@ -214,8 +218,9 @@
     <div class="char-container">
             <div class="text-border">          
                 <div>Character Name</div>
-                    <div>
-                        <input class="larger-input" type="text">
+                
+                    <div class="mouse-out" id="mouse-out">
+                        <input class="larger-input" name="charName"type="text">
                     </div> 
             </div>
             <div class="text-border">                  
@@ -227,13 +232,13 @@
             <div class="text-border">                
                 <div>Level</div>
                     <div>
-                        <input class="number-input" lass="number-input center" class="number-input" type="number" placeholder="">            
+                        <input class="number-input" type="number" placeholder="">            
                     </div> 
             </div>
             <div class="text-border">                
                 <div>XP</div>
                     <div>
-                        <input class="number-input" lass="number-input" class="number-input" type="number" placeholder="">
+                        <input class="number-input" name="" type="number" placeholder="">
                     </div>
             </div>
             <div class="text-border">                 
@@ -282,29 +287,29 @@
             <div class="text-border">              
                 <div>HP</div>                   
                     <div>
-                        <input class="number-input" lass="number-input" class="number-input" type="number">
+                        <input class="number-input" type="number">
                     </div>
             </div>
             <div class="text-border">             
                 <div>Current</div>                    
                     <div>
-                        <input class="number-input" lass="number-input" class="number-input" type="number">
+                        <input class="number-input" type="number">
                     </div>
             </div>
 
             <div class="text-border">            
                 <div>Temporary</div>                
                     <div>
-                        <input class="number-input" lass="number-input" class="number-input" type="number">
+                        <input class="number-input" type="number">
                     </div>
             </div>
 
             <div class="text-border">    
                 <div>Dying</div>
-                    <div class="hero-points-div">
-                        <input type="checkbox" value="None" name="check">
-                        <input type="checkbox" value="None" name="check">  
-                        <input type="checkbox" value="None" name="check">        
+                    <div class="hero-points-div">                  
+                        <input class="dying" type="checkbox" value="1" name="check">
+                        <input class="dying" type="checkbox" value="1" name="check1">  
+                        <input class="dying" type="checkbox" value="1" name="check2">        
                     </div>
             </div>
 
