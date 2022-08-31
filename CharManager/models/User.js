@@ -40,7 +40,9 @@ const UserSchema = new mongoose.Schema({
        class: {
         type: String
        },
-
+       charName: {
+        type: String
+       }
     }  
 })
 
