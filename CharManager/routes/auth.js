@@ -10,7 +10,7 @@ router.get('/google', passport.authenticate('google', {scope: ['profile'] }))
 // @route GET /auth/google/callback (main.ejs i think for my project?)
 router.get('/google/callback', passport.authenticate('google', { failureRedirect: '/'}), 
 (req,res) => {
-    res.redirect('/main')
+    res.redirect('/charSheet')
     }
 )
 

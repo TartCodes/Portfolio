@@ -1,4 +1,5 @@
 const express = require('express')
+const app = express()
 const dotenv = require('dotenv')
 const { config } = require('process')
 const mongoose = require('mongoose')
@@ -18,25 +19,26 @@ require('./config/passport')(passport)
 
 connectDB()
 
-const app = express()
+
 
 // logging
 if (process.env.NODE_ENV === 'development'){
     app.use(morgan('dev'))
 }
+
 // EJS
 app.set('view engine', 'ejs')
 app.use(express.static('public'))
 
 // Sessions
 app.use(
-    session({
+  session({
     secret: 'keyboard cat',
     resave: false,
     saveUninitialized: false,
-    store: MongoStore.create({mongoUrl: process.env.MONGO_URI,})    
+    store: MongoStore.create({mongoUrl: process.env.MONGO_URI,}),
   })
-  )
+)
 
 
 //Passport Middleware
