@@ -42,8 +42,6 @@ if (process.env.NODE_ENV === 'development'){
 //   )
 
 
-
-
 // EJS
 app.set('view engine', 'ejs')
 app.use(express.static('public'))
