@@ -250,17 +250,19 @@
                         <input class="number-input" type="number" placeholder="" name="xp">
                     </div>
             </div>
+
             <div class="text-border">                 
                 <div>Hero Points</div>
                     <div class="hero-points-div">
-                        <input type="checkbox" value="None" name="check1">
-                        <input type="checkbox" value="None" name="check2">  
-                        <input type="checkbox" value="None" name="check3">        
+                        <input type="checkbox" name="check1">
+                        <input type="checkbox" name="check2">  
+                        <input type="checkbox" name="check3">        
                     </div>
             </div>
+
             <div class="text-border">    
                 <div>Size</div>
-                   <select name="size-category" id="" name="size">
+                   <select name="size">
                         <option value="tiny">Tiny</option>
                         <option value="small">Small</option>
                         <option value="medium">Medium</option>
@@ -268,7 +270,7 @@
                         <option value="huge">Huge</option>
                         <option value="gargantuan">Gargantuan</option>
                     </select>                                   
-            </div>
+            </div>        
         
             <div class="text-border">        
                 <div>Alignment</div>
@@ -287,7 +289,7 @@
             <div class="text-border"> 
                 <div>Traits</div>
                     <div>
-                        <input class="traits" type="text" placeholder="...Char Traits">           
+                        <input class="traits" type="text" placeholder="" name="traits">           
                     </div>
             </div>
     </div>
@@ -297,20 +299,20 @@
             <div class="text-border">              
                 <div>HP</div>                   
                     <div>
-                        <input class="number-input" type="number">
+                        <input class="number-input" type="number" name="hp">
                     </div>
             </div>
             <div class="text-border">             
                 <div>Current</div>                    
                     <div>
-                        <input class="number-input" type="number">
+                        <input class="number-input" type="number" name="currentHP">
                     </div>
             </div>
 
             <div class="text-border">            
                 <div>Temporary</div>                
                     <div>
-                        <input class="number-input" type="number">
+                        <input class="number-input" type="number" name="tempHP">
                     </div>
             </div>
 
@@ -338,62 +340,62 @@
             <div class="text-border"> 
                  <div class="ability-scores">Str</div>
                      <div>                                               
-                         <input class="number-input" type="number">   
+                         <input class="number-input" type="number" name="totalStr">   
                      </div>
                      <div class="mod-div">              
                         <span>+</span>
-                        <input class="number-input" type="number">                        
+                        <input class="number-input" type="number" name="strMod">                        
                      </div> 
             </div>           
             <div class="text-border"> 
                 <div class="ability-scores">Dex</div>
                     <div>                                               
-                        <input class="number-input" type="number">   
+                        <input class="number-input" type="number" name="totalDex">   
                     </div>
                     <div class="mod-div">              
                        <span>+</span>
-                       <input class="number-input" type="number">                        
+                       <input class="number-input" type="number" name="dexMod">                        
                     </div> 
            </div>           
                  <div class="text-border"> 
                  <div class="ability-scores">Con</div>
                      <div>                                               
-                         <input class="number-input" type="number">   
+                         <input class="number-input" type="number" name="totalCon">   
                      </div>
                      <div class="mod-div">              
                         <span>+</span>
-                        <input class="number-input" type="number">                        
+                        <input class="number-input" type="number" name="conMod">                        
                      </div> 
             </div>                            
                  <div class="text-border"> 
                  <div class="ability-scores">Int</div>
                      <div>                                               
-                         <input class="number-input" type="number">   
+                         <input class="number-input" type="number" name="totalInt">   
                      </div>
                      <div class="mod-div">              
                         <span>+</span>
-                        <input class="number-input" type="number">                        
+                        <input class="number-input" type="number" name="intMod">                        
                      </div> 
             </div>             
                  <div class="text-border"> 
                  <div class="ability-scores">Wis</div>
                      <div>                                               
-                         <input class="number-input" type="number">   
+                         <input class="number-input" type="number" name="totalWis">   
                      </div>
                      <div class="mod-div">              
                         <span>+</span>
-                        <input class="number-input" type="number">                        
+                        <input class="number-input" type="number" name="wisMod">                        
                      </div> 
             </div>           
              
                  <div class="text-border"> 
                  <div class="ability-scores">Cha</div>
                      <div>                                               
-                         <input class="number-input" type="number">   
+                         <input class="number-input" type="number" name="totalCha">   
                      </div>
                      <div class="mod-div">              
                         <span>+</span>
-                        <input class="number-input" type="number">                        
+                        <input class="number-input" type="number" name="chaMod">                        
                      </div> 
             </div>           
          </div>
@@ -404,14 +406,14 @@
             <div class="text-border">    
                 <div>Resistances/Immunities:</div> 
                     <div>
-                        <textarea name="body" id="" cols="25" rows="3"></textarea>
+                        <textarea name="resistsImmunities" id="" cols="25" rows="3"></textarea>
                     </div>
                 </div>
 
             <div class="text-border">    
                 <div>Conditions:</div>
                     <div>
-                        <textarea name="body" id="" cols="25" rows="3"></textarea>
+                        <textarea name="conditions" id="" cols="25" rows="3"></textarea>
                     </div> 
                 </div>  
                
@@ -423,25 +425,25 @@
                 <div class="saves-text-main">
                     <div>Fort</div>
                         <div>
-                            <input class="number-input" type="number">
+                            <input class="number-input" type="number" name="fortSave">
                         </div>             
                 </div>
                 <div class="saves-text">    
                     <div>Con</div>
                         <div>
-                            <input class="number-input" type="number"> 
+                            <input class="number-input" type="number" name="fortMod"> 
                         </div>
                 </div>
                 <div class="saves-text">
                     <div>Prof</div>
                         <div>
-                            <input class="number-input" type="number">
+                            <input class="number-input" type="number" name="fortProf">
                         </div>
                 </div>
                 <div class="saves-text">
                     <div>Item</div>
                         <div>
-                            <input class="number-input" type="number">                               
+                            <input class="number-input" type="number" name="fortItem">                               
                         </div>
                 </div>
                 <div class="saves-text-check">                            
@@ -458,25 +460,25 @@
                 <div class="saves-text-main">
                     <div>Reflex</div>
                         <div>
-                            <input class="number-input" type="number">
+                            <input class="number-input" type="number" name="reflexSave">
                         </div>             
                 </div>
                 <div class="saves-text">    
                     <div>Dex</div>
                         <div>
-                            <input class="number-input" type="number"> 
+                            <input class="number-input" type="number" name="reflexMod"> 
                         </div>
                 </div>
                 <div class="saves-text">
                     <div>Prof</div>
                         <div>
-                            <input class="number-input" type="number">
+                            <input class="number-input" type="number" name="reflexProf">
                         </div>
                 </div>
                 <div class="saves-text">
                     <div>Item</div>
                         <div>
-                            <input class="number-input" type="number">                               
+                            <input class="number-input" type="number" name="reflexItem">                               
                         </div>
                 </div>
                 <div class="saves-text-check">                            
@@ -493,25 +495,25 @@
                 <div class="saves-text-main">
                     <div>Will</div>
                         <div>
-                            <input class="number-input" type="number">
+                            <input class="number-input" type="number" name="willSave">
                         </div>             
                 </div>
                 <div class="saves-text">    
                     <div>Wis</div>
                         <div>
-                            <input class="number-input" type="number"> 
+                            <input class="number-input" type="number" name="willMod"> 
                         </div>
                 </div>
                 <div class="saves-text">
                     <div>Prof</div>
                         <div>
-                            <input class="number-input" type="number">
+                            <input class="number-input" type="number" name="willProf">
                         </div>
                 </div>
                 <div class="saves-text">
                     <div>Item</div>
                         <div>
-                            <input class="number-input" type="number">                               
+                            <input class="number-input" type="number" name="willItem">                               
                         </div>
                 </div>
                 <div class="saves-text-check">                            

@@ -1,5 +1,7 @@
 const mongoose = require('mongoose')
 
+
+
 const CharacterSchema = new mongoose.Schema({
     user: {
         type: mongoose.Schema.Types.ObjectId,
@@ -47,60 +49,155 @@ const CharacterSchema = new mongoose.Schema({
     intimidation: {
         type: Number
     },
-    firstLore: {
+    firstLore:{
         type: String
     },
-    firstLoreB: {
+    firstLoreB:{
         type: Number
     },
-    secondLore: {
+    secondLore:{
         type: String
     },
-    secondLoreB: {
+    secondLoreB:{
         type: Number
     },
-    medicine: {
+    medicine:{
         type: Number
     },
-    nature: {
+    nature:{
         type: Number
     },
-    occultism: {
+    occultism:{
         type: Number
     },
-    performance: {
+    performance:{
         type: Number
     },
-    society: {
+    society:{
         type: Number
     },
-    stealth: {
+    stealth:{
         type: Number
     },
-    survival: {
+    survival:{
         type: Number
     },
-    thievery: {
+    thievery:{
         type: Number
     },                      //main container 
-    charName: {
+    charName:{
         type: String
     },
-    playerName: {
+    playerName:{
         type: String
     },
-    level: {
+    level:{
         type: String
     },
-    xp: {
+    xp:{
         type: String
+    },  
+   //checkbox here if you figure it out
+    size:{
+        type: String //drop down
     },
-    size: {
-        type: String,
-        enum: ['tiny', 'small', 'medium', 'large', 'huge', 'gargantuan'],
-        require: true
+    alignment:{
+        type: String //drop down
     },
-    
+    traits:{
+        type: String //textarea
+    },
+    hp:{
+        type: Number
+    },
+    currentHP:{
+        type: Number
+    },
+    tempHP:{
+        type: Number
+    },
+    //another checkbox
+    //and another
+    totalStr:{          //main stats
+        type: Number
+    },
+    strMod:{
+        type: Number
+    },
+    totalDex:{
+        type: Number
+    },
+    dexMod:{
+        type: Number
+    },
+    totalCon:{
+        type: Number
+    },
+    conMod:{
+        type: Number
+    },
+    totalInt:{
+        type: Number
+    },
+    intMod:{
+        type: Number
+    },
+    totalWis:{
+        type: Number
+    },
+    widMod:{
+        type: Number
+    },
+    totalCha:{
+        type: Number
+    },
+    chaMod:{
+        type: Number
+    },
+    resisitsImmunities:{
+        type: String //textarea
+    },
+    conditions:{
+        type: String //textarea
+    },
+    fortSave:{                //saving throws
+        type: Number
+    },
+    fortMod:{
+        type: Number
+    },
+    fortProf:{
+        type: Number
+    },
+    fortItem:{
+        type: Number
+    },
+    //checkbox for fort save prof
+    reflexSave:{
+        type: Number
+    },
+    reflexMod:{
+        type: Number
+    },
+    reflexProf:{
+        type: Number
+    },
+    reflexItem:{
+        type: Number
+    },
+    //checkbox for reflex prof
+    willSave:{
+        type: Number
+    },
+    willMod:{
+        type: Number
+    },
+    willProf:{
+        type: Number
+    },
+    willItem:{
+        type: Number
+    },  
 
 
 
