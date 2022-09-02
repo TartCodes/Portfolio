@@ -534,17 +534,17 @@
     <div class="armor-container">    
         <div class="ac-style">
             <div>
-                <input class="number-input" type="number">
+                <input class="number-input" type="number" name="totalAC">
             </div>
             <div>= AC</div>
         </div>
         <div>Dex:</div>
             <div>
-                <input class="number-input" type="number"> 
+                <input class="number-input" type="number" name="acDexBonus"> 
             </div>            
         <div>Cap:</div>
             <div>
-                <input class="number-input" type="number">
+                <input class="number-input" type="number" name="acCap"> 
             </div>          
             <div class="hero-points-div">
                 <input type="checkbox" value="None" name="check">
@@ -554,7 +554,7 @@
             </div>    
         <div>Item:</div>
             <div>
-                <input class="number-input" type="number">
+                <input class="number-input" type="number" name="acItemBonus">
             </div>
     </div>
     <!--armor type  -->
@@ -609,7 +609,7 @@
                    <!-- <span>+<input class="number-input" type="number">AC</span> -->
                    <div class="shieldac-div">              
                     <span>+</span>
-                    <input class="number-input" type="number">   
+                    <input class="number-input" type="number" name="shieldAC">   
                     <span>AC</span>                     
                  </div>
                 <!-- </div>         -->
@@ -617,25 +617,25 @@
         <div class="armor-type-text"> 
             <div>Hardness</div>
                 <div>
-                    <input class="number-input" type="number"> 
+                    <input class="number-input" type="number" name="hardness"> 
                 </div>
         </div>
         <div class="armor-type-text"> 
             <div>Max HP</div>
                 <div>
-                    <input class="number-input" type="number">                     
+                    <input class="number-input" type="number" name="shieldHP">                     
                 </div>
         </div>
         <div class="armor-type-text"> 
             <div>Break</div>
                 <div>
-                    <input class="number-input" type="number"> 
+                    <input class="number-input" type="number" name="shieldBreak"> 
                 </div>
         </div>
         <div class="armor-type-text"> 
             <div>Current HP</div>
                 <div>   
-                    <input class="number-input" type="number"> 
+                    <input class="number-input" type="number" name="shieldCurrentHP"> 
                 </div>  
         </div>   
     </div>
@@ -643,17 +643,17 @@
     <div class="classdc-container">                 
         <div class="ac-style">                               
             <div>   
-                <input class="number-input" type="number">           
+                <input class="number-input" type="number" name="classDC">           
             </div>
             <div>= Class DC</div>             
         </div>
         <div>Key:</div>
             <div>                                
-                <input class="number-input" type="number"> 
+                <input class="number-input" type="number" name="classKey"> 
             </div>
         <div>Prof:</div>
             <div>                     
-                <input class="number-input" type="number">
+                <input class="number-input" type="number" name="classDCProf">
             </div>
     
             <div class="hero-points-div">
@@ -665,7 +665,7 @@
 
     <div>Item:</div>
         <div>
-            <input class="number-input" type="number">
+            <input class="number-input" type="number" name="classDCItem">
         </div>                                                
 </div>
 
@@ -673,19 +673,19 @@
     <div class="perception-container">           
         <div class="ac-style">                               
             <div>   
-                <input class="number-input" type="number">           
+                <input class="number-input" type="number" name="perception">           
             </div>
             <div>= Perception</div>             
         </div>
 
         <div>Wis:</div>                
             <div>
-               <input class="number-input" type="number">
+               <input class="number-input" type="number" name="wisBonus">
             </div>
 
         <div>Prof:</div>            
             <div>
-                <input class="number-input" type="number">
+                <input class="number-input" type="number" name="perceptionProf">
             </div>
 
             <div class="hero-points-div">
@@ -700,7 +700,7 @@
     <div class="senses">
         <div>Senses:</div>
             <div>
-                <textarea name="body" id="" cols="25" rows="3"></textarea>
+                <textarea name="body" id="" cols="25" rows="3" name="senses"></textarea>
             </div>        
     </div>    
 

@@ -197,10 +197,69 @@ const CharacterSchema = new mongoose.Schema({
     },
     willItem:{
         type: Number
-    },  
-
-
-
+    },
+    //checkbox for will
+    //ac info
+    totalAC:{
+        type: Number
+    },
+    acDexBonus:{
+        type: Number
+    },
+    acCap:{
+        type: Number
+    },
+    //checkbox for prof in ac
+    acItemBonus: {
+        type: Number
+    },
+    // all the checkboxes for armor training
+                   //shield info
+    shieldAC:{
+        type: Number
+    },
+    hardness:{
+        type: Number
+    },
+    shieldHP:{
+        type: Number
+    },
+    shieldBreak:{
+        type: Number
+    },
+    shieldCurrentHP:{
+        type: Number
+    },
+                //class DC info
+    classDC:{
+        type: Number
+    },
+    classKey:{
+        type: Number
+    },
+    classDCProf:{
+        type: Number
+    },
+    //class dc checkboxes
+    classDCItem:{
+        type: Number
+    },
+                    //perception
+    perception:{
+        type: Number
+    },
+    wisBonus:{
+        type: Number
+    },
+    perceptionProf:{
+        type: Number
+    },
+            //perception prof checkboxes
+    senses:{
+        type: String //textarea
+    },
+                //weapons
+    
 
 
 
