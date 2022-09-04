@@ -228,10 +228,25 @@ const CharacterSchema = new mongoose.Schema({
         type: Number
     },
     //checkbox for prof in ac
+    acProfCheck:{
+        type: Array
+    },
     acItemBonus: {
         type: Number
     },
     // all the checkboxes for armor training
+    unarmoredCheck:{
+        type: Array
+    },
+    lightArmorCheck:{
+        type: Array
+    },
+    mediumArmorCheck:{
+        type: Array
+    },
+    heavyArmorCheck:{
+        type: Array
+    },
                    //shield info
     shieldAC:{
         type: Number
@@ -259,6 +274,9 @@ const CharacterSchema = new mongoose.Schema({
         type: Number
     },
     //class dc checkboxes
+    classDcCheck:{
+        type: Array
+    },
     classDCItem:{
         type: Number
     },
@@ -273,12 +291,27 @@ const CharacterSchema = new mongoose.Schema({
         type: Number
     },
             //perception prof checkboxes
+    perceptionCheck:{
+        type: Array
+    },        
     senses:{
         type: String //textarea
     },
                 //weapons
     //weapon training checkboxes
     //then add weapon button (still WIP)
+    unarmedCheck:{
+        type: Array
+    },
+    simpleCheck:{
+        type: Array
+    },
+    martialCheck:{
+        type: Array
+    },
+    advancedCheck:{
+        type: Array
+    },
     addWeapon:{
         type: String
     },
@@ -323,13 +356,7 @@ const CharacterSchema = new mongoose.Schema({
     },
     rangeTraits:{
         type: String //textarea
-    }
-
-
-
-
-
-    
+    }    
 })
 
 module.exports = mongoose.model('Character', CharacterSchema)

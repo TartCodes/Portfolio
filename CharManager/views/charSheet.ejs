@@ -254,7 +254,7 @@
             <div class="text-border">                 
                 <div>Hero Points</div>
                     <div class="hero-points-div">
-                        <input type="checkbox" name="heroCheck" value="onePoint">
+                        <input type="checkbox" name="heroCheck" value="onePoint"> <!-- % if (character.onePoint === true) { checked } %> --> 
                         <input type="checkbox" name="heroCheck" value="twoPoint">  
                         <input type="checkbox" name="heroCheck" value="threePoint">        
                     </div>
@@ -262,7 +262,7 @@
 
             <div class="text-border">    
                 <div>Size</div>
-                   <select name="size">
+                   <select name="size">                   
                         <option value="tiny">Tiny</option>
                         <option value="small">Small</option>
                         <option value="medium">Medium</option>
@@ -547,10 +547,10 @@
                 <input class="number-input" type="number" name="acCap"> 
             </div>          
             <div class="hero-points-div">
-                <input type="checkbox" value="None" name="check">
-                <input type="checkbox" value="None" name="check">  
-                <input type="checkbox" value="None" name="check">
-                <input type="checkbox" value="None" name="check">        
+                <input type="checkbox" value="plusTwo" name="acProfCheck">
+                <input type="checkbox" value="plusFour" name="acProfCheck">  
+                <input type="checkbox" value="plusSix" name="acProfCheck">
+                <input type="checkbox" value="plusEight" name="acProfCheck">        
             </div>    
         <div>Item:</div>
             <div>
@@ -562,38 +562,38 @@
         <div class="armor-type-text">            
             <div>Unarmored</div>
             <div class="hero-points-div">
-                <input type="checkbox" value="None" name="check">
-                <input type="checkbox" value="None" name="check">  
-                <input type="checkbox" value="None" name="check">
-                <input type="checkbox" value="None" name="check">        
+                <input type="checkbox" value="plusTwo" name="unarmoredProf">
+                <input type="checkbox" value="plusFour" name="unarmoredProf">  
+                <input type="checkbox" value="plusSix" name="unarmoredProf">
+                <input type="checkbox" value="plusEight" name="unarmoredProf">        
             </div> 
         </div>
 
         <div class="armor-type-text"> 
             <div>Light</div>
             <div class="hero-points-div">
-                <input type="checkbox" value="None" name="check">
-                <input type="checkbox" value="None" name="check">  
-                <input type="checkbox" value="None" name="check">
-                <input type="checkbox" value="None" name="check">        
+                <input type="checkbox" value="plusTwo" name="lightArmorCheck">
+                <input type="checkbox" value="plusFour" name="lightArmorCheck">  
+                <input type="checkbox" value="plusSix" name="lightArmorCheck">
+                <input type="checkbox" value="plusEight" name="lightArmorCheck">        
             </div>  
         </div>
         <div class="armor-type-text"> 
             <div>Medium</div>
             <div class="hero-points-div">
-                <input type="checkbox" value="None" name="check">
-                <input type="checkbox" value="None" name="check">  
-                <input type="checkbox" value="None" name="check">
-                <input type="checkbox" value="None" name="check">        
+                <input type="checkbox" value="plusTwo" name="mediumArmorCheck">
+                <input type="checkbox" value="plusFour" name="mediumArmorCheck">  
+                <input type="checkbox" value="plusSix" name="mediumArmorCheck">
+                <input type="checkbox" value="plusEight" name="mediumArmorCheck">        
             </div>  
         </div>
         <div class="armor-type-text"> 
             <div>Heavy</div>       
             <div class="hero-points-div">
-                <input type="checkbox" value="None" name="check">
-                <input type="checkbox" value="None" name="check">  
-                <input type="checkbox" value="None" name="check">
-                <input type="checkbox" value="None" name="check">        
+                <input type="checkbox" value="plusTwo" name="heavyArmorCheck">
+                <input type="checkbox" value="plusFour" name="heavyArmorCheck">  
+                <input type="checkbox" value="plusSix" name="heavyArmorCheck">
+                <input type="checkbox" value="plusEight" name="heavyArmorCheck">        
             </div>   
         </div>       
     </div>
@@ -657,10 +657,10 @@
             </div>
     
             <div class="hero-points-div">
-                <input type="checkbox" value="None" name="check">
-                <input type="checkbox" value="None" name="check">  
-                <input type="checkbox" value="None" name="check">
-                <input type="checkbox" value="None" name="check">        
+                <input type="checkbox" value="plusTwo" name="classDcCheck">
+                <input type="checkbox" value="plusFour" name="classDcCheck">  
+                <input type="checkbox" value="plusSix" name="classDcCheck">
+                <input type="checkbox" value="plusEight" name="classDcCheck">        
             </div>
 
     <div>Item:</div>
@@ -689,10 +689,10 @@
             </div>
 
             <div class="hero-points-div">
-                <input type="checkbox" value="None" name="check">
-                <input type="checkbox" value="None" name="check">  
-                <input type="checkbox" value="None" name="check">
-                <input type="checkbox" value="None" name="check">        
+                <input type="checkbox" value="plusTwo" name="perceptionCheck">
+                <input type="checkbox" value="plusFour" name="perceptionCheck">  
+                <input type="checkbox" value="plusSix" name="perceptionCheck">
+                <input type="checkbox" value="plusEighunarmedC" name="perceptionCheck">        
             </div>   
     </div>                            
             
@@ -717,37 +717,37 @@
         <div>           
             <div>Unarmed</div>
             <div class="weapon-prof-checks">
-                <input type="checkbox" value="None" name="check">
-                <input type="checkbox" value="None" name="check">  
-                <input type="checkbox" value="None" name="check">
-                <input type="checkbox" value="None" name="check">        
+                <input type="checkbox" value="plusTwo" name="unarmedCheck">
+                <input type="checkbox" value="plusFour" name="unarmedCheck">  
+                <input type="checkbox" value="plusSix" name="unarmedCheck">
+                <input type="checkbox" value="plusEight" name="unarmedCheck">        
             </div>    
         </div>    
         <div>         
             <div>Simple</div>
             <div class="weapon-prof-checks">
-                <input type="checkbox" value="None" name="check">
-                <input type="checkbox" value="None" name="check">  
-                <input type="checkbox" value="None" name="check">
-                <input type="checkbox" value="None" name="check">        
+                <input type="checkbox" value="plusTwo" name="simpleCheck">
+                <input type="checkbox" value="plusFour" name="simpleCheck">  
+                <input type="checkbox" value="plusSix" name="simpleCheck">
+                <input type="checkbox" value="plusEight" name="simpleCheck">        
             </div>    
         </div>
         <div>            
             <div>Martial</div>
             <div class="weapon-prof-checks">
-                <input type="checkbox" value="None" name="check">
-                <input type="checkbox" value="None" name="check">  
-                <input type="checkbox" value="None" name="check">
-                <input type="checkbox" value="None" name="check">        
+                <input type="checkbox" value="plusTwo" name="martialCheck">
+                <input type="checkbox" value="plusFour" name="martialCheck">  
+                <input type="checkbox" value="plusSix" name="martialCheck">
+                <input type="checkbox" value="plusEight" name="martialCheck">        
             </div>
         </div>
         <div>            
             <div>Advanced</div>
             <div class="weapon-prof-checks">
-                <input type="checkbox" value="None" name="check">
-                <input type="checkbox" value="None" name="check">  
-                <input type="checkbox" value="None" name="check">
-                <input type="checkbox" value="None" name="check">        
+                <input type="checkbox" value="plusTwo" name="advancedCheck">
+                <input type="checkbox" value="plusFour" name="advancedCheck">  
+                <input type="checkbox" value="plusSix" name="advancedCheck">
+                <input type="checkbox" value="plusEight" name="advancedCheck">        
             </div>
         </div>
     </div>     
