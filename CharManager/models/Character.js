@@ -97,7 +97,10 @@ const CharacterSchema = new mongoose.Schema({
     xp:{
         type: String
     },  
-   //checkbox here if you figure it out
+                    //checkbox 
+    heroCheck:{
+        type: Array        
+    },
     size:{
         type: String //drop down
     },
@@ -116,8 +119,14 @@ const CharacterSchema = new mongoose.Schema({
     tempHP:{
         type: Number
     },
-    //another checkbox
-    //and another
+                // dying checkbox
+    dyingCheck:{
+        type: Array
+    },                
+    //      wounded check
+    woundedCheck:{
+        type: Array
+    },
     totalStr:{          //main stats
         type: Number
     },
@@ -173,6 +182,9 @@ const CharacterSchema = new mongoose.Schema({
         type: Number
     },
     //checkbox for fort save prof
+    fortCheck:{
+        type: Array
+    },
     reflexSave:{
         type: Number
     },
@@ -186,6 +198,9 @@ const CharacterSchema = new mongoose.Schema({
         type: Number
     },
     //checkbox for reflex prof
+    reflexCheck:{
+        type: Array
+    },
     willSave:{
         type: Number
     },
@@ -199,6 +214,9 @@ const CharacterSchema = new mongoose.Schema({
         type: Number
     },
     //checkbox for will
+    willCheck:{
+        type: Array
+    },
     //ac info
     totalAC:{
         type: Number
