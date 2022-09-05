@@ -259,8 +259,53 @@ const CharacterSchema = new mongoose.Schema({
         type: String //textarea
     },
                 //weapons
-    
-
+    //weapon training checkboxes
+    //then add weapon button (still WIP)
+    addWeapon:{
+        type: String
+    },
+    attackDie:{
+        type: Number
+    },
+    damageDie:{
+        type: Number
+    },
+    damageTypeWeapon:{
+        type: String //dropdown
+    },
+    weaponProfType:{
+        type: String // dropdown
+    },
+    weaponDmgType:{
+        type: String // dropdown
+    },
+    otherTraits:{
+        type: String //textarea
+    },
+    rangeWeaponName:{
+        type: String
+    },
+    rangeAtkDie:{
+        type: Number
+    },
+    rangeDmgDie:{
+        type: Number
+    },
+    rangeDmgType:{
+        type: String //dropdown
+    },
+    rangeProfType:{
+        type: String //dropdown
+    },
+    weaponRange:{
+        type: Number
+    },
+    rangeReload:{
+        type: Number
+    },
+    rangeTraits:{
+        type: String //textarea
+    }
 
 
 

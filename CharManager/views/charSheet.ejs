@@ -714,7 +714,7 @@
         <span>Proficiencies</span>
     </div>
     <div class="weapon-prof-divs">
-        <div>         
+        <div>           
             <div>Unarmed</div>
             <div class="weapon-prof-checks">
                 <input type="checkbox" value="None" name="check">
@@ -764,17 +764,17 @@
                     <div>
                         <span>Weapon Name</span>
                     </div>
-                    <input type="text" name="" id="">
+                    <input type="text" name="addWeapon" id="">
                 </div>
 
                 <div class="damage-die">
                     <div>
                         <span>Attack</span>
                     </div>
-                    <input class="number-input" type="number">
+                    <input class="number-input" type="number" name="attackDie">
                     <span>d</span>
-                    <input class="number-input" type="number">
-                    <select name="weapon-dmg-type" id="">
+                    <input class="number-input" type="number" name="damageDie">
+                    <select name="damageTypeWeapon" id="">
                         <option value="P">P</option>
                         <option value="S">S</option>
                         <option value="B">B</option>                        
@@ -783,7 +783,7 @@
 
                 <div class="weapon-prof-list">
                     <div>Type</div>
-                    <select name="weapon-prof-list" id="">
+                    <select name="weaponProfType" id="">
                         <option value="Unarmed">Unarmed</option>
                         <option value="Simple">Simple</option>
                         <option value="Martial">Martial</option>
@@ -795,7 +795,7 @@
                     <div>
                         <span>Versatile</span>
                     </div>
-                    <select name="weapon-dmg-type" id="">
+                    <select name="weaponDmgType" id="">
                         <option value="blank"></option>
                         <option value="P">P</option>
                         <option value="S">S</option>
@@ -808,7 +808,7 @@
                         <span>Other Traits</span>
                     </div>
                     <div>
-                        <textarea name="body" id="" cols="30" rows="2"></textarea>
+                        <textarea name="otherTraits" id="" cols="30" rows="2"></textarea>
                     </div>
                 </div>
             </div>      
@@ -819,17 +819,17 @@
                     <div>
                         <span>Weapon Name</span>
                     </div>
-                    <input type="text" name="" id="">
+                    <input type="text" name="rangeWeaponName" id="">
                 </div>
 
                 <div class="damage-die">
                     <div>
                         <span>Attack</span>
                     </div>
-                    <input class="number-input" type="number">
+                    <input class="number-input" type="number" name="rangeAtkDie">
                     <span>d</span>
-                    <input class="number-input" type="number">
-                    <select name="weapon-dmg-type" id="">
+                    <input class="number-input" type="number" name="rangeDmgDie">
+                    <select name="rangeDmgType" id="">
                         <option value="P">P</option>
                         <option value="S">S</option>
                         <option value="B">B</option>                        
@@ -838,7 +838,7 @@
 
                 <div class="weapon-prof-list">
                     <div>Type</div>
-                    <select name="weapon-prof-list" id="">
+                    <select name="rangeProfType" id="">
                         <option value="Unarmed">Unarmed</option>
                         <option value="Simple">Simple</option>
                         <option value="Martial">Martial</option>
@@ -850,14 +850,14 @@
                     <div>
                         <span>Range</span>
                     </div>
-                    <input class="number-input" type="number">
+                    <input class="number-input" type="number" name="weaponRange">
                 </div>
 
                 <div class="reload">
                     <div>
                         <span>Reload</span>
                     </div>
-                    <input class="number-input" type="number">
+                    <input class="number-input" type="number" name="rangeReload">
                 </div>
 
                 <div class="other-traits">
@@ -865,7 +865,7 @@
                         <span>Other Traits</span>
                     </div>
                     <div>
-                        <textarea name="body" id="" cols="30" rows="2"></textarea>
+                        <textarea name="rangeTraits" id="" cols="30" rows="2"></textarea>
                     </div>
                 </div>
             </div> 
