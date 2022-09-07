@@ -9,7 +9,7 @@ const Character = require('../models/Character')
 router.get('/', ensureAuth, async (req, res) => {
     console.log(req.user)
     try {
-    const character = await Character.find({userId:req.user.id})
+    const character = await Character.find({userId:req.user._id})
     res.render('charSheet', {character: character, user: req.user})    
     } catch(err){
         console.log(err)

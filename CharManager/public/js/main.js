@@ -46,3 +46,12 @@ shieldButton.addEventListener('click', function shieldButtonTextSwap() {
 
 //checklist
 
+//prevent default on form submit? 
+
+
+// function handleForm(event){
+
+// document.getElementById("formSubmit").addEventListener("click", (event) => {
+//     event.preventDefault()
+//   }); 
+

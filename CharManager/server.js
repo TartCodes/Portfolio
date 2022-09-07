@@ -67,6 +67,21 @@ app.use('/', require('./routes/index'))
 app.use('/auth', require('./routes/auth'))
 app.use('/postCharacter', require('./routes/postCharacter')) //not sure about this 
 
+
+//api and node-fetch ? move to routes maybe
+// import fetch from 'node-fetch'
+
+// const response = await fetch('https://github.com/');
+// const body = await response.text('https://api.pathfinder2.fr/v1/pf2/');
+
+// console.log(body);
+
+
+
+
+
+
+
 const PORT = process.env.PORT || 3000
 
 app.listen(PORT, console.log(`Server running in ${process.env.NODE_ENV} mode on ${PORT}`))

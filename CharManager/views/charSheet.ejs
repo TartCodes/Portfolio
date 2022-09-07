@@ -26,8 +26,7 @@
             </a>
         </div>
         <div>
-            <input type="submit" name="" value="save" class="btn" id="">
-            
+            <input type="submit" name="" value="save" class="btn" id="formSubmit">            
         </div>       
             
                
@@ -40,7 +39,7 @@
         <fieldset>           
             <div>Ancestry:</div>        
                 <div>
-                    <input class="larger-input" type="text" placeholder="" name="ancestry">
+                    <input class="larger-input" type="text" placeholder="" name="ancestry" value="<%= character.ancestry || '' %>">
                 </div>
             <div>Heritage:</div>
                 <div>
