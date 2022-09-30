@@ -14,13 +14,7 @@ router.get('/google/callback', passport.authenticate('google', { failureRedirect
     }
 )
 
-//@desc Logout user
-//@route /auth/logout
-// from tutorial - did not work
-// router.get('/logout', (req,res) => {
-//     req.logout()
-//     res.redirect('/')
-// })
+
 
 // from updated stack-overflow, seems to be working
 router.get('/logout',(req, res, next) => {

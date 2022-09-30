@@ -15,10 +15,14 @@ router.get('/', ensureGuest, (req, res) => {
 router.get('/charSheet', ensureAuth, async (req, res) => {
     try {
         const character = await Character.find({ user: req.user.id })
-        res.render('CharSheet', {
-            name: req.user.firstName,
-            character
-        })
+        console.log(req.user, 'please work')
+        if(character.length !== 0){
+            console.log(character, 'rendering if')
+            res.render('charSheet', {characterData: character, user: req.user})  
+        } else {
+            console.log('render else')
+            res.render('charSheet')  
+        }       
     } catch (err) {
         console.error(err);
         res.render('errors/500')
