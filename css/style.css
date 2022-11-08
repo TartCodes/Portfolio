@@ -552,7 +552,7 @@ h4 {
 /* second project */
 
 .second-project {
-    background-image: url(../assets/legends2-resized.png);
+    background-image: url(../assets/pf2e-cropped.jpg);;
     background-repeat: no-repeat;
     background-size: cover;
     grid-row: 1/2;
@@ -589,7 +589,7 @@ h4 {
 /* fourth project */
 
 .fourth-project {
-    background-image: url(../assets/pf2e-resized.jpg);
+    background-image: url(../assets/monday.JPG);
     background-repeat: no-repeat;
     background-size: cover;
     display: grid;
